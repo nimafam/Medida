@@ -1,1 +1,186 @@
-.cover-container
+@import url("fonts/iransans.css");
+
+body{
+    font-family: IRANSans, Serif !important;
+}
+
+/* Main Navigation Bar*/
+.nav-header {
+    background: transparent;
+    height: 200px;
+    overflow: hidden;
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    -ms-transition: all 0.35s;
+    -o-transition: all 0.35s;
+    transition: all 0.35s;
+    line-height: 160px;
+}
+
+.nav-header.shrink {
+    background: #fffbfa;
+    height: 120px;
+    line-height: 80px;
+}
+
+.nav-header h1
+{
+    font-size:30px;
+    font-weight:normal;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.nav-header.shrink h1
+{
+    font-size:24px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.content
+{
+    height:2000px;
+    /*just to get the page to scroll*/
+}
+/* Menu icon styles */
+
+.menu-icon-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 34px;
+    margin: 2em;
+    pointer-events: none;
+    transition: 0.1s;
+}
+
+.menu-icon-wrapper.scaled {
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+}
+
+.menu-icon-wrapper svg {
+    position: absolute;
+    top: -33px;
+    left: -33px;
+    -webkit-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    transform: scale(0.1);
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+.menu-icon-wrapper svg path {
+    stroke: #17d0ff;
+    stroke-width: 30px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: transparent;
+}
+
+.menu-icon-wrapper .menu-icon-trigger {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    pointer-events: auto;
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-icon-wrapper .menu-icon-trigger:hover,
+.menu-icon-wrapper .menu-icon-trigger:focus {
+    outline: none;
+}
+
+
+/* THe Side navigation Menu */
+.side-nav{
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1031; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.side-nav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-nav a:hover {
+    color: #f1f1f1;
+}
+
+#main {
+    transition: margin-right .5s;
+}
+
+@media screen and (max-height: 450px) {
+    .side-nav {padding-top: 15px;}
+    .side-nav a {font-size: 18px;}
+}
+
+#cover {
+    padding-top: 50px;
+    background-color: #4e555b;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+
+    height: 100vh;
+}
+
+/* Footer Section */
+footer {
+    height: 300px;
+    background-color: #92b8c3;
+    position: relative;
+}
+footer .footer-inner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 40px 60px;
+    width: 100%;
+}
+footer .footer-inner * {
+    color: #fff;
+}
+footer .logo {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 80px;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: transform, opacity;
+    transition-duration: 0.8s;
+    transition-timing-function: ease;
+}
+footer .logo.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+footer nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

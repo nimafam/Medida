@@ -8,23 +8,91 @@
 
     <!-- Bootstrap 4.0 CSS -->
     <link rel="stylesheet" href="../../assets/css/bootstrap/bootstrap.min.css" crossorigin="anonymous"/>
+
+    <!-- Public Stylesheet -->
+    <link rel="stylesheet" href="../../assets/css/public.css" crossorigin="anonymous"/>
+
+    <!-- Material Font Icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
+<body id="main">
 
-<div class="container d-flex h-100 mx-auto flex-column">
-
-    <header class="masthead mb-auto">
-        <div class="inner">
-            <h3 class="masthead-brand">Cover</h3>
-            <nav class="nav nav-masthead justify-content-center">
-                <a class="nav-link active" href="#">Home</a>
-                <a class="nav-link" href="#">Features</a>
-                <a class="nav-link" href="#">Contact</a>
-            </nav>
-        </div>
-    </header>
-
+<div class="side-nav" id="side-nav">
+    <a href="javascript:void(0)" class="closebtn">&times;</a>
+    <a href="#">درباره مدیدا</a>
+    <a href="#">خدمات</a>
+    <a href="#">قیمت</a>
+    <a href="#">ارتباط با ما</a>
 </div>
+
+<header class="container-fluid" id="cover">
+
+    <nav class="navbar navbar-expand-lg fixed-top nav-header" id="banner">
+
+        <div class="container">
+
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html">
+                <img src="../../assets/images/logo.png" class="img-fluid mx-auto">
+            </a>
+
+            <div class="nav-item">
+                <svg height="10" width="950">
+                    <line x1="0" y1="0" x2="950" y2="0" style="stroke:rgb(23,208,255);stroke-width:5;"></line>
+                </svg>
+            </div>
+
+            <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: visible">
+
+                <svg width="1000px" height="1000px">
+                    <path id="pathA" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"
+                          style="stroke-dashoffset: 5803.15; stroke-dasharray: 2901.57, 5258.15, 240;"></path>
+                    <path id="pathB" d="M 300 500 L 700 500"
+                          style="stroke-dashoffset: 800; stroke-dasharray: 400, 600, 0;"></path>
+                    <path id="pathC" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"
+                          style="stroke-dashoffset: 6993.11; stroke-dasharray: 3496.56, 6448.11, 240;"></path>
+                </svg>
+
+                <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+
+            </div>
+
+            <!-- Menu-icon-wrapper-->
+            <div id="dummy" class="dummy"></div>
+
+        </div>
+
+    </nav>
+
+    <section class="container" style="height: 100vh">
+    </section>
+
+
+</header>
+
+<section class="container" style="height: 100vh">
+    <h1> Medida </h1>
+</section>
+
+<section class="container" style="height: 100vh">
+    <h1> Medida </h1>
+</section>
+
+<footer>
+    <div class="footer-inner">
+        <div class="logo">Logo</div>
+        <nav>
+            <a href="">© Company name</a>
+            <div class="social">
+                <a href="">F</a>
+                <a href="">T</a>
+                <a href="">In</a>
+                <a href="">@</a>
+            </div>
+        </nav>
+    </div>
+</footer>
+
 <!-- Required Javascript -->
 <script src="../../assets/js/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
 
@@ -32,6 +100,14 @@
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="../../assets/js/popper.min.js" crossorigin="anonymous"></script>
 <script src="../../assets/js/bootstrap/bootstrap.min.js" crossorigin="anonymous"></script>
+
+<!-- Menu Icon -->
+<script src="../../assets/js/menu-icon/segment.min.js" crossorigin="anonymous"></script>
+<script src="../../assets/js/menu-icon/ease.min.js" crossorigin="anonymous"></script>
+<script src="../../assets/js/menu-icon/menu-icon.js" crossorigin="anonymous"></script>
+
+<!-- Main JS-->
+<script src="../../assets/js/main.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
