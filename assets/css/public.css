@@ -1,4 +1,5 @@
 @import url("fonts/iransans.css");
+@import url("fonts/all.min.css");
 
 body{
     font-family: IRANSans, Serif !important;
