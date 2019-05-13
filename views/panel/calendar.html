@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
-    <title>Dashboard</title>
+    <title>Calander</title>
 
     <!-- Bootstrap 4.0 CSS -->
     <!-- Add crossorigin="anonymous" for Host stage-->
@@ -20,6 +20,10 @@
 
     <!-- Material Font Icon-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Full Calander -->
+    <link href="../../assets/css/fullcalendar/fullcalendar.min.css" rel="stylesheet">
+    <link href="../../assets/css/fullcalendar/fullcalendar.print.css" media="print" rel="stylesheet">
 
 
 </head>
@@ -42,51 +46,7 @@
                     <a class="navbar-brand d-none d-sm-inline-block" href="dashboard.html.html">Medida</a>
                 </li>
 
-                <li class="nav-item dropdown d-none d-sm-inline-block mr-2">
-
-                    <!--<a class="nav-link dropdown-toggle megamenu-link" href="#" data-toggle="dropdown">-->
-
-                        <!--<span>برنامه‌ها<i class="material-icons ml-2">keyboard_arrow_down</i></span>-->
-
-                    <!--</a>-->
-
-                    <!--<div class="dropdown-menu dropdown-menu-right nav-megamenu" style="min-width: 400px">-->
-                        <!--<div class="row m-0">-->
-
-                            <!--<div class="col-6">-->
-                                <!--<a class="mega-menu-item" href="#">-->
-                                    <!--<i class="material-icons mb-4">timeline</i>-->
-                                    <!--<h5 class="mb-2">آمار</h5>-->
-                                    <!--&lt;!&ndash;<div class="text-muted font-12">Lorem Ipsum dolar.</div>&ndash;&gt;-->
-                                <!--</a>-->
-                            <!--</div>-->
-
-                            <!--<div class="col-6">-->
-                                <!--<a class="mega-menu-item bg-primary text-white" href="#">-->
-                                    <!--<i class="material-icons mb-4 text-white">face</i>-->
-                                    <!--<h5 class="mb-2">کاربران</h5>-->
-                                    <!--&lt;!&ndash;<div class="text-white font-12">Lorem Ipsum dolar.</div>&ndash;&gt;-->
-                                <!--</a>-->
-                            <!--</div>-->
-
-                            <!--<div class="col-6"><a class="mega-menu-item" href="#">-->
-                                <!--<i class="material-icons mb-4">settings</i>-->
-                                <!--<h5 class="mb-2">تنظیمات</h5>-->
-                                <!--&lt;!&ndash;<div class="text-muted font-12">Lorem Ipsum dolar.</div>&ndash;&gt;-->
-                            <!--</a>-->
-                            <!--</div>-->
-
-                            <!--<div class="col-6">-->
-                                <!--<a class="mega-menu-item" href="#">-->
-                                    <!--<i class="material-icons mb-4">add_photo_alternate</i>-->
-                                    <!--<h5 class="mb-2">پست جدید</h5>-->
-                                    <!--&lt;!&ndash;<div class="text-muted font-12">Lorem Ipsum dolar.</div>&ndash;&gt;-->
-                                <!--</a>-->
-                            <!--</div>-->
-
-                        <!--</div>-->
-                    <!--</div>-->
-                </li>
+                <li class="nav-item dropdown d-none d-sm-inline-block mr-2"></li>
 
             </ul>
 
@@ -219,7 +179,7 @@
         <nav class="header-nav" id="header-nav">
             <ul class="nav header-menu position-static">
                 <li class="nav-item">
-                    <a class="header-menu-toggle active" href="dashboard.html">
+                    <a class="header-menu-toggle" href="dashboard.html">
                         <i class="ti-dashboard ml-3 font-18"></i>
                         پیشخوان
                     </a>
@@ -237,7 +197,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="header-menu-toggle" href="calendar.html">
+                    <a class="header-menu-toggle active" href="calendar.html">
                         <i class="ti-calendar ml-2 font-18"></i>
 تقویم
                     </a>
@@ -271,9 +231,45 @@
 
                 <div class="page-heading">
                     <div class="page-breadcrumb">
-                        <h1 class="page-title">پیشخوان</h1>
+                        <h1 class="page-title">تقویم</h1>
                     </div>
                 </div>
+                <!-- End: Page Heading -->
+
+                <!-- Begin: Main Content -->
+                <div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card card-fullheight">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between mb-5">
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                           <div class="card card-fullheight">
+                               <div class="card-header">
+                                   <h5 class="title-box">تقویم</h5>
+                                   <button class="btn btn-danger btn-rounded my-3">
+                                       <span class="btn-icon">
+                                            رویداد جدید
+                                           <i class="ti-plus"></i>
+                                       </span>
+                                   </button>
+                               </div>
+                               <div class="card-body">
+                                <div class="d-flex justify-content-between mb-5">
+                                    <div id="calendar"></div>
+                                </div>
+                               </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End: Main Heading -->
+
             </div>
         </div>
         <!-- End: Content -->
@@ -293,6 +289,7 @@
 
     <!-- Required Javascript -->
     <script src="../../assets/js/jquery-3.4.1.min.js"></script>
+    <script src="../../assets/js/fullcalendar/lib/jquery-ui.min.js"></script>
 
     <!-- Optional Javascript-->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -301,5 +298,14 @@
 
     <!-- Main.JS -->
     <script src="../../assets/js/panel/main.js"></script>
+
+    <!-- Full Calander  -->
+    <script src="../../assets/js/fullcalendar/lib/moment.min.js"></script>
+    <script src="../../assets/js/fullcalendar/lib/moment-jalaali.js"></script>
+    <script src="../../assets/js/fullcalendar/fullcalendar.min.js"></script>
+    <script src="../../assets/js/fullcalendar/locale/fa.js"></script>
+    <script src="../../assets/js/panel/calendar.js"></script>
+
+
 </body>
 </html>
