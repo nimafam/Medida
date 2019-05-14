@@ -178,14 +178,11 @@
     $('.fc-left').addClass('rtl');
     
     // initialize datetimepicker
-    $('.datepicker').pDatepicker({
-        format: 'YYYY-MM-DD hh:mm:ss',
-        timePicker: {
-            enabled: true,
-            meridiem: {
-                enabled: true,
-            },
-        },
+    $('.datepicker').datetimepicker({
+        format: 'yyyy-mm-dd hh:ii:ss',
+        useCurrent: false,
+        rtl: true,
+        language: 'fa'
     });
     
     // Validate Forms
