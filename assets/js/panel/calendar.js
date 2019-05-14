@@ -54,7 +54,7 @@
                     return (ev._id == calEvent._id);
                 });
 
-                toastr.success('event successfully deleted');
+                toastr.success('رویداد با موفقیت حذف شد');
                 $this.$eventModal.modal('hide');
             });
 
@@ -79,7 +79,7 @@
 
                     // update event
                     $this.$calendarObj.fullCalendar('updateEvent', calEvent);
-                    toastr.success('event successfully updated');
+                    toastr.success('رویداد با موفقیت بروزرسانی شد');
 
                     $this.$eventModal.modal('hide');
                 }
@@ -110,7 +110,7 @@
         copiedEventObject.id = Math.random();;
         $this.$calendarObj.fullCalendar('renderEvent', copiedEventObject, true); // stick? = true
         
-        toastr.success('event successfully created');
+        toastr.success('رویداد با موفقیت اضافه شد');
 
         // is the "remove after drop" checkbox checked?
         if ($('#drop-remove').is(':checked')) {
@@ -174,11 +174,18 @@
 
     $.CalendarApp = new CalendarApp;
     $.CalendarApp.init();
+
+    $('.fc-left').addClass('rtl');
     
     // initialize datetimepicker
-    $('.datepicker').datetimepicker({
-        format: 'yyyy-mm-dd hh:ii:ss',
-        useCurrent: false
+    $('.datepicker').pDatepicker({
+        format: 'YYYY-MM-DD hh:mm:ss',
+        timePicker: {
+            enabled: true,
+            meridiem: {
+                enabled: true,
+            },
+        },
     });
     
     // Validate Forms
@@ -245,7 +252,7 @@
         // Create Event
         CalendarApp.$calendarObj.fullCalendar('renderEvent', newEvent, true); // stick? = true
         
-        toastr.success('event successfully created');
+        toastr.success('رویداد با موفقیت ساخته شد');
         CalendarApp.$modal.modal('hide');
       }
     });

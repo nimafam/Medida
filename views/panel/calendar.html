@@ -24,6 +24,8 @@
     <!-- Full Calander -->
     <link href="../../assets/css/fullcalendar/fullcalendar.min.css" rel="stylesheet">
     <link href="../../assets/css/fullcalendar/fullcalendar.print.css" media="print" rel="stylesheet">
+    <link href="../../assets/css/toastr/toastr.min.css" rel="stylesheet">
+    <link href="../../assets/css/bootstrap-datetimepicker/bootstrap_datetimepicker.min.css" rel="stylesheet">
 
 
 </head>
@@ -240,10 +242,43 @@
                 <div>
                     <div class="row">
                         <div class="col-md-3">
-                            <div class="card card-fullheight">
+                            <div class="card">
                                 <div class="card-body">
-                                    <div class="d-flex justify-content-between mb-5">
-                                        <div></div>
+                                    <div class="card-header">
+                                        <h5 class="box-title">رویداد</h5>
+                                    </div>
+                                    <div class="card-body p-3">
+                                        <div id="external-events" class="float-right text-right">
+                                            <div class="ex-event" data-class="fc-event-primary">
+                                                <i class="badge-point badge-primary ml-3"></i>
+                                                تجاری
+                                            </div>
+                                            <div class="ex-event" data-class="fc-info">
+                                                <i class="badge-point badge-info ml-3"></i>
+                                                شخصی
+                                            </div>
+                                            <div class="ex-event" data-class="fc-warning">
+                                                <i class="badge-point badge-warning ml-3"></i>
+                                                رویداد
+                                            </div>
+                                            <div class="ex-event" data-class="fc-danger">
+                                                <i class="badge-point badge-danger ml-3"></i>
+                                                رویداد مهم
+                                            </div>
+                                            <div class="ex-event" data-class="fc-success">
+                                                <i class="badge-point badge-success ml-3"></i>
+                                                تولد
+                                            </div>
+
+                                            <p class="mr-2 mt-4">
+                                                <label class="checkbox checkbox-success">
+                                                        <span>
+                                                                بعد از قراردادن در تقویم پاک شود
+                                                        </span>    
+                                                    <input type="checkbox" id="drop-remove">
+                                                </label>
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -252,7 +287,7 @@
                            <div class="card card-fullheight">
                                <div class="card-header">
                                    <h5 class="title-box">تقویم</h5>
-                                   <button class="btn btn-danger btn-rounded my-3">
+                                   <button class="btn btn-danger btn-rounded my-3" data-toggle="modal" data-target="#new-event-modal">
                                        <span class="btn-icon">
                                             رویداد جدید
                                            <i class="ti-plus"></i>
@@ -273,6 +308,178 @@
             </div>
         </div>
         <!-- End: Content -->
+        
+        <!-- Begin: New  Event Modal -->
+        <div class="modal fade" id="new-event-modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <form class="modal-content form-horizontal" id="newEventForm" action="javascript:;" novalidate="novalidate">
+                    <div class="modal-header p-4">
+                        <h5 class="modal-title">رویداد جدید</h5>
+                        <button class="close float-left font-10" type="button" data-dismiss="modal" aria-label="close">
+                            <span aria-hidden="true">x</span>
+                        </button>
+                    </div>
+                    <div class="modal-body p-4">
+
+                            <div class="form-group mb-4">
+                                <label class="text-muted mb-3 float-right">دسته بندی</label>
+
+                                <div>
+                                    <label class="radio radio-outline-primary radio-inline check-single">
+                                        <input type="radio" name="category" checked="" value="fc-event-primary">
+                                        <span></span>
+                                    </label>
+                                    <label class="radio radio-outline-warning radio-inline check-single">
+                                        <input type="radio" name="category" value="fc-event-warning">
+                                        <span></span>
+                                    </label>
+                                    <label class="radio radio-outline-success radio-inline check-single">
+                                        <input type="radio" name="category" value="fc-event-success">
+                                        <span></span>
+                                    </label>
+                                    <label class="radio radio-outline-danger radio-inline check-single">
+                                        <input type="radio" name="category" value="fc-event-danger">
+                                        <span></span>
+                                    </label>
+                                    <label class="radio radio-outline-info radio-inline check-single">
+                                        <input type="radio" name="category" value="fc-event-info">
+                                        <span></span>
+                                    </label>
+                                </div>
+
+                            </div>
+                            <div class="mb-3">
+                                <div class="md-form mb-1">
+                                    <input class="md-form-control" id="new-event-title" type="text" name="title" required="">
+                                    <label>عنوان</label>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-6">
+                                    <div class="input-group-icon input-group-icon-right mb-4">
+                                        <div class="md-form mb-1">
+                                            <input class="md-form-control m-0 datepicker date" id="new-event-start" name="start" value="" type="text" required="">
+                                            <label class="active">شروع:</label>
+                                            <span class="input-icon input-icon-right">
+                                                <i class="ti-calendar"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="input-group-icon input-group-icon-right mb-4">
+                                        <div class="md-form mb-1">
+                                            <input class="md-form-control m-0 datepicker date" id="new-event-end" name="end" value="" type="text">
+                                            <label class="active">پایان:</label>
+                                            <span class="input-icon input-icon-right">
+                                                <i class="ti-calendar"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group mb-4 float-right">
+                                <label class="ui-switch switch-solid">
+                                    <input id="new-event-allDay" type="checkbox" checked="">
+                                        <span class="ml-3"></span>
+                                         تمام روز
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="modal-footer justify-content-start p-4">
+                            <button class="btn btn-primary btn-rounded" id="addEventButton" type="submit">
+                                افزودن رویداد
+                            </button>
+                        </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- End: New Event Modal -->
+        <!-- Begin: Edit Event Modal -->
+        <div class="modal fade" id="event-modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                    <div class="modal-dialog" role="document">
+                            <form class="modal-content form-horizontal" id="eventForm" action="javascript:;" novalidate="novalidate">
+                                <div class="modal-header p-4">
+                                    <h5 class="modal-title">ویرایش رویداد</h5>
+                                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body p-4">
+                                    <div class="form-group mb-4">
+                                        <label class="text-muted mb-3 float-right">دسته بندی</label>
+                                            <div>
+                                                <label class="radio radio-outline-primary radio-inline check-single">
+                                                    <input type="radio" name="category" checked="" value="fc-event-primary">
+                                                    <span></span>
+                                                </label>
+                                                <label class="radio radio-outline-warning radio-inline check-single">
+                                                    <input type="radio" name="category" value="fc-event-warning">
+                                                    <span></span>
+                                                </label>
+                                                <label class="radio radio-outline-success radio-inline check-single">
+                                                    <input type="radio" name="category" value="fc-event-success">
+                                                    <span></span>
+                                                </label>
+                                                <label class="radio radio-outline-danger radio-inline check-single">
+                                                    <input type="radio" name="category" value="fc-event-danger">
+                                                    <span></span>
+                                                </label>
+                                                <label class="radio radio-outline-info radio-inline check-single">
+                                                    <input type="radio" name="category" value="fc-event-info">
+                                                    <span></span>
+                                                </label>
+                                            </div>
+
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <div class="md-form mb-1"><input class="md-form-control" id="event-title" type="text" name="title" required=""><label class="active">عنوان</label></div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-6">
+                                            <div class="input-group-icon input-group-icon-right mb-4">
+                                                <div class="md-form mb-1">
+                                                    <input class="md-form-control m-0 datepicker date" id="event-start" name="start" value="" type="text" required="">
+                                                    <label class="active">شروع:</label>
+                                                    <span class="input-icon input-icon-right">
+                                                        <i class="ti-calendar"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="input-group-icon input-group-icon-right mb-4">
+                                                <div class="md-form mb-1">
+                                                    <input class="md-form-control m-0 datepicker date" id="event-end" name="end" value="" type="text">
+                                                    <label class="active">پایان:</label>
+                                                    <span class="input-icon input-icon-right">
+                                                        <i class="ti-calendar"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-4 float-right"><label class="ui-switch switch-solid">
+                                        <input id="event-allDay" type="checkbox">
+                                        <span class="ml-3"></span> تمام روز</label>
+                                    </div>
+                                </div>
+                                <div class="modal-footer justify-content-between p-4">
+                                    <button class="btn btn-primary btn-rounded" id="editEventButton" type="submit">ثبت</button>
+                                    <button class="btn btn-danger btn-rounded" id="deleteEventButton" data-dismiss="modal">
+                                        <span class="btn-icon">
+                                            <i class="ti-trash"></i>
+                                            پاک کردن</span>
+                                        </button>
+                                    </div>
+                            </form>
+                        </div>
+            </div>
+        </div>
+        <!-- End: Edit Event Modal -->
     </div>
 
     <footer class="footer font-18">
@@ -291,6 +498,10 @@
     <script src="../../assets/js/jquery-3.4.1.min.js"></script>
     <script src="../../assets/js/fullcalendar/lib/jquery-ui.min.js"></script>
 
+    <!-- Validation -->
+    <script src="../../assets/js/validation/jquery.validate.min.js"></script>
+    <script src="../../assets/js/validation/localization/messages_fa.min.js"></script>
+    
     <!-- Optional Javascript-->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="../../assets/js/popper.min.js"></script>
@@ -302,10 +513,13 @@
     <!-- Full Calander  -->
     <script src="../../assets/js/fullcalendar/lib/moment.min.js"></script>
     <script src="../../assets/js/fullcalendar/lib/moment-jalaali.js"></script>
+    <script src="../../assets/js/bootstrap-datetimepicker/persian_date.min.js"></script>
+    <script src="../../assets/js/bootstrap-datetimepicker/bootstrap_datetimepicker.min.js"></script>
     <script src="../../assets/js/fullcalendar/fullcalendar.min.js"></script>
     <script src="../../assets/js/fullcalendar/locale/fa.js"></script>
+    <script src="../../assets/js/toastr/toastr.min.js"></script>
     <script src="../../assets/js/panel/calendar.js"></script>
 
-
+    
 </body>
 </html>
