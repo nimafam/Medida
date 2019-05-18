@@ -1,0 +1,10 @@
+Dropzone.prototype.defaultOptions.dictDefaultMessage = "فایل خود را در این قسمت رها کنید";
+Dropzone.prototype.defaultOptions.dictFallbackMessage = "مرورگر شما از متد drag'n drop تبعیت نمی کند.";
+Dropzone.prototype.defaultOptions.dictFallbackText = "لطفا از لینک زیر جهت بارگذاری اطلاعات خود استفاده نمایید، مانند روزهای قدیمی";
+Dropzone.prototype.defaultOptions.dictFileTooBig = "حجم فایل ( {{filesize}} مگابایت) زیاد است. حداکثر حجم فایل باید {{maxFilesize}} مگابایت باشد";
+Dropzone.prototype.defaultOptions.dictInvalidFileType = "شما نمی‌توانید این فرمت فایل را بارگذاری نمایید";
+Dropzone.prototype.defaultOptions.dictResponseError = "سرور کد {{statusCode}} بازگرداند";
+Dropzone.prototype.defaultOptions.dictCancelUpload = "متوقف کردن بارگذاری";
+Dropzone.prototype.defaultOptions.dictCancelUploadConfirmation = "آیا از متوقف کردن بارگذاری مطمئن هستید؟";
+Dropzone.prototype.defaultOptions.dictRemoveFile = "پاک کردن فایل";
+Dropzone.prototype.defaultOptions.dictMaxFilesExceeded = "شما نمی‌توانید فایل بیشتری بارگذاری کنید.";

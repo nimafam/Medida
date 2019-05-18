@@ -18,13 +18,19 @@
     <!-- RTL Direction-->
     <link rel="stylesheet" href="../../assets/css/rtl.css"/>
 
+    <!-- Perfect Scrollbar -->
+    <link rel="stylesheet" href="../../assets/css/perfect-scrollbar.css"/>
+
     <!-- Material Font Icon-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- DropZone -->
+    <link href="../../assets/css/dropzone/dropzone.min.css" rel="stylesheet"/>
 
 
 </head>
 <body>
-    <div class="page-wrapper">
+<div class="page-wrapper">
 
     <!-- Begin: header -->
     <header class="header">
@@ -41,12 +47,78 @@
                 <li>
                     <a class="navbar-brand d-none d-sm-inline-block" href="dashboard.html.html">Medida</a>
                 </li>
+                <li class="nav-item dropdown d-none d-sm-inline-block mr-2">
+
+                    <a class="nav-link dropdown-toggle megamenu-link" href="#" data-toggle="dropdown">
+
+                        <span><i class="ti-instagram ml-2"></i> حساب‌های کاربری </span>
+
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right nav-megamenu" style="min-width: 400px">
+                        <div class="row m-0">
+
+                            <div class="col-6">
+                                <a class="mega-menu-item media align-items-center bg-success" href="#">
+                                    <img src="../../assets/images/man.png" class="rounded-circle p-4" alt="image"
+                                         width="256"/>
+                                    <div class="media-body text-white">
+                                        <h5 class="mb-1 text-center ltr text-white">@john_dou</h5>
+                                        <i class="ti-instagram text-center font-11 text-white"></i> instagram
+                                    </div>
+                                </a>
+                            </div>
+
+
+                            <div class="col-6">
+                                <a class="mega-menu-item media align-items-center disabled" href="#">
+                                    <img src="../../assets/images/man.png" class="rounded-circle p-4" alt="image"
+                                         width="256"/>
+                                    <div class="media-body">
+                                        <h5 class="mb-1 text-center ltr">@john_dou</h5>
+                                        <i class="ti-instagram text-center font-11 text-muted"></i> instagram
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6">
+                                <a class="mega-menu-item media align-items-center disabled" href="#">
+                                    <img src="../../assets/images/man.png" class="rounded-circle p-4" alt="image"
+                                         width="256"/>
+                                    <div class="media-body">
+                                        <h5 class="mb-1 text-center ltr">@john_dou</h5>
+                                        <i class="ti-instagram text-center font-11 text-muted"></i> instagram
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6">
+                                <a class="mega-menu-item media align-items-center disabled" href="#">
+                                    <img src="../../assets/images/man.png" class="rounded-circle p-4" alt="image"
+                                         width="256"/>
+                                    <div class="media-body">
+                                        <h5 class="mb-1 text-center ltr">@john_dou</h5>
+                                        <i class="ti-instagram text-center font-11 text-muted"></i> instagram
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="px-3 py-2 text-center">
+                                    <a class="hover-link font-13" href="javascript:;">مشاهده همه</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </li>
             </ul>
 
             <ul class="navbar-nav">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle navbar-icon navbar-icon-btn px-4" data-toggle="dropdown" href="#0" aria-expanded="false">
-                        <i class="material-icons position-relative">notification_important</i>
+                    <a class="nav-link dropdown-toggle navbar-icon px-4" data-toggle="dropdown"
+                       href="#0" aria-expanded="false">
+                        <i class="ti-bell font-24 position-relative"></i>
                         <span class="badge badge-danger badge-circle notify-badge">4</span>
                     </a>
 
@@ -60,7 +132,8 @@
 
                                 <a class="list-group-item list-group-item-action px-4 py-3" href="#0">
                                     <div class="media align-items-center">
-                                        <i class="ti-user text-center font-26 text-primary ml-3" style="width: 40px;"></i>
+                                        <i class="ti-user text-center font-26 text-primary ml-3"
+                                           style="width: 40px;"></i>
                                         <div class="media-body">
                                             <div class="flexbox">
                                                 <h6 class="text-right mb-0 font-weight-bold">20 درخواست دوستی جدید</h6>
@@ -73,20 +146,24 @@
 
                                 <a class="list-group-item list-group-item-action px-4 py-3" href="#0">
                                     <div class="media align-items-center">
-                                        <i class="ti-heart text-center font-26 text-primary ml-3" style="width: 40px;"></i>
+                                        <i class="ti-heart text-center font-26 text-primary ml-3"
+                                           style="width: 40px;"></i>
                                         <div class="media-body">
                                             <div class="flexbox">
                                                 <h6 class="text-right mb-0 font-weight-bold">46 لایک چدید</h6>
                                                 <div class="text-muted font-13">1 ساعت</div>
                                             </div>
-                                            <div class="text-right font-13 text-muted">daftein, digiato, &rlm;44 کاربر دیگر</div>
+                                            <div class="text-right font-13 text-muted">daftein, digiato, &rlm;44 کاربر
+                                                دیگر
+                                            </div>
                                         </div>
                                     </div>
                                 </a>
 
                                 <a class="list-group-item list-group-item-action px-4 py-3" href="#0">
                                     <div class="media align-items-center">
-                                        <i class="ti-envelope text-center font-26 text-primary ml-3" style="width: 40px;"></i>
+                                        <i class="ti-envelope text-center font-26 text-primary ml-3"
+                                           style="width: 40px;"></i>
                                         <div class="media-body">
                                             <div class="flexbox">
                                                 <h6 class="text-right mb-0 font-weight-bold">75 پیام خوانده نشده</h6>
@@ -99,13 +176,16 @@
 
                                 <a class="list-group-item list-group-item-action px-4 py-3" href="#0">
                                     <div class="media align-items-center">
-                                        <i class="ti-alert text-center font-26 text-primary ml-3" style="width: 40px;"></i>
+                                        <i class="ti-alert text-center font-26 text-primary ml-3"
+                                           style="width: 40px;"></i>
                                         <div class="media-body">
                                             <div class="flexbox">
                                                 <h6 class="text-right mb-0 font-weight-bold">2 پیام از طرف مدیدا</h6>
                                                 <div class="text-muted font-13">1 روز</div>
                                             </div>
-                                            <div class="text-right font-13 text-muted">اعتبار حساب کاربری شما روبه اتمام است</div>
+                                            <div class="text-right font-13 text-muted">اعتبار حساب کاربری شما روبه اتمام
+                                                است
+                                            </div>
                                         </div>
                                     </div>
                                 </a>
@@ -113,57 +193,60 @@
                             </div>
                         </div>
 
-                        <div class="px-3 py-2 text-center"><a class="hover-link font-13" href="javascript:;">مشاهده همه</a></div>
+                        <div class="px-3 py-2 text-center"><a class="hover-link font-13" href="javascript:;">مشاهده
+                            همه</a></div>
 
                     </div>
                 </li>
-               <li class="nav-item dropdown mr-3">
-                   <a class="nav-link dropdown-toggle no-arrow d-inline-flex align-items-center px-4" style="background-color: rgba(255,255,255,.1);" data-toggle="dropdown" href="#" aria-expanded="false">
-                       <div class="d-none d-sm-inline-block ml-2 text-left">
-                           <div class="font-weight-strong text-white">John Due</div>
-                           <div class="font-12">سلام جان</div>
-                       </div>
+                <li class="nav-item dropdown mr-3">
+                    <a class="nav-link dropdown-toggle no-arrow d-inline-flex align-items-center px-4"
+                       style="background-color: rgba(255,255,255,.1);" data-toggle="dropdown" href="#"
+                       aria-expanded="false">
+                        <div class="d-none d-sm-inline-block ml-2 text-left">
+                            <div class="font-weight-strong text-white">John Due</div>
+                            <div class="font-12">سلام جان</div>
+                        </div>
 
-                       <span class="position-relative d-inline-block">
+                        <span class="position-relative d-inline-block">
                            <img class="rounded-circle" src="../../assets/images/man.png" alt="image" width="36">
                            <span class="badge-point badge-success avatar-badge"></span>
                        </span>
-                   </a>
+                    </a>
 
-                   <div class="dropdown-menu pt-0 pb-4" style="min-width: 280px;">
-                       <div class="p-4 mb-4 media align-items-center border-bottom">
-                           <img class="rounded-circle ml-3" src="../../assets/images/man.png" alt="image" width="55">
-                           <div class="media-body">
-                               <h5 class="mb-1 text-right">John Due</h5>
-                               <div class="font-13 text-right">جان دو</div>
-                           </div>
-                       </div>
+                    <div class="dropdown-menu pt-0 pb-4" style="min-width: 280px;">
+                        <div class="p-4 mb-4 media align-items-center border-bottom">
+                            <img class="rounded-circle ml-3" src="../../assets/images/man.png" alt="image" width="55">
+                            <div class="media-body">
+                                <h5 class="mb-1 text-right">John Due</h5>
+                                <div class="font-13 text-right">جان دو</div>
+                            </div>
+                        </div>
 
-                       <a class="dropdown-item d-flex align-items-center" href="#">
-                           <i class="ti-user ml-3 font-18 text-muted"></i>
-                           حساب کاربری
-                       </a>
-                       <a class="dropdown-item d-flex align-items-center" href="#">
-                           <i class="ti-email ml-3 font-18 text-muted"></i>
-پیام‌ها
-                       </a>
-                       <a class="dropdown-item d-flex align-items-center" href="#">
-                           <i class="ti-settings ml-3 font-18 text-muted"></i>
-                          تنظیمات
-                       </a>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                            <i class="ti-user ml-3 font-18 text-muted"></i>
+                            حساب کاربری
+                        </a>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                            <i class="ti-email ml-3 font-18 text-muted"></i>
+                            پیام‌ها
+                        </a>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                            <i class="ti-settings ml-3 font-18 text-muted"></i>
+                            تنظیمات
+                        </a>
 
-                       <div class="dropdown-divider"></div>
+                        <div class="dropdown-divider"></div>
 
-                       <div class="mx-4 float-right">
-                           <a class="btn btn-link p-0" href="login.html">
-                               <span class="btn-icon"></span>
-                               <i class="ti-power-off ml-2 font-18"></i>
-                               خروج
-                           </a>
-                       </div>
+                        <div class="mx-4 float-right">
+                            <a class="btn btn-link p-0" href="login.html">
+                                <span class="btn-icon"></span>
+                                <i class="ti-power-off ml-2 font-18"></i>
+                                خروج
+                            </a>
+                        </div>
 
-                   </div>
-               </li>
+                    </div>
+                </li>
             </ul>
         </nav>
         <!-- ،Top Nav-->
@@ -186,25 +269,25 @@
                 <li class="nav-item">
                     <a class="header-menu-toggle" href="analytics.html">
                         <i class="fa fa-chart-bar ml-2 font-18"></i>
-تحلیل پروفایل
+                        تحلیل پروفایل
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="header-menu-toggle" href="calendar.html">
                         <i class="ti-calendar ml-2 font-18"></i>
-تقویم
+                        تقویم
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="header-menu-toggle" href="captions.html">
                         <i class="ti-instagram ml-2 font-18"></i>
-کپشن‌ها
+                        کپشن‌ها
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="header-menu-toggle" href="stats.html">
                         <i class="ti-stats-up ml-2 font-18"></i>
-آمارها
+                        آمارها
                     </a>
                 </li>
             </ul>
@@ -213,7 +296,7 @@
 
     </header>
     <!-- End: header-->
-    
+
     <div class="content-wrapper">
 
         <!-- Begin: content -->
@@ -227,6 +310,211 @@
                         <h1 class="page-title">پست ها</h1>
                     </div>
                 </div>
+
+                <!-- End: Page Heading -->
+
+                <div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="box-title text-primary text-right">بارگذاری فایل</h5>
+
+                            <form class="dropzone dz-clickable" id="dropzoneValidation"
+                                  action="javascript:;" novalidate="novalidate" role="application">
+                                <div class="content clearfix">
+                                    <div class="dz-message"><i class="ti-import text-primary font-40"></i>
+                                        <div class="mt-3 font-20">فایل خود را اینجا رها کنید.</div>
+                                        <div class="text-muted">تنها فایل تصویر و ویدیو قابل قبول است و حداکثر حجم
+                                            بارگذاری 10 مگابایت می باشد
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="card-footer bg-white" style="overflow-y: scroll; height: 400px;">
+                            <div class="flexbox">
+                                <h5 class="card-title text-primary text-right py-4">فایل‌های بارگذاری شده</h5>
+                                <div>
+                                    <ol class="breadcrumb text-muted bg-white font-11">
+                                        <li class="breadcrumb-item">
+                                            تعداد فایل:
+                                            <i class="ti-files font-11"></i>
+                                            <span>7</span>
+                                        </li>
+                                        <li class="breadcrumb-item">
+                                            فضای باقی مانده:
+                                            <i class="ti-pie-chart font-11"></i>
+                                            <span> 237.9 MB</span>
+                                        </li>
+                                        <li class="breadcrumb-item">
+                                            فضای کل:
+                                            <i class="ti-harddrive font-11"></i>
+                                            <span>300 MB</span>
+
+                                        </li>
+                                    </ol>
+                                </div>
+
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="card bg-dark text-white">
+                                        <img class="card-img" src="../../assets/images/upload/download.jpg">
+                                        <div class="card-img-overlay p-4 d-flex flex-column justify-content-between align-items-start"
+                                             style="background-color: rgba(0,0,0,.5)">
+                                            <div class="flexbox w-100">
+                                                <div>
+                                                    <span class="badge badge-pill badge-info">jpg</span>
+                                                </div>
+                                            </div>
+                                            <p class="card-text text-right font-11">2 روز پیش</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card bg-dark text-white">
+                                        <img class="card-img" src="../../assets/images/upload/images.jpg">
+                                        <div class="card-img-overlay p-4 d-flex flex-column justify-content-between align-items-start"
+                                             style="background-color: rgba(0,0,0,.5)">
+                                            <div class="flexbox w-100">
+                                                <div>
+                                                    <span class="badge badge-pill badge-info">jpg</span>
+                                                </div>
+                                            </div>
+                                            <p class="card-text text-right font-11">2 روز پیش</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card bg-dark text-white">
+                                        <img class="card-img" src="../../assets/images/upload/annegien-schilling.jpg">
+                                        <div class="card-img-overlay p-4 d-flex flex-column justify-content-between align-items-start"
+                                             style="background-color: rgba(0,0,0,.5)">
+                                            <div class="flexbox w-100">
+                                                <div>
+                                                    <span class="badge badge-pill badge-info">jpg</span>
+                                                </div>
+                                            </div>
+                                            <p class="card-text text-right font-11">2 روز پیش</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card bg-dark text-white">
+                                        <img class="card-img" src="../../assets/images/upload/instaphotos1.jpg">
+                                        <div class="card-img-overlay p-4 d-flex flex-column justify-content-between align-items-start"
+                                             style="background-color: rgba(0,0,0,.5)">
+                                            <div class="flexbox w-100">
+                                                <div>
+                                                    <span class="badge badge-pill badge-info">jpg</span>
+                                                </div>
+                                            </div>
+                                            <p class="card-text text-right font-11">2 روز پیش</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- End: row -->
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="card bg-dark text-white">
+                                        <img class="card-img" src="../../assets/images/upload/images%20(1).jpg">
+                                        <div class="card-img-overlay p-4 d-flex flex-column justify-content-between align-items-start"
+                                             style="background-color: rgba(0,0,0,.5)">
+                                            <div class="flexbox w-100">
+                                                <div>
+                                                    <span class="badge badge-pill badge-info">jpg</span>
+                                                </div>
+                                            </div>
+                                            <p class="card-text text-right font-11">2 روز پیش</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card bg-dark text-white">
+                                        <img class="card-img" src="../../assets/images/upload/qatareats.jpg">
+                                        <div class="card-img-overlay p-4 d-flex flex-column justify-content-between align-items-start"
+                                             style="background-color: rgba(0,0,0,.5)">
+                                            <div class="flexbox w-100">
+                                                <div>
+                                                    <span class="badge badge-pill badge-info">jpg</span>
+                                                </div>
+                                            </div>
+                                            <p class="card-text text-right font-11">2 روز پیش</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card bg-dark text-white">
+                                        <img class="card-img" src="../../assets/images/upload/brahmino.png">
+                                        <div class="card-img-overlay p-4 d-flex flex-column justify-content-between align-items-start"
+                                             style="background-color: rgba(0,0,0,.5)">
+                                            <div class="flexbox w-100">
+                                                <div>
+                                                    <span class="badge badge-pill badge-info">png</span>
+                                                </div>
+                                            </div>
+                                            <p class="card-text text-right font-11">2 روز پیش</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End: row -->
+
+
+                        </div>
+                    </div>
+                    <!-- End: First Card -->
+
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="box-title text-primary text-right">ایجاد پست / استوری</h5>
+                                <form class="circle-steps wizard clearfix" id="form-wizard" action="javascript:;"
+                                      novalidate="novalidate">
+                                    <div class="steps clearfix"></div>
+
+                                    <div class="content clearfix">
+
+                                        <h6>اینستاگرام</h6>
+                                        <fieldset>
+                                            <h3 class="mb-4 text-right">انتخاب حساب کابری اینستاگرام</h3>
+                                            <div class="form-group mb-4">
+                                                <div class="input-group-icon input-group-icon-left">
+                                                    <span class="input-icon input-icon-left">
+                                                        <i class="ti-instagram"></i>
+                                                    </span>
+                                                    <select class="form-control ltr" style="height: 50px">
+                                                        <option>لطفا یک حساب کابری انتخاب کنید</option>
+                                                        <option>@sinalef.s</option>
+                                                        <option>@nima_mirkhani</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+
+                                        <h6>کپشن</h6>
+                                        <fieldset>
+                                            <h3 class="mb-4 text-right">متن مورد نظر خود را وارد نمایید</h3>
+                                            <label for="caption"></label>
+                                            <textarea class="form-control" name="caption" id="caption"></textarea>
+                                        </fieldset>
+
+                                    </div>
+
+                                    <div class="actions clearfix rtl">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
             </div>
         </div>
         <!-- End: Content -->
@@ -237,22 +525,103 @@
             &lrm;© 2020 All Right Reserved: <span class="font-18">Medida</span>
         </div>
     </footer>
-    </div>
+</div>
 
-    <!-- Page Preloader -->
-    <div class="preloader-backdrop" style="display: none;">
-        <div class="page-preloader">Loading</div>
-    </div>
+<!-- Page Preloader -->
+<div class="preloader-backdrop" style="display: none;">
+    <div class="page-preloader">Loading</div>
+</div>
 
-    <!-- Required Javascript -->
-    <script src="../../assets/js/jquery-3.4.1.min.js"></script>
+<!-- Required Javascript -->
+<script src="../../assets/js/jquery-3.4.1.min.js"></script>
 
-    <!-- Optional Javascript-->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="../../assets/js/popper.min.js"></script>
-    <script src="../../assets/js/bootstrap/bootstrap.min.js"></script>
+<!-- Optional Javascript-->
+<!-- jQuery first, then Potest.jsr.js, then Bootstrap JS -->
+<script src="../../assets/js/popper.min.js"></script>
+<script src="../../assets/js/bootstrap/bootstrap.min.js"></script>
 
-    <!-- Main.JS -->
-    <script src="../../assets/js/panel/main.js"></script>
+<!-- Perfect Scrollbar -->
+<script src="../../assets/js/perfect-scrollbar.js"></script>
+
+<!-- DropZone -->
+<script src="../../assets/js/dropzone/dropzone.min.js"></script>
+
+<!-- CKeditor -->
+<script src="../../assets/ckeditor/ckeditor.js"></script>
+<script src="../../assets/ckeditor/lang/fa.js"></script>
+<script>
+    CKEDITOR.replace('caption');
+</script>
+
+<!-- Main.JS -->
+<script src="../../assets/js/panel/main.js"></script>
+<script>
+    Dropzone.options.dropzoneValidation = {
+        paramName: "file", // The name that will be used to transfer the file
+        maxFilesize: 10, //MB
+        acceptedFiles: "image/*,video/*",
+        addRemoveLinks: !0
+    }
+</script>
+
+<script src="../../assets/js/dropzone/dropzone.fa.js"></script>
+<!-- Form Wizard -->
+<script src="../../assets/js/validation/jquery.validate.min.js"></script>
+<script src="../../assets/js/validation/localization/messages_fa.min.js"></script>
+<script src="../../assets/js/jquery-steps/jquery.steps.min.js"></script>
+
+
+<script>
+
+    $(function() {
+        var form = $("#form-wizard").show();
+        form.steps({
+            headerTag: "h6",
+            bodyTag: "fieldset",
+            titleTemplate: '<span class="step-number">#index#</span> #title#',
+            onStepChanging: function(event, currentIndex, newIndex) {
+                // Always allow going backward even if the current step contains invalid fields!
+                if (currentIndex > newIndex) {
+                    return true;
+                }
+                // Clean up if user went backward before
+                if (currentIndex < newIndex) {
+                    // To remove error styles
+                    $(".body:eq(" + newIndex + ") label.invalid-feedback", form).remove();
+                    $(".body:eq(" + newIndex + ") .invalid-feedback", form).removeClass(".invalid-feedback");
+                }
+                // Disable validation on fields that are disabled or hidden.
+                form.validate().settings.ignore = ":disabled,:hidden";
+                // Start validation; Prevent going forward if false
+                return form.valid();
+            },
+            onFinishing: function(event, currentIndex) {
+                form.validate().settings.ignore = ":disabled";
+                return form.valid();
+            },
+            onFinished: function(event, currentIndex) {
+                alert("Submitted!");
+            }
+        }).validate({
+            errorPlacement: function errorPlacement(error, element) {
+                error.insertAfter(element);
+            },
+            rules: {
+                confirm: {
+                    equalTo: "#password"
+                }
+            },
+            errorClass: 'invalid-feedback',
+            validClass: 'valid-feedback',
+            highlight: function(e) {
+                $(e).addClass("is-invalid").removeClass('is-valid');
+            },
+            unhighlight: function(e) {
+                $(e).removeClass("is-invalid").addClass('is-valid');
+            },
+        });
+    });
+</script>
+
 </body>
 </html>

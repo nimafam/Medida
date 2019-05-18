@@ -2,7 +2,7 @@
     "use strict";
 //console.dir($('#new-event-start').val('aa').siblings('label').add);
     var CalendarApp = function() {
-        this.$body = $("body")
+        this.$body = $("body");
         this.$calendar = $('#calendar'),
         this.$event = ('#external-events div.ex-event'),
         this.$categoryForm = $('#add-new-event form'),
@@ -51,7 +51,7 @@
                 
                 // Remove Event
                 $this.$calendarObj.fullCalendar('removeEvents', function (ev) {
-                    return (ev._id == calEvent._id);
+                    return (ev._id === calEvent._id);
                 });
 
                 toastr.success('رویداد با موفقیت حذف شد');
@@ -62,6 +62,7 @@
             $this.$eventModal.find('form').unbind('submit').on('submit', function () {
                 if($('#eventForm').valid()) {
                     var event = {};
+                    //language=JQuery-CSS
                     calEvent.title = event.title = $(this).find("#event-title").val();
                     calEvent.start = event.start = $(this).find("#event-start").val();
                     if($(this).find("#event-end").val()) calEvent.end = event.end = $(this).find("#event-end").val();
@@ -84,7 +85,7 @@
                     $this.$eventModal.modal('hide');
                 }
             });
-    }
+    };
 
     // Called when a valid jQuery UI draggable has been dropped onto the calendar.
     CalendarApp.prototype.onDrop = function (eventObj, date) { 
@@ -107,7 +108,7 @@
         });*/
         
         // Create event
-        copiedEventObject.id = Math.random();;
+        copiedEventObject.id = Math.random();
         $this.$calendarObj.fullCalendar('renderEvent', copiedEventObject, true); // stick? = true
         
         toastr.success('رویداد با موفقیت اضافه شد');
@@ -136,7 +137,7 @@
                 revertDuration: 0  //  original position after the drag
             });
         });
-    }
+    };
 
     /* Initializing */
     CalendarApp.prototype.init = function() {
@@ -151,7 +152,47 @@
             isJalaali: true,
             isRTL: true,
             lang: 'fa',
-            events: [{"id":1,"title":"All Day Event","start":"2019-05-02","allDay":true,"className":"fc-event-primary"},{"id":2,"title":"Long Event","start":"2019-05-07","end":"2019-05-10","className":"fc-event-danger"},{"id":3,"title":"Conference","start":"2019-05-11","end":"2019-05-13","className":"fc-event-success"},{"id":4,"title":"Meeting","start":"2019-05-18 10:30:00","end":"2019-05-18 12:30:00","className":"fc-event-warning"},{"id":5,"title":"Lunch","start":"2019-05-12 12:00:00","className":"fc-event-info"},{"id":6,"title":"Meeting","start":"2019-05-12 02:30:00","className":"fc-event-warning"},{"id":7,"title":"Dinner","start":"2019-05-12 08:00:00","className":"fc-event-danger"},{"id":8,"title":"Birthday Party","start":"2019-05-14 05:00:00","className":"fc-event-primary"},{"id":9,"title":"Reporting","start":"2019-05-27","end":"2019-05-29","className":"fc-event-warning"}],
+            events: [{
+                "id": 1,
+                "title": "All Day Event",
+                "start": "2019-05-02",
+                "allDay": true,
+                "className": "fc-event-primary"
+            }, {
+                "id": 2,
+                "title": "Long Event",
+                "start": "2019-05-07",
+                "end": "2019-05-10",
+                "className": "fc-event-danger"
+            }, {
+                "id": 3,
+                "title": "Conference",
+                "start": "2019-05-11",
+                "end": "2019-05-13",
+                "className": "fc-event-success"
+            }, {
+                "id": 4,
+                "title": "Meeting",
+                "start": "2019-05-18 10:30:00",
+                "end": "2019-05-18 12:30:00",
+                "className": "fc-event-warning"
+            }, {"id": 5, "title": "Lunch", "start": "2019-05-12 12:00:00", "className": "fc-event-info"}, {
+                "id": 6,
+                "title": "Meeting",
+                "start": "2019-05-12 02:30:00",
+                "className": "fc-event-warning"
+            }, {"id": 7, "title": "Dinner", "start": "2019-05-12 08:00:00", "className": "fc-event-danger"}, {
+                "id": 8,
+                "title": "Birthday Party",
+                "start": "2019-05-14 05:00:00",
+                "className": "fc-event-primary"
+            }, {
+                "id": 9,
+                "title": "Reporting",
+                "start": "2019-05-27",
+                "end": "2019-05-29",
+                "className": "fc-event-warning"
+            }],
             editable: true,
             droppable: true, // this allows things to be dropped onto the calendar
             navLinks: true, // can click day/week names to navigate views
@@ -164,11 +205,11 @@
             eventResize: function(event, delta, revertFunc) { $this.updateEvent(event, revertFunc); },
             eventDrop: function(event, delta, revertFunc) { $this.updateEvent(event, revertFunc); },
 
-            // eventRender: function(event, element, view) {
-            //     event.allDay = event.allDay == true ? true : false;
-            // },
+            eventRender: function(event, element, view) {
+                event.allDay = event.allDay == true ? true : false;
+            },
         });
-    }
+    };
 
     // initializing CalendarApp
 
@@ -234,7 +275,7 @@
             end: CalendarApp.$modal.find('#new-event-end').val(),
             allDay: CalendarApp.$modal.find('#new-event-allDay').prop('checked'),
             className: CalendarApp.$modal.find('input[name="category"]:checked').val(),
-        }
+        };
         
         // execute the query to save the event in the database and get its id
         // for example
