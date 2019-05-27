@@ -5,3 +5,8 @@ body{
 .right {
     direction: rtl !important;
 }
+
+.en {
+    font-family: sans-serif !important;
+    direction: ltr;
+}

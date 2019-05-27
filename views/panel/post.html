@@ -27,6 +27,8 @@
     <!-- DropZone -->
     <link href="../../assets/css/dropzone/dropzone.min.css" rel="stylesheet"/>
 
+    <!-- Devices -->
+    <link href="../../assets/css/device/devices.min.css" rel="stylesheet"/>
 
 </head>
 <body>
@@ -314,170 +316,202 @@
                 <!-- End: Page Heading -->
 
                 <div>
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="box-title text-primary text-right">بارگذاری فایل</h5>
 
-                            <form class="dropzone dz-clickable" id="dropzoneValidation"
-                                  action="javascript:;" novalidate="novalidate" role="application">
-                                <div class="content clearfix">
-                                    <div class="dz-message"><i class="ti-import text-primary font-40"></i>
-                                        <div class="mt-3 font-20">فایل خود را اینجا رها کنید.</div>
-                                        <div class="text-muted">تنها فایل تصویر و ویدیو قابل قبول است و حداکثر حجم
-                                            بارگذاری 10 مگابایت می باشد
+                    <div class="row">
+
+                        <div class="col-md-8">
+                            <div class="card card-fullheight">
+                                <div class="card-body">
+                                    <h5 class="box-title text-primary text-right">بارگذاری فایل</h5>
+
+                                    <form class="dropzone dz-clickable" id="dropzoneValidation"
+                                          action="javascript:;" novalidate="novalidate" role="application">
+                                        <div class="content clearfix">
+                                            <div class="dz-message"><i class="ti-import text-primary font-40"></i>
+                                                <div class="mt-3 font-20">فایل خود را اینجا رها کنید.</div>
+                                                <div class="text-muted">تنها فایل تصویر و ویدیو قابل قبول است و حداکثر
+                                                    حجم
+                                                    بارگذاری 10 مگابایت می باشد
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="card-footer bg-white" style="overflow-y: scroll; height: 400px;">
+                                    <div class="flexbox">
+                                        <h5 class="card-title text-primary text-right py-4">فایل‌های بارگذاری شده</h5>
+                                        <div>
+                                            <ol class="breadcrumb text-muted bg-white font-11">
+                                                <li class="breadcrumb-item">
+                                                    تعداد فایل:
+                                                    <i class="ti-files font-11"></i>
+                                                    <span>7</span>
+                                                </li>
+                                                <li class="breadcrumb-item">
+                                                    فضای باقی مانده:
+                                                    <i class="ti-pie-chart font-11"></i>
+                                                    <span> 237.9 MB</span>
+                                                </li>
+                                                <li class="breadcrumb-item">
+                                                    فضای کل:
+                                                    <i class="ti-harddrive font-11"></i>
+                                                    <span>300 MB</span>
+
+                                                </li>
+                                            </ol>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="card bg-dark text-white">
+                                                <img class="card-img" src="../../assets/images/upload/download.jpg">
+                                                <div class="card-img-overlay p-4 d-flex flex-column justify-content-between align-items-start"
+                                                     style="background-color: rgba(0,0,0,.5)">
+                                                    <div class="flexbox w-100">
+                                                        <div>
+                                                            <span class="badge badge-pill badge-info">jpg</span>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-text text-right font-11">2 روز پیش</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="card bg-dark text-white">
+                                                <img class="card-img" src="../../assets/images/upload/images.jpg">
+                                                <div class="card-img-overlay p-4 d-flex flex-column justify-content-between align-items-start"
+                                                     style="background-color: rgba(0,0,0,.5)">
+                                                    <div class="flexbox w-100">
+                                                        <div>
+                                                            <span class="badge badge-pill badge-info">jpg</span>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-text text-right font-11">2 روز پیش</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="card bg-dark text-white">
+                                                <img class="card-img"
+                                                     src="../../assets/images/upload/annegien-schilling.jpg">
+                                                <div class="card-img-overlay p-4 d-flex flex-column justify-content-between align-items-start"
+                                                     style="background-color: rgba(0,0,0,.5)">
+                                                    <div class="flexbox w-100">
+                                                        <div>
+                                                            <span class="badge badge-pill badge-info">jpg</span>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-text text-right font-11">2 روز پیش</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="card bg-dark text-white">
+                                                <img class="card-img" src="../../assets/images/upload/instaphotos1.jpg">
+                                                <div class="card-img-overlay p-4 d-flex flex-column justify-content-between align-items-start"
+                                                     style="background-color: rgba(0,0,0,.5)">
+                                                    <div class="flexbox w-100">
+                                                        <div>
+                                                            <span class="badge badge-pill badge-info">jpg</span>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-text text-right font-11">2 روز پیش</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- End: row -->
+
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="card bg-dark text-white">
+                                                <img class="card-img" src="../../assets/images/upload/images%20(1).jpg">
+                                                <div class="card-img-overlay p-4 d-flex flex-column justify-content-between align-items-start"
+                                                     style="background-color: rgba(0,0,0,.5)">
+                                                    <div class="flexbox w-100">
+                                                        <div>
+                                                            <span class="badge badge-pill badge-info">jpg</span>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-text text-right font-11">2 روز پیش</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="card bg-dark text-white">
+                                                <img class="card-img" src="../../assets/images/upload/qatareats.jpg">
+                                                <div class="card-img-overlay p-4 d-flex flex-column justify-content-between align-items-start"
+                                                     style="background-color: rgba(0,0,0,.5)">
+                                                    <div class="flexbox w-100">
+                                                        <div>
+                                                            <span class="badge badge-pill badge-info">jpg</span>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-text text-right font-11">2 روز پیش</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="card bg-dark text-white">
+                                                <img class="card-img" src="../../assets/images/upload/brahmino.png">
+                                                <div class="card-img-overlay p-4 d-flex flex-column justify-content-between align-items-start"
+                                                     style="background-color: rgba(0,0,0,.5)">
+                                                    <div class="flexbox w-100">
+                                                        <div>
+                                                            <span class="badge badge-pill badge-info">png</span>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-text text-right font-11">2 روز پیش</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+                                    <!-- End: row -->
+
+
                                 </div>
-                            </form>
+                            </div>
                         </div>
-                        <div class="card-footer bg-white" style="overflow-y: scroll; height: 400px;">
-                            <div class="flexbox">
-                                <h5 class="card-title text-primary text-right py-4">فایل‌های بارگذاری شده</h5>
-                                <div>
-                                    <ol class="breadcrumb text-muted bg-white font-11">
-                                        <li class="breadcrumb-item">
-                                            تعداد فایل:
-                                            <i class="ti-files font-11"></i>
-                                            <span>7</span>
-                                        </li>
-                                        <li class="breadcrumb-item">
-                                            فضای باقی مانده:
-                                            <i class="ti-pie-chart font-11"></i>
-                                            <span> 237.9 MB</span>
-                                        </li>
-                                        <li class="breadcrumb-item">
-                                            فضای کل:
-                                            <i class="ti-harddrive font-11"></i>
-                                            <span>300 MB</span>
 
-                                        </li>
-                                    </ol>
-                                </div>
+                        <!-- End: First Card -->
 
-                            </div>
-
-
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <div class="card bg-dark text-white">
-                                        <img class="card-img" src="../../assets/images/upload/download.jpg">
-                                        <div class="card-img-overlay p-4 d-flex flex-column justify-content-between align-items-start"
-                                             style="background-color: rgba(0,0,0,.5)">
-                                            <div class="flexbox w-100">
-                                                <div>
-                                                    <span class="badge badge-pill badge-info">jpg</span>
-                                                </div>
+                        <div class="col-md-4">
+                            <div class="card card-fullheight ltr">
+                                <div class="card-body">
+                                    <h5 class="mb-5 text-right">زمانبندی ارسال</h5>
+                                    <div class="cd-timeline cd-timeline center-orientation">
+                                        <div class="cd-timeline-block"><span class="cd-timeline-point"></span>
+                                            <div class="cd-timeline-content">
+                                                <h5 class="mb-4">New Comment</h5>
+                                                <div class="media"><img class="mr-3 rounded-circle" src="../../assets/images/man.png" alt="image" width="54">
+                                                    <div class="media-body">
+                                                        <h6 class="mb-1"><a href="#">John Due</a></h6>
+                                                        <p class="mb-4">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin ...</p>
+                                                        <div class="text-muted font-13"><a class="hover-link mr-3" href="#"><i class="fas fa-heart mr-2"></i>Like</a><a class="hover-link" href="#"><i class="fas fa-reply mr-2"></i>Reply</a></div>
+                                                    </div>
+                                                </div><span class="cd-date">Today 14:25</span>
                                             </div>
-                                            <p class="card-text text-right font-11">2 روز پیش</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="card bg-dark text-white">
-                                        <img class="card-img" src="../../assets/images/upload/images.jpg">
-                                        <div class="card-img-overlay p-4 d-flex flex-column justify-content-between align-items-start"
-                                             style="background-color: rgba(0,0,0,.5)">
-                                            <div class="flexbox w-100">
-                                                <div>
-                                                    <span class="badge badge-pill badge-info">jpg</span>
-                                                </div>
-                                            </div>
-                                            <p class="card-text text-right font-11">2 روز پیش</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="card bg-dark text-white">
-                                        <img class="card-img" src="../../assets/images/upload/annegien-schilling.jpg">
-                                        <div class="card-img-overlay p-4 d-flex flex-column justify-content-between align-items-start"
-                                             style="background-color: rgba(0,0,0,.5)">
-                                            <div class="flexbox w-100">
-                                                <div>
-                                                    <span class="badge badge-pill badge-info">jpg</span>
-                                                </div>
-                                            </div>
-                                            <p class="card-text text-right font-11">2 روز پیش</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="card bg-dark text-white">
-                                        <img class="card-img" src="../../assets/images/upload/instaphotos1.jpg">
-                                        <div class="card-img-overlay p-4 d-flex flex-column justify-content-between align-items-start"
-                                             style="background-color: rgba(0,0,0,.5)">
-                                            <div class="flexbox w-100">
-                                                <div>
-                                                    <span class="badge badge-pill badge-info">jpg</span>
-                                                </div>
-                                            </div>
-                                            <p class="card-text text-right font-11">2 روز پیش</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <!-- End: row -->
-
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <div class="card bg-dark text-white">
-                                        <img class="card-img" src="../../assets/images/upload/images%20(1).jpg">
-                                        <div class="card-img-overlay p-4 d-flex flex-column justify-content-between align-items-start"
-                                             style="background-color: rgba(0,0,0,.5)">
-                                            <div class="flexbox w-100">
-                                                <div>
-                                                    <span class="badge badge-pill badge-info">jpg</span>
-                                                </div>
-                                            </div>
-                                            <p class="card-text text-right font-11">2 روز پیش</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="card bg-dark text-white">
-                                        <img class="card-img" src="../../assets/images/upload/qatareats.jpg">
-                                        <div class="card-img-overlay p-4 d-flex flex-column justify-content-between align-items-start"
-                                             style="background-color: rgba(0,0,0,.5)">
-                                            <div class="flexbox w-100">
-                                                <div>
-                                                    <span class="badge badge-pill badge-info">jpg</span>
-                                                </div>
-                                            </div>
-                                            <p class="card-text text-right font-11">2 روز پیش</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="card bg-dark text-white">
-                                        <img class="card-img" src="../../assets/images/upload/brahmino.png">
-                                        <div class="card-img-overlay p-4 d-flex flex-column justify-content-between align-items-start"
-                                             style="background-color: rgba(0,0,0,.5)">
-                                            <div class="flexbox w-100">
-                                                <div>
-                                                    <span class="badge badge-pill badge-info">png</span>
-                                                </div>
-                                            </div>
-                                            <p class="card-text text-right font-11">2 روز پیش</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- End: row -->
-
-
                         </div>
+
+
                     </div>
-                    <!-- End: First Card -->
+                    <div class="row">
+                        <!-- Col-8 -->
 
-                    <div class="col-md-8">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="box-title text-primary text-right">ایجاد پست / استوری</h5>
-                                <form class="circle-steps wizard clearfix" id="form-wizard" action="javascript:;"
-                                      novalidate="novalidate">
-                                    <div class="steps clearfix"></div>
-
-                                    <div class="content clearfix">
+                        <div class="col-md-8">
+                            <div class="card card-fullheight">
+                                <div class="card-body">
+                                    <h5 class="box-title text-primary text-right">ایجاد پست / استوری</h5>
+                                    <form class="circle-steps wizard clearfix" id="form-wizard" action="javascript:;"
+                                          novalidate="novalidate">
 
                                         <h6>اینستاگرام</h6>
                                         <fieldset>
@@ -503,15 +537,97 @@
                                             <textarea class="form-control" name="caption" id="caption"></textarea>
                                         </fieldset>
 
-                                    </div>
-
-                                    <div class="actions clearfix rtl">
-                                    </div>
-                                </form>
+                                    </form>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
+                        <div class="col-md-4">
+
+                            <div class="marvel-device iphone8 gold ml-5">
+                                <div class="top-bar"></div>
+                                <div class="sleep"></div>
+                                <div class="volume"></div>
+                                <div class="camera"></div>
+                                <div class="sensor"></div>
+                                <div class="speaker"></div>
+                                <div class="screen">
+                                    <!-- Content goes here -->
+                                    <div class="row mobile-header ltr">
+                                        <div class="flexbox pl-4 mt-2">
+                                            <div class="ml-2">
+                                                <i class="icon-camera font-20"></i>
+                                                <img class="ml-1" src="../../assets/images/instagram-logo.png"
+                                                     style="width: 5rem;"/>
+                                            </div>
+
+
+                                            <div class="right-side">
+                                                <span class="icon-film font-20 mr-2"></span>
+                                                <span class="icon-paper-plane font-20 mr-3"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="post-header">
+                                        <div class="flexbox">
+                                            <div class="left-side mt-4 ml-3">
+                                                <div class="d-inline-flex align-items-center">
+                                                    <span class="d-sm-inline-block ml-2 font-11"> golnoush.mirosseini</span>
+                                                    <span class="position-relative d-inline-block">
+                                                    <img class="rounded-circle" src="../../assets/images/man.png"
+                                                         width="18">
+                                                </span>
+                                                </div>
+                                            </div>
+
+                                            <div class="right-side mt-4 mr-3">
+                                                <span class="icon-options-vertical font-13"></span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="post-image">
+                                        <div class="row  no-gutters">
+                                            <div class="col-sm-12">
+                                                <img src="../../assets/images/upload/qatareats.jpg"/>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="post-like p-4">
+                                        <div class="flexbox">
+                                            <div class="left-side ml-3">
+                                                <span class="ti-heart font-20 ml-1"></span>
+                                                <span class="icon-bubble font-20 ml-2"></span>
+                                                <span class="icon-paper-plane font-20 ml-2"></span>
+                                            </div>
+
+                                            <div class="right-side mr-3">
+                                                <span class="ti-bookmark font-20 mr-2"></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="flexbox en mt-3">
+                                            <div>
+                                                <p class="text-left font-16"><strong>77 likes</strong></p>
+                                                <div class="text-left font-16">
+                                                    محل قرارگیری کپشن‌ها
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="home"></div>
+                                <div class="bottom-bar"></div>
+                            </div>
+
+                        </div>
+
+                    </div>
                 </div>
 
 
@@ -572,55 +688,65 @@
 
 
 <script>
+    var form = $("#form-wizard").show();
 
-    $(function() {
-        var form = $("#form-wizard").show();
-        form.steps({
-            headerTag: "h6",
-            bodyTag: "fieldset",
-            titleTemplate: '<span class="step-number">#index#</span> #title#',
-            onStepChanging: function(event, currentIndex, newIndex) {
-                // Always allow going backward even if the current step contains invalid fields!
-                if (currentIndex > newIndex) {
-                    return true;
-                }
-                // Clean up if user went backward before
-                if (currentIndex < newIndex) {
-                    // To remove error styles
-                    $(".body:eq(" + newIndex + ") label.invalid-feedback", form).remove();
-                    $(".body:eq(" + newIndex + ") .invalid-feedback", form).removeClass(".invalid-feedback");
-                }
-                // Disable validation on fields that are disabled or hidden.
-                form.validate().settings.ignore = ":disabled,:hidden";
-                // Start validation; Prevent going forward if false
-                return form.valid();
-            },
-            onFinishing: function(event, currentIndex) {
-                form.validate().settings.ignore = ":disabled";
-                return form.valid();
-            },
-            onFinished: function(event, currentIndex) {
-                alert("Submitted!");
+    form.steps({
+        headerTag: "h6",
+        bodyTag: "fieldset",
+        transitionEffect: "slideLeft",
+        titleTemplate: '<span class="step-number">#index#</span> #title#',
+        loadingTemplate: '<span class="spinner"></span> #text#',
+        saveState: true,
+        stepsOrientation: "vertical",
+        labels: {
+            current: "مرحله جاری:",
+            pagination: "صفحه‌بندی",
+            finish: "پایان",
+            next: "بعدی",
+            previous: "قبلی",
+            loading: "در حال بارگذاری ..."
+        },
+        onStepChanging: function (event, currentIndex, newIndex) {
+            // Always allow going backward even if the current step contains invalid fields!
+            if (currentIndex > newIndex) {
+                return true;
             }
-        }).validate({
-            errorPlacement: function errorPlacement(error, element) {
-                error.insertAfter(element);
-            },
-            rules: {
-                confirm: {
-                    equalTo: "#password"
-                }
-            },
-            errorClass: 'invalid-feedback',
-            validClass: 'valid-feedback',
-            highlight: function(e) {
-                $(e).addClass("is-invalid").removeClass('is-valid');
-            },
-            unhighlight: function(e) {
-                $(e).removeClass("is-invalid").addClass('is-valid');
-            },
-        });
+            // Clean up if user went backward before
+            if (currentIndex < newIndex) {
+                // To remove error styles
+                $(".body:eq(" + newIndex + ") label.invalid-feedback", form).remove();
+                $(".body:eq(" + newIndex + ") .invalid-feedback", form).removeClass(".invalid-feedback");
+            }
+            // Disable validation on fields that are disabled or hidden.
+            form.validate().settings.ignore = ":disabled,:hidden";
+            // Start validation; Prevent going forward if false
+            return form.valid();
+        },
+        onFinishing: function (event, currentIndex) {
+            form.validate().settings.ignore = ":disabled";
+            return form.valid();
+        },
+        onFinished: function (event, currentIndex) {
+            alert("Submitted!");
+        }
+    }).validate({
+        errorPlacement: function errorPlacement(error, element) {
+            error.insertAfter(element);
+        },
+        errorClass: 'invalid-feedback',
+        validClass: 'valid-feedback',
+        highlight: function (e) {
+            $(e).addClass('is-invalid').removeClass('is-valid');
+        },
+        unhighlight: function (e) {
+            $(e).removeClass('is-invalid').addClass('in-valid');
+        }
+
     });
+
+
+    $('.steps').addClass('ltr');
+
 </script>
 
 </body>
