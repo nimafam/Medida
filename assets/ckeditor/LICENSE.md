@@ -38,12 +38,12 @@ done by developers outside of CKSource with their express permission.
 The following libraries are included in CKEditor under the MIT license (see Appendix D):
 
 * CKSource Samples Framework (included in the samples) - Copyright (c) 2014-2019, CKSource - Frederico Knabben.
-* PicoModal (included in `samples/js/sftest.js`) - Copyright (c) 2012 James Frasca.
+* PicoModal (included in `samples/js/sf.js`) - Copyright (c) 2012 James Frasca.
 * CodeMirror (included in the samples) - Copyright (C) 2014 by Marijn Haverbeke <marijnh@gmail.com> and others.
 
 Parts of code taken from the following libraries are included in CKEditor under the MIT license (see Appendix D):
 
-* jQuery (inspired the domReady function, ckeditor_basetest.js) - Copyright (c) 2011 John Resig, http://jquery.com/
+* jQuery (inspired the domReady function, ckeditor_base.js) - Copyright (c) 2011 John Resig, http://jquery.com/
 
 The following libraries are included in CKEditor under the SIL Open Font License, Version 1.1 (see Appendix E):
 
@@ -51,7 +51,7 @@ The following libraries are included in CKEditor under the SIL Open Font License
 
 The following libraries are included in CKEditor under the BSD-3 License (see Appendix F):
 
-* highlighttest.js (included in the `codesnippet` plugin) - Copyright (c) 2006, Ivan Sagalaev.
+* highlight.js (included in the `codesnippet` plugin) - Copyright (c) 2006, Ivan Sagalaev.
 * YUI Library (included in the `uicolor` plugin) - Copyright (c) 2009, Yahoo! Inc.
 
 

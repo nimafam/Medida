@@ -65,7 +65,7 @@ Other Changes:
 
 * Updated the [WebSpellChecker](https://ckeditor.com/cke4/addon/wsc) (WSC) plugin:
 	* [#52](https://github.com/WebSpellChecker/ckeditor-plugin-wsc/issues/52) Fixed: Clicking "Finish Checking" without a prior action would hang the Spell Checking dialog.
-* [#2603](https://github.com/ckeditor/ckeditor-dev/issues/2603): Corrected the GPL license entry in the `packagetest.json` file.
+* [#2603](https://github.com/ckeditor/ckeditor-dev/issues/2603): Corrected the GPL license entry in the `package.json` file.
 
 ## CKEditor 4.11.1
 
@@ -343,7 +343,7 @@ API Changes:
 
 Other Changes:
 
-* [#815](https://github.com/ckeditor/ckeditor-dev/issues/815): Removed Nodetest.js dependency from the CKEditor build script.
+* [#815](https://github.com/ckeditor/ckeditor-dev/issues/815): Removed Node.js dependency from the CKEditor build script.
 * [#1041](https://github.com/ckeditor/ckeditor-dev/pull/1041), [#1131](https://github.com/ckeditor/ckeditor-dev/issues/1131): Updated URLs pointing to [CKSource](https://cksource.com/) and [CKEditor](https://ckeditor.com/) resources after the launch of new websites.
 
 ## CKEditor 4.7.3
@@ -483,7 +483,7 @@ Other Changes:
 * [#16958](https://dev.ckeditor.com/ticket/16958): Switched the default MathJax CDN provider for the [Mathematical Formulas](https://ckeditor.com/cke4/addon/mathjax) plugin from `cdn.mathjax.org` to [cdnjs](https://cdnjs.com/), due to closing of `cdn.mathjax.org` scheduled for April 30, 2017.
 * [#16954](https://dev.ckeditor.com/ticket/16954): Removed the paste dialog.
 * [#16982](https://dev.ckeditor.com/ticket/16982): Latest Safari now supports enhanced Clipboard API introduced in CKEditor 4.5.0.
-* [#17025](https://dev.ckeditor.com/ticket/17025): Updated [Bendertest.js](https://github.com/benderjs/benderjs) to 0.4.2.
+* [#17025](https://dev.ckeditor.com/ticket/17025): Updated [Bender.js](https://github.com/benderjs/benderjs) to 0.4.2.
 
 ## CKEditor 4.6.2
 
@@ -742,7 +742,7 @@ Fixed Issues:
 Other Changes:
 
 * [#11725](https://dev.ckeditor.com/ticket/11725): Marked [`CKEDITOR.env.mobile`](https://ckeditor.com/docs/ckeditor4/latest/api/CKEDITOR_env.html#property-mobile) as deprecated. The reason is that it is no longer clear what "mobile" means.
-* [#13737](https://dev.ckeditor.com/ticket/13737): Upgraded [Bendertest.js](https://github.com/benderjs/benderjs) to 0.4.1.
+* [#13737](https://dev.ckeditor.com/ticket/13737): Upgraded [Bender.js](https://github.com/benderjs/benderjs) to 0.4.1.
 
 ## CKEditor 4.5.3
 
@@ -768,7 +768,7 @@ Fixed Issues:
 Other Changes:
 
 * [#13637](https://dev.ckeditor.com/ticket/13637): Several icons were refactored.
-* Updated [Bendertest.js](https://github.com/benderjs/benderjs) to 0.3.0 and introduced the ability to run tests via HTTPs ([#13265](https://dev.ckeditor.com/ticket/13265)).
+* Updated [Bender.js](https://github.com/benderjs/benderjs) to 0.3.0 and introduced the ability to run tests via HTTPs ([#13265](https://dev.ckeditor.com/ticket/13265)).
 
 ## CKEditor 4.5.2
 
@@ -921,7 +921,7 @@ New Features:
 * [#12150](https://dev.ckeditor.com/ticket/12150): Exposed the [`getNestedEditable()`](https://ckeditor.com/docs/ckeditor4/latest/api/CKEDITOR_plugins_widget.html#static-method-getNestedEditable) and `is*` [widget helper](https://ckeditor.com/docs/ckeditor4/latest/api/CKEDITOR.plugins.widget.html) functions (see the static methods).
 * [#12448](https://dev.ckeditor.com/ticket/12448): Introduced the [`editable.insertHtmlIntoRange`](https://ckeditor.com/docs/ckeditor4/latest/api/CKEDITOR_editable.html#method-insertHtmlIntoRange) method.
 * [#12143](https://dev.ckeditor.com/ticket/12143): Added the [`config.floatSpacePreferRight`](https://ckeditor.com/docs/ckeditor4/latest/api/CKEDITOR_config.html#cfg-floatSpacePreferRight) configuration option that switches the alignment of the floating toolbar. Thanks to [InvisibleBacon](http://github.com/InvisibleBacon)!
-* [#10986](https://dev.ckeditor.com/ticket/10986): Added support for changing dialog input and textarea text directions by using the *Shift+Alt+Home/End* keystrokes. The direction is stored in the value of the input by prepending the [`\u202A`](http://unicode.org/cldr/utility/charactertest.jsp?a=202A) or [`\u202B`](http://unicode.org/cldr/utility/charactertest.jsp?a=202B) marker to it. Read more in the [documentation](https://ckeditor.com/docs/ckeditor4/latest/api/CKEDITOR_dialog_definition_textInput.html#property-bidi). Thanks to [edithkk](https://github.com/edithkk)!
+* [#10986](https://dev.ckeditor.com/ticket/10986): Added support for changing dialog input and textarea text directions by using the *Shift+Alt+Home/End* keystrokes. The direction is stored in the value of the input by prepending the [`\u202A`](http://unicode.org/cldr/utility/character.jsp?a=202A) or [`\u202B`](http://unicode.org/cldr/utility/character.jsp?a=202B) marker to it. Read more in the [documentation](https://ckeditor.com/docs/ckeditor4/latest/api/CKEDITOR_dialog_definition_textInput.html#property-bidi). Thanks to [edithkk](https://github.com/edithkk)!
 * [#12770](https://dev.ckeditor.com/ticket/12770): Added support for passing [widget](https://ckeditor.com/docs/ckeditor4/latest/api/CKEDITOR.plugins.widget.html)'s startup data as a widget command's argument. Thanks to [Rebrov Boris](https://github.com/zipp3r) and [Tieme van Veen](https://github.com/tiemevanveen)!
 * [#11583](https://dev.ckeditor.com/ticket/11583): Added support for the HTML5 `required` attribute in various form elements. Thanks to [Steven Busse](https://github.com/sbusse)!
 
@@ -979,7 +979,7 @@ Fixed Issues:
 
 Other Changes:
 
-* [#12844](https://dev.ckeditor.com/ticket/12844) and [#13103](https://dev.ckeditor.com/ticket/13103): Upgraded the [testing environment](https://ckeditor.com/docs/ckeditor4/latest/guide/dev_tests.html) to [Bendertest.js](https://github.com/benderjs/benderjs) `0.2.3`.
+* [#12844](https://dev.ckeditor.com/ticket/12844) and [#13103](https://dev.ckeditor.com/ticket/13103): Upgraded the [testing environment](https://ckeditor.com/docs/ckeditor4/latest/guide/dev_tests.html) to [Bender.js](https://github.com/benderjs/benderjs) `0.2.3`.
 * [#12930](https://dev.ckeditor.com/ticket/12930): Because of licensing issues, `truncated-mathjax/` is now removed from the `tests/` directory. Now `bender.config.mathJaxLibPath` must be configured manually in order to run [Mathematical Formulas](https://ckeditor.com/cke4/addon/mathjax) plugin tests.
 * [#13266](https://dev.ckeditor.com/ticket/13266): Added more shades of gray in the [Color Dialog](https://ckeditor.com/cke4/addon/colordialog) window. Thanks to [mizafish](https://github.com/mizafish)!
 
@@ -1215,7 +1215,7 @@ New Features:
 * [#11341](https://dev.ckeditor.com/ticket/11341): [Enhanced Image](https://ckeditor.com/cke4/addon/image2) plugin: It is now possible to add a link to any image type.
 * [#10202](https://dev.ckeditor.com/ticket/10202): Introduced wildcard support in the [Allowed Content Rules](https://ckeditor.com/docs/ckeditor4/latest/guide/dev_allowed_content_rules.html) format.
 * [#10276](https://dev.ckeditor.com/ticket/10276): Introduced blacklisting in the [Allowed Content Filter](https://ckeditor.com/docs/ckeditor4/latest/guide/dev_advanced_content_filter.html).
-* [#10480](https://dev.ckeditor.com/ticket/10480): Introduced code snippets with code highlighting. There are two versions available so far &mdash; the default [Code Snippet](https://ckeditor.com/cke4/addon/codesnippet) which uses the [highlighttest.js](http://highlightjs.org) library and the [Code Snippet GeSHi](https://ckeditor.com/cke4/addon/codesnippetgeshi) which uses the [GeSHi](http://qbnz.com/highlighter/) library.
+* [#10480](https://dev.ckeditor.com/ticket/10480): Introduced code snippets with code highlighting. There are two versions available so far &mdash; the default [Code Snippet](https://ckeditor.com/cke4/addon/codesnippet) which uses the [highlight.js](http://highlightjs.org) library and the [Code Snippet GeSHi](https://ckeditor.com/cke4/addon/codesnippetgeshi) which uses the [GeSHi](http://qbnz.com/highlighter/) library.
 * [#11737](https://dev.ckeditor.com/ticket/11737): Introduced an option to prevent [filtering](https://ckeditor.com/docs/ckeditor4/latest/guide/dev_advanced_content_filter.html) of an element that matches custom criteria (see [`filter.addElementCallback()`](https://ckeditor.com/docs/ckeditor4/latest/api/CKEDITOR_filter.html#method-addElementCallback)).
 * [#11532](https://dev.ckeditor.com/ticket/11532): Introduced the [`editor.addContentsCss()`](https://ckeditor.com/docs/ckeditor4/latest/api/CKEDITOR_editor.html#method-addContentsCss) method that can be used for [adding custom CSS files](https://ckeditor.com/docs/ckeditor4/latest/guide/plugin_sdk_styles.html).
 * [#11536](https://dev.ckeditor.com/ticket/11536): Added the [`CKEDITOR.tools.htmlDecode()`](https://ckeditor.com/docs/ckeditor4/latest/api/CKEDITOR_tools.html#method-htmlDecode) method for decoding HTML entities.

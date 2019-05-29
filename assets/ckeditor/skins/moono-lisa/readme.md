@@ -34,7 +34,7 @@ it's not loaded until the first menu open up,
 - **editor_XYZ.css** and **dialog_XYZ.css**: browser specific CSS hacks.
 
 Other parts:
-- **skintest.js**: the only JavaScript part of the skin that registers the skin, its browser specific files and its icons and defines the Chameleon feature,
+- **skin.js**: the only JavaScript part of the skin that registers the skin, its browser specific files and its icons and defines the Chameleon feature,
 - **images/**: contains a fill general used images,
 - **dev/**: contains SVG and PNG source of the skin icons.
 
