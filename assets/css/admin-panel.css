@@ -8,6 +8,11 @@
     }
 }
 
+@import url('fonts/all.css');
+@import url('fonts/simple-line-icons.css');
+@import url('fonts/iransans.css');
+@import url('fonts/themify-icons.css');
+
 @keyframes fadeIn {
     from {
         opacity: 0
@@ -87,7 +92,35 @@
 }
 
 :root {
-    --blue:#2949EF;--indigo:#6610f2;--purple:#6f42c1;--pink:#e83e8c;--red:#FE4D2E;--orange:#fd7e14;--yellow:#FDA424;--green:#06B5B6;--teal:#20c997;--cyan:#00BCD4;--white:#fff;--gray:#6c757d;--gray-dark:#343a40;--primary:#2949EF;--secondary:#6c757d;--success:#06B5B6;--info:#00BCD4;--warning:#fd7e14;--danger:#FE4D2E;--light:#dee2e6;--dark:#343a40;--breakpoint-xs:0;--breakpoint-sm:576px;--breakpoint-md:768px;--breakpoint-lg:992px;--breakpoint-xl:1200px;--font-family-sans-serif:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";--font-family-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace}
+    --blue:#2949EF;
+    --indigo:#6610f2;
+    --purple:#6f42c1;
+    --pink:#e83e8c;
+    --red:#FE4D2E;
+    --orange:#fd7e14;
+    --yellow:#FDA424;
+    --green:#06B5B6;
+    --teal:#20c997;
+    --cyan:#00BCD4;
+    --white:#fff;
+    --gray:#6c757d;
+    --gray-dark:#343a40;
+    --primary:#2949EF;
+    --secondary:#6c757d;
+    --success:#06B5B6;
+    --info:#00BCD4;
+    --warning:#fd7e14;
+    --danger:#FE4D2E;
+    --light:#dee2e6;
+    --dark:#343a40;
+    --breakpoint-xs:0;
+    --breakpoint-sm:576px;
+    --breakpoint-md:768px;
+    --breakpoint-lg:992px;
+    --breakpoint-xl:1200px;
+    --font-family-sans-serif:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --font-family-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace
+}
 
 *,::after,::before {
     -webkit-box-sizing: border-box;
@@ -4529,6 +4562,9 @@ input[type=button].btn-block,input[type=reset].btn-block,input[type=submit].btn-
 
 .dropdown,.dropleft,.dropright,.dropup {
     position: relative
+}
+.dropdown-toggle.megamenu-link.no-arrow::after{
+    display: none;
 }
 
 .dropdown-toggle:not(.no-arrow)::after {
@@ -12638,7 +12674,7 @@ a.text-dark:focus,a.text-dark:hover {
     bottom: 0;
     left: 0;
     width: 255px;
-    background-color: #2c2f48;
+    background-color: #fefefe;
     -webkit-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -12665,7 +12701,7 @@ a.text-dark:focus,a.text-dark:hover {
 }
 
 .page-sidebar .sidebar-brand,.page-sidebar .sidebar-brand-mini {
-    color: #fff;
+    color: #242C96;
     font-size: 22px;
     font-weight: 500
 }
@@ -12715,7 +12751,7 @@ a.text-dark:focus,a.text-dark:hover {
     display: -ms-flexbox;
     display: flex;
     padding: 12px 25px;
-    color: #b4bcc8;
+    color: #5860AF;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
@@ -12731,7 +12767,7 @@ a.text-dark:focus,a.text-dark:hover {
     -webkit-transition: all .15s linear;
     -o-transition: all .15s linear;
     transition: all .15s linear;
-    color: #71808f
+    color: #5860AF
 }
 
 .sidebar-menu a .arrow {
@@ -12745,20 +12781,19 @@ a.text-dark:focus,a.text-dark:hover {
     right: 25px;
     margin-top: -9px;
     opacity: 1;
-    color: #71808f
+    color: #5860AF
 }
 
 .sidebar-menu a:focus,.sidebar-menu a:hover {
-    color: #fff;
-    background-color: #323551
+    color: #242C96;
 }
 
 .sidebar-menu a:focus .arrow,.sidebar-menu a:focus .sidebar-item-icon,.sidebar-menu a:hover .arrow,.sidebar-menu a:hover .sidebar-item-icon {
-    color: #fff
+    color: #242C96
 }
 
 .sidebar-menu li a.mm-active,.sidebar-menu li a.mm-active .sidebar-item-icon {
-    color: #fff
+    color: #242C96;
 }
 
 .sidebar-menu li.mm-active {
@@ -12766,7 +12801,7 @@ a.text-dark:focus,a.text-dark:hover {
 }
 
 .sidebar-menu li.mm-active>a,.sidebar-menu li.mm-active>a .arrow,.sidebar-menu li.mm-active>a .sidebar-item-icon {
-    color: #fff
+    color: #242C96
 }
 
 .sidebar-menu li.mm-active>a>.arrow {
@@ -12776,7 +12811,7 @@ a.text-dark:focus,a.text-dark:hover {
 }
 
 .sidebar-menu>li>a.mm-active {
-    color: #fff;
+    color: #242C96;
     background-color: #323551
 }
 
@@ -12986,7 +13021,11 @@ body,html {
     flex-direction: column;
     max-width: 100%;
     position: relative;
-    background-color: #f2f3fa;
+    background: #E2E7F3 url('../images/section-background.png') fixed center center no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
     padding-left: 255px;
     padding-top: 66px;
     -webkit-transition: margin .2s ease-in-out;
@@ -12994,6 +13033,13 @@ body,html {
     transition: margin .2s ease-in-out
 }
 
+.content-area > nav > a {
+    width: 50px;
+    background: #fff;
+    height: 37px;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
 .page-content {
     padding: 30px;
     position: relative;
@@ -13065,7 +13111,7 @@ body,html {
 .page-heading .page-breadcrumb .page-title-sep {
     margin-right: 25px;
     padding-right: 25px;
-    border-right: 1px solid #e4e5ec
+    border-right: 1px solid #a0a0a0
 }
 
 .page-heading .page-breadcrumb .breadcrumb {

@@ -14,6 +14,7 @@
 
     <!-- Public Stylesheet -->
     <link rel="stylesheet" href="../../assets/css/admin-panel.css"/>
+    <link rel="stylesheet" href="../../assets/css/fonts/simple-line-icons.css"/>
     
     <!-- Perfect scrollbar -->
     <link rel="stylesheet" href="../../assets/css/perfect-scrollbar.css" />
@@ -29,32 +30,147 @@
     <div class="page-wrapper">
         <div class="content-wrapper">
             <div class="page-sidebar custom-scroll ps ps--active-y" id="sidebar">
+
                 <div class="sidebar-header">
                     <a class="sidebar-brand" href="./dashboard-1.html">Medida.</a>
                     <a class="sidebar-brand-mini" href="./dashboard-1.html">Md</a>
                 </div>
 
                 <ul class="sidebar-menu metismenu">
+                    <li>
+                        <a href="./dashboard-1.html" aria-expanded="false">
+                            <i class="sidebar-item-icon material-icons">explorer</i>
+                            <span class="nav-label">Dashboard</span>
+                        </a>
+                    </li>
+
                     <li class="heading">
                         <span class="nav-label">Main</span>
                     </li>
                     <li>
-                        <a href="./dashboard-1.html" aria-expanded="false">
-                            <i class="sidebar-item-icon icon-layers"></i>
-                            <span class="nav-label">Dashboard</span>
+                        <a href="./post.html" aria-expanded="false">
+                            <i class="sidebar-item-icon material-icons">subtitles</i>
+                            <span class="nav-label">Posts</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./post.html" aria-expanded="false">
+                            <i class="sidebar-item-icon material-icons">timeline</i>
+                            <span class="nav-label">Profile Analytics</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./post.html" aria-expanded="false">
+                            <i class="sidebar-item-icon material-icons">date_range</i>
+                            <span class="nav-label">Calendar</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./post.html" aria-expanded="false">
+                            <i class="sidebar-item-icon material-icons">short_text</i>
+                            <span class="nav-label">Captions</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./post.html" aria-expanded="false">
+                            <i class="sidebar-item-icon material-icons">supervised_user_circle</i>
+                            <span class="nav-label">Accounts</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./post.html" aria-expanded="false">
+                            <i class="sidebar-item-icon material-icons">equalizer</i>
+                            <span class="nav-label">Charts</span>
+                        </a>
+                    </li>
+                    <li class="heading">
+                        <span class="nav-label">Settings</span>
+                    </li>
+                    <li>
+                        <a href="./post.html" aria-expanded="false">
+                            <i class="sidebar-item-icon material-icons">settings</i>
+                            <span class="nav-label">Settings</span>
                         </a>
                     </li>
                 </ul>
+
+                <div class="p-4 mb-4 media align-items-center position-absolute" style="bottom: 0;">
+                    <img src="../../assets/images/man.png" width="36" class="rounded-circle mr-3" />
+                    <div class="media-body">
+                        <a href="./profile.html">
+                            <h5 class="mb-1">Jonathan Due</h5>
+                            <div class="font-11 text-muted">Premuim</div>
+                        </a>
+                    </div>
+                </div>
+
             </div>
             <div class="content-area">
+                <nav>
+                    <a class="nav-link navbar-icon sidebar-toggler" id="sidebar-toggler" href="#">
+                        <span class="material-icons">reorder</span>
+                    </a>
+
+                </nav>
                 <div class="page-content fade-in-up">
                     <div class="page-heading">
+
                         <div class="page-breadcrumb">
-                            <h1 class="page-title">Dashboard</h1>
+                            <h1 class="page-title page-title-sep">Dashboard</h1>
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <i class="material-icons">explore</i>
+                                </li>
+                            </ol>
                         </div>
 
-                        <div></div>
+                        <div class="subheader_daterange dropdown" id="subheader_daterange">
+                            <span class="subheader-daterange-label">
+                                <span class="subheader-daterange-title">
+                                    <i class="icon-social-instagram"></i>
+                                </span>
+                                <span class="subheader-daterange-date">
+                                    @nima_mirkhani
+                                </span>
+                            </span>
+                            <a class="btn btn-floating btn-sm rounded-0 dropdown-toggle no-arrow megamenu-link"  href="#0" data-toggle="dropdown">
+                                <i class="material-icons">keyboard_arrow_down</i>
+                            </a>
+                            <div class="dropdown-menu nav-megamenu" style="min-width: 400px">
+                                    <div class="row m-0">
+                                        <div class="col-6"><a class="mega-menu-item" href="#">
+                                            <i class="ft-activity item-badge mb-4"></i>
+                                                <h5 class="mb-2">Activity</h5>
+                                                <div class="text-muted font-12">Lorem Ipsum dolar.</div>
+                                            </a>
+                                        </div>
+                                        <div class="col-6"><a class="mega-menu-item bg-primary text-white" href="#">
+                                            <i class="ft-globe item-badge mb-4 text-white"></i>
+                                                <h5 class="mb-2">Customers</h5>
+                                                <div class="text-white font-12">Lorem Ipsum dolar.</div>
+                                            </a>
+                                        </div>
+                                        <div class="col-6"><a class="mega-menu-item" href="#">
+                                            <i class="ft-layers item-badge mb-4"></i>
+                                                <h5 class="mb-2">My Projects</h5>
+                                                <div class="text-muted font-12">Lorem Ipsum dolar.</div>
+                                            </a>
+                                        </div>
+                                        <div class="col-6"><a class="mega-menu-item" href="#">
+                                            <i class="ft-shopping-cart item-badge mb-4"></i>
+                                                <h5 class="mb-2">My Orders</h5>
+                                                <div class="text-muted font-12">Lorem Ipsum dolar.</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+        
+        
+                        </div>
+                        
                     </div>
+
+                    <div></div>
                 </div>
             </div>
         </div>
