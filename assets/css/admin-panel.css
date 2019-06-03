@@ -1,4 +1,10 @@
-@charset "UTF-8";@-webkit-keyframes fadeIn {
+@charset "UTF-8";
+@import url('fonts/all.css');
+@import url('fonts/simple-line-icons.css');
+@import url('fonts/iransans.css');
+@import url('fonts/themify-icons.css');
+
+@-webkit-keyframes fadeIn {
     from {
         opacity: 0
     }
@@ -7,11 +13,6 @@
         opacity: 1
     }
 }
-
-@import url('fonts/all.css');
-@import url('fonts/simple-line-icons.css');
-@import url('fonts/iransans.css');
-@import url('fonts/themify-icons.css');
 
 @keyframes fadeIn {
     from {
@@ -12575,15 +12576,15 @@ a.text-dark:focus,a.text-dark:hover {
     border-radius: 50%
 }
 
-.header .megamenu-link:after {
+.megamenu-link:after {
     display: none
 }
 
-.header .megamenu-link .arrow {
+.megamenu-link .arrow {
     font-size: 10px
 }
 
-.header .nav-megamenu .mega-menu-item {
+.nav-megamenu .mega-menu-item {
     display: block;
     color: inherit;
     text-align: center;
@@ -12595,11 +12596,21 @@ a.text-dark:focus,a.text-dark:hover {
     border-radius: .25rem
 }
 
-.header .nav-megamenu .mega-menu-item:hover {
+.nav-megamenu .mega-menu-item:hover {
     background-color: #e9ecef
 }
 
-.header .nav-megamenu .item-badge {
+.nav-megamenu .mega-menu-item.disabled {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+
+    color: #4e555b;
+    opacity: 0.6;
+    background: #efefef;
+}
+.nav-megamenu .item-badge {
     display: inline-block;
     font-size: 28px;
     color: #2949ef
@@ -12797,7 +12808,7 @@ a.text-dark:focus,a.text-dark:hover {
 }
 
 .sidebar-menu li.mm-active {
-    background-color: #323551
+    background-color: #fff;
 }
 
 .sidebar-menu li.mm-active>a,.sidebar-menu li.mm-active>a .arrow,.sidebar-menu li.mm-active>a .sidebar-item-icon {
@@ -12816,9 +12827,12 @@ a.text-dark:focus,a.text-dark:hover {
 }
 
 .sidebar-menu .nav-2-level>li>a {
-    padding: 9px 10px 9px 60px
+    padding: 9px 10px 9px 60px;
+    color: #a2a6d2;
 }
-
+.sidebar-menu .nav-2-level>li>a:hover {
+    color: #242C96;
+}
 .sidebar-menu .nav-3-level>li>a {
     padding: 9px 10px 9px 70px
 }
@@ -13764,6 +13778,9 @@ body.has-backdrop .backdrop {
     width: 16px;
     background-color: #ced4da
 }
+.fc-unthemed {
+    width:100%;
+}
 
 .fc-unthemed .fc-content,.fc-unthemed .fc-divider,.fc-unthemed .fc-list-heading td,.fc-unthemed .fc-list-view,.fc-unthemed .fc-popover,.fc-unthemed .fc-row,.fc-unthemed tbody,.fc-unthemed td,.fc-unthemed th,.fc-unthemed thead {
     border-color: #e9ecef
@@ -13793,10 +13810,15 @@ body.has-backdrop .backdrop {
     left: .75rem
 }
 
-.fc-unthemed td.fc-today {
-    background-color: #fdf0db
-}
+.fc-unthemed td.fc-today-button {
 
+}
+.fc button{
+    background: #fff;
+    box-shadow: none;
+    border: none;
+    color: #5860AF;
+}
 .fc-unthemed .fc-event-success .fc-event-dot,.fc-unthemed .fc-event-success.fc-event {
     background-color: #06b5b6
 }
@@ -13818,16 +13840,17 @@ body.has-backdrop .backdrop {
 }
 
 .fc-toolbar .fc-right .fc-button {
-    border: 1px solid #e9ecef
+    border: 1px solid #e9ecef;
+    background: #fff;
+    box-shadow: none;
 }
 
 .fc-button {
     -webkit-box-shadow: none;
     box-shadow: none;
     text-shadow: none;
-    background-color: #fff;
     border: 0;
-    background-image: none
+    background: #fff;
 }
 
 .fc-state-active,.fc-state-down {

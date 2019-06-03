@@ -149,9 +149,9 @@
                 center: 'title',
                 right: 'month,agendaWeek,agendaDay,listWeek'
             },
-            isJalaali: true,
-            isRTL: true,
-            lang: 'fa',
+            // isJalaali: true,
+            // isRTL: true,
+            // lang: 'fa',
             events: [{
                 "id": 1,
                 "title": "All Day Event",
@@ -216,16 +216,13 @@
     $.CalendarApp = new CalendarApp;
     $.CalendarApp.init();
 
-    $('.fc-left').addClass('rtl');
-    
     // initialize datetimepicker
     $('.datepicker').datetimepicker({
         format: 'yyyy-mm-dd hh:ii:ss',
-        useCurrent: false,
-        rtl: true,
-        language: 'fa'
+        useCurrent: false
     });
-    
+
+
     // Validate Forms
     $('#newEventForm').validate({
         rules: {
