@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
-    <title>Posts</title>
+    <title>All Posts</title>
 
     <!-- Bootstrap 4.0 CSS -->
     <!-- Add crossorigin="anonymous" for Host stage-->
@@ -127,19 +127,15 @@
                 <div class="page-heading">
 
                     <div class="page-breadcrumb">
-                        <h1 class="page-title page-title-sep">New Posts</h1>
+                        <h1 class="page-title page-title-sep">All Posts</h1>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item">
                                 <a href="dashboard-1.html">
                                     <i class="icon-home font-20"></i>
                                 </a>
                             </li>
-                            <li class="breadcrumb-item">
-                                Posts
-                            </li>
-                            <li class="breadcrumb-item">
-                                New Post
-                            </li>
+                            <li class="breadcrumb-item">Posts</li>
+                            <li class="breadcrumb-item">All Posts</li>
                         </ol>
                     </div>
 
@@ -208,55 +204,139 @@
                 </div>
 
                 <div>
-                    <div class="row">
-                        <div class="col-md-10 mx-auto">
-                            <div class="card card-fullheight">
+                    <div class="controls">
+                        <div class="row justify-content-center">
+                            <div class="col-4">
 
-                                <div class="card-body">
-                                    <h5 class="box-title text-primary">Adding New Post</h5>
-
-                                    <form class="circle-steps wizard clearfix" id="form-wizard" action="javascript:;"
-                                          novalidate="novalidate">
-
-                                        <h6>Instagram</h6>
-                                        <fieldset>
-                                            <h3 class="mb-4">Choose your Account</h3>
-                                            <div class="form-group mb-4">
-                                                <div class="input-group-icon input-group-icon-left">
-                                                    <span class="input-icon input-icon-left">
-                                                        <i class="ti-instagram"></i>
-                                                    </span>
-                                                    <select class="form-control ltr" style="height: 50px" title="account">
-                                                        <option>Please Choose an account</option>
-                                                        <option>@sinalef.s</option>
-                                                        <option>@nima_mirkhani</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </fieldset>
-
-                                        <h6>Captions</h6>
-                                        <fieldset>
-                                            <h3 class="mb-4">Write done caption</h3>
-                                            <label for="caption"></label>
-                                            <textarea class="form-control" name="caption" id="caption"></textarea>
-                                        </fieldset>
-
-                                        <h6>Post Type</h6>
-                                        <fieldset>
-
-                                        </fieldset>
-
-                                        <h6>Schedule</h6>
-                                        <fieldset>
-
-                                        </fieldset>
-
-                                    </form>
+                                <div class="btn-toolbar mb-4" role="toolbar" aria-label="Categories">
+                                    <div class="btn-group mr-2" role="group">
+                                        <button class="btn btn-dark control" data-filter="all">
+                                            All
+                                        </button>
+                                        <button class="btn btn-primary control" data-toggle=".green">
+                                           Sent
+                                        </button>
+                                        <button class="btn btn-primary control" data-toggle=".blue">
+                                            Schedule
+                                        </button>
+                                        <button class="btn btn-primary control" data-toggle=".pink">
+                                            Not Sent
+                                        </button>
+                                    </div>
                                 </div>
+
+                            </div>
+
+                            <div class="col-4">
+                                <div class="btn-toolbar mb-4" role="toolbar" aria-label="Categories">
+                                    <div class="btn-group mr-2" role="group">
+                                        <button class="btn btn-primary control" data-toggle=".post">
+                                            Post
+                                        </button>
+                                        <button class="btn btn-primary control" data-toggle=".album">
+                                            Album
+                                        </button>
+                                        <button class="btn btn-primary control" data-toggle=".story">
+                                            Story
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-4">
+                                <div class="btn-toolbar mb-4" role="toolbar" aria-label="Categories">
+                                    <div class="btn-group mr-2" role="group">
+                                        <button class="btn btn-success control" data-sort="default:asc">
+                                            <i class="ti-arrow-up"></i>
+                                        </button>
+                                        <button class="btn btn-success control" data-sort="default:desc">
+                                            <i class="ti-arrow-down"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
 
+                    </div>
+
+                    <div class="container">
+                        <div class="mix green album">
+                            <img src="../../assets/images/upload/annegien-schilling.jpg" class="img-fluid mx-auto">
+
+                            <div class="flexbox px-4 my-4">
+                                <div class="text-black-50">
+                                    <i class="fas fa-heart text-danger"></i> 765
+                                </div>
+                                <div class="text-muted font-13">Dec 27 2018</div>
+
+                            </div>
+                        </div>
+                        <div class="mix green post">
+                            <img src="../../assets/images/upload/images%20(1).jpg" class="img-fluid mx-auto">
+
+                            <div class="flexbox px-4 my-4">
+                                <div class="text-black-50">
+                                    <i class="fas fa-heart text-danger"></i> 765
+                                </div>
+                                <div class="text-muted font-13">Dec 27 2018</div>
+
+                            </div>
+
+                        </div>
+                        <div class="mix blue album">
+                            <img src="../../assets/images/upload/instaphotos1.jpg" class="img-fluid mx-auto">
+
+                            <div class="flexbox px-4 my-4">
+                                <div class="text-black-50">
+                                    <i class="fas fa-heart text-danger"></i> 765
+                                </div>
+                                <div class="text-muted font-13">Dec 27 2018</div>
+
+                            </div>
+
+                        </div>
+                        <div class="mix green post">
+                            <img src="../../assets/images/upload/images.jpg" class="img-fluid mx-auto">
+
+                            <div class="flexbox px-4 my-4">
+                                <div class="text-black-50">
+                                    <i class="fas fa-heart text-danger"></i> 765
+                                </div>
+                                <div class="text-muted font-13">Dec 27 2018</div>
+
+                            </div>
+
+                        </div>
+                        <div class="mix blue album">
+                            <img src="../../assets/images/upload/qatareats.jpg" class="img-fluid mx-auto">
+
+                            <div class="flexbox px-4 my-4">
+                                <div class="text-black-50">
+                                    <i class="fas fa-heart text-danger"></i> 765
+                                </div>
+                                <div class="text-muted font-13">Dec 27 2018</div>
+
+                            </div>
+
+                        </div>
+                        <div class="mix pink post">
+                            <img src="../../assets/images/upload/brahmino.png" class="img-fluid mx-auto">
+
+                            <div class="flexbox px-4 my-4">
+                                <div class="text-black-50">
+                                    <i class="fas fa-heart text-danger"></i> 765
+                                </div>
+                                <div class="text-muted font-13">Dec 27 2018</div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="gap"></div>
+                        <div class="gap"></div>
+                        <div class="gap"></div>
                     </div>
                 </div>
             </div>
@@ -276,78 +356,19 @@
 <script src="../../assets/js/popper.min.js"></script>
 <script src="../../assets/js/bootstrap/bootstrap.min.js"></script>
 
-<script src="../../assets/js/validation/jquery.validate.min.js"></script>
-<script src="../../assets/js/validation/localization/messages_fa.min.js"></script>
-<script src="../../assets/js/jquery-steps/jquery.steps.min.js"></script>
-
-
-<script>
-    var form = $("#form-wizard").show();
-
-    form.steps({
-        headerTag: "h6",
-        bodyTag: "fieldset",
-        transitionEffect: "slideLeft",
-        titleTemplate: '<span class="step-number">#index#</span> #title#',
-        loadingTemplate: '<span class="spinner"></span> #text#',
-        saveState: true,
-        stepsOrientation: "vertical",
-//        labels: {
-//            current: "مرحله جاری:",
-//            pagination: "صفحه‌بندی",
-//            finish: "پایان",
-//            next: "بعدی",
-//            previous: "قبلی",
-//            loading: "در حال بارگذاری ..."
-//        },
-        onStepChanging: function (event, currentIndex, newIndex) {
-            // Always allow going backward even if the current step contains invalid fields!
-            if (currentIndex > newIndex) {
-                return true;
-            }
-            // Clean up if user went backward before
-            if (currentIndex < newIndex) {
-                // To remove error styles
-                $(".body:eq(" + newIndex + ") label.invalid-feedback", form).remove();
-                $(".body:eq(" + newIndex + ") .invalid-feedback", form).removeClass(".invalid-feedback");
-            }
-            // Disable validation on fields that are disabled or hidden.
-            form.validate().settings.ignore = ":disabled,:hidden";
-            // Start validation; Prevent going forward if false
-            return form.valid();
-        },
-        onFinishing: function (event, currentIndex) {
-            form.validate().settings.ignore = ":disabled";
-            return form.valid();
-        },
-        onFinished: function (event, currentIndex) {
-            alert("Submitted!");
-        }
-    }).validate({
-        errorPlacement: function errorPlacement(error, element) {
-            error.insertAfter(element);
-        },
-        errorClass: 'invalid-feedback',
-        validClass: 'valid-feedback',
-        highlight: function (e) {
-            $(e).addClass('is-invalid').removeClass('is-valid');
-        },
-        unhighlight: function (e) {
-            $(e).removeClass('is-invalid').addClass('in-valid');
-        }
-
-    });
-
-//
-//    $('.steps').addClass('ltr');
-
-</script>
-
 <!-- Perfect Scrollbar JS -->
 <script src="../../assets/js/perfect-scrollbar.js"></script>
 
 <!-- Metismenu JS -->
 <script src="../../assets/js/metismenu.min.js"></script>
+
+<!-- MixItUp -->
+<script src="../../assets/js/mixit-up/mixitup.min.js"></script>
+<script>
+    var containerEl = document.querySelector('.container');
+
+    var mixer = mixitup(containerEl);
+</script>
 
 <!-- Main Js -->
 <script src="../../assets/js/panel/main.js"></script>
