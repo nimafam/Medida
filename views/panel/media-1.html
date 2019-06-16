@@ -213,8 +213,23 @@
                     <div class="container">
 
                         <div class="row">
-                            <div class="col-md-10 mx-auto">
+                            <div class="col-md-4">
                                 <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="box-title text-primary">Statics . <span class="font-11 text-muted">167.85 MB Remain</span></h5>
+
+                                        <div id="chart"></div>
+
+                                        <ul class="font-15">
+                                            <li>#file: <span class="font-11 text-muted">10</span> </li>
+                                            <li>Maximum size: <span class="font-11 text-muted">50 MB</span> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-8">
+                                <div class="card card-fullheight">
                                     <div class="card-body">
                                         <h5 class="box-title text-primary">Drop Your File Here</h5>
 
@@ -491,6 +506,49 @@
         goToPage(1);
     });
 
+
+</script>
+
+<!-- AppexCharts JS-->
+<script src="../../assets/js/appex-charts/apexcharts.min.js"></script>
+
+<script>
+    var options = {
+        chart: {
+            height: 250,
+            type: 'radialBar',
+        },
+        plotOptions: {
+            radialBar: {
+                dataLabels: {
+                    name: {
+                        fontSize: '1rem',
+                    },
+                    value: {
+                        fontSize: '0.8rem',
+                    },
+                    total: {
+                        show: true,
+                        label: 'Disk Space',
+                        formatter: function (w) {
+                            // By default this function returns the average of all series. The below is just an example to show the use of custom formatter function
+                            return 300 +" MB"
+                        }
+                    }
+                }
+            }
+        },
+        series: [44, 55, 67],
+        labels: ['Usage', 'Images', 'Videos'],
+
+    }
+
+    var chart = new ApexCharts(
+        document.querySelector("#chart"),
+        options
+    );
+
+    chart.render();
 
 </script>
 
