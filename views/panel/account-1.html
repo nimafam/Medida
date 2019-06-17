@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
-    <title>Dashboard</title>
+    <title>Accounts</title>
 
     <!-- Bootstrap 4.0 CSS -->
     <!-- Add crossorigin="anonymous" for Host stage-->
@@ -245,23 +245,27 @@
                 <div>
                     <div class="row">
                         <div class="col-md-3">
-                            <button class="btn btn-primary btn-rounded btn-block mb-5">
+                            <button class="btn btn-primary btn-rounded btn-block mb-5" type="button" data-toggle="modal"
+                                    data-target="#addAccount">
                                     <span class="btn-icon">
                                         <i class="ti-plus"></i>
                                         New Account
                                     </span>
                             </button>
 
-                            <div class="nav flex-column contacts-filter-nav">
-                                <a class="nav-link d-flex align-items-center active" href="javascript:;">
+                            <div class="nav flex-column contacts-filter-nav" id="selectNav">
+                                <a class="nav-link d-flex align-items-center active" href="#0" id="selectAll"
+                                   data-star="all">
                                     <i class="mr-3 ti-view-grid font-20" role="img"></i>
                                     All Accounts
                                 </a>
-                                <a class="nav-link d-flex align-items-center" href="javascript:;">
+                                <a class="nav-link d-flex align-items-center" href="#0" id="selectUsed"
+                                   data-star="used">
                                     <i class="mr-3 ti-timer font-20"></i>
                                     Frequently Used
                                 </a>
-                                <a class="nav-link d-flex align-items-center" href="javascript:;">
+                                <a class="nav-link d-flex align-items-center" id="selectStar" href="#0"
+                                   data-star="star">
                                     <i class="mr-3 ti-star font-20"></i>
                                     Starred Account
                                 </a>
@@ -272,7 +276,7 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h5 class="mb-4">Total Accounts
-                                        <span class="badge badge-success badge-circle">12</span>
+                                        <span class="badge badge-danger badge-circle">4</span>
                                     </h5>
 
                                     <div class="input-group-icon input-group-icon-left input-group-lg mb-4">
@@ -286,133 +290,145 @@
                                     <div class="card-body">
                                         <table class="table table-hover" id="contacts-table" style="width: 100%;">
                                             <thead>
-                                                <tr>
-                                                    <th>
-                                                        <a class="text-muted font-18 mr-2" href="#">
-                                                            <i class="material-icons">star_outline</i>
-                                                        </a>
-                                                    </th>
-                                                    <th>Name</th>
-                                                    <th>User Name</th>
-                                                    <th>Social</th>
-                                                    <th>Actions</th>
-                                                </tr>
+                                            <tr>
+                                                <th>
+                                                    <a class="text-muted font-18 mr-2" href="#" id="starred">
+                                                        <i class="material-icons">star_outline</i>
+                                                    </a>
+                                                </th>
+                                                <th>Name</th>
+                                                <th>User Name</th>
+                                                <th>Social</th>
+                                                <th>Actions</th>
+                                            </tr>
                                             </thead>
                                             <tbody>
 
-                                                <tr>
-                                                    <td>
-                                                        <a class="text-muted font-18 mr-2" href="#">
-                                                            <i class="material-icons">star_outline</i>
-                                                        </a>
-                                                    </td>
-                                                    <td>
-                                                        <div class="media align-items-center" >
-                                                            <img src="../../assets/images/man.png" width="40" class="contact-avatar rounded-circle mr-3">
-                                                            <div class="media-body">
-                                                                <span class="mb-1">Jonathan Due</span>
-                                                                <div class="font-11 badge badge-pill badge-success">Personal</div>
+                                            <tr data-star="star" data-frequently="true">
+                                                <td>
+                                                    <a class="text-muted font-18 mr-2 starred" href="#">
+                                                        <i class="material-icons">star_outline</i>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <div class="media align-items-center">
+                                                        <img src="../../assets/images/man.png" width="40"
+                                                             class="contact-avatar rounded-circle mr-3">
+                                                        <div class="media-body">
+                                                            <span class="mb-1">Jonathan Due</span>
+                                                            <div class="font-11 badge badge-pill badge-success">
+                                                                Personal
                                                             </div>
                                                         </div>
-                                                    </td>
+                                                    </div>
+                                                </td>
 
-                                                    <td>
-                                                        <a href="#0">@john.due</a>
-                                                    </td>
-                                                    <td class="align-items-center">
-                                                        <i class="ti-instagram text-primary font-20 text-center"></i>
-                                                    </td>
-                                                    <td>
-                                                        <a class="text-muted font-18" href="#">
-                                                            <i class="material-icons">more_vert</i>
-                                                        </a>
-                                                    </td>
-                                                </tr>
+                                                <td>
+                                                    <a href="#0">@john.due</a>
+                                                </td>
+                                                <td class="align-items-center">
+                                                    <i class="ti-instagram text-primary font-20 text-center"></i>
+                                                </td>
+                                                <td>
+                                                    <a class="text-muted font-18" href="#">
+                                                        <i class="material-icons">more_vert</i>
+                                                    </a>
+                                                </td>
+                                            </tr>
 
-                                                <tr>
-                                                    <td>
-                                                        <a class="text-muted font-18 mr-2" href="#">
-                                                            <i class="material-icons">star_outline</i>
-                                                        </a>
-                                                    </td>
-                                                    <td>
-                                                        <div class="media align-items-center" >
-                                                            <img src="../../assets/images/u1.jpg" width="40" class="contact-avatar rounded-circle mr-3">
-                                                            <div class="media-body">
-                                                                <span class="mb-1">Alpha Romeo</span>
-                                                                <div class="font-11 badge badge-pill badge-danger">Business</div>
+                                            <tr data-star="all" data-frequently="true">
+                                                <td>
+                                                    <a class="text-muted font-18 mr-2 starred" href="#">
+                                                        <i class="material-icons">star_outline</i>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <div class="media align-items-center">
+                                                        <img src="../../assets/images/u1.jpg" width="40"
+                                                             class="contact-avatar rounded-circle mr-3">
+                                                        <div class="media-body">
+                                                            <span class="mb-1">Alpha Romeo</span>
+                                                            <div class="font-11 badge badge-pill badge-danger">
+                                                                Business
                                                             </div>
                                                         </div>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#0">@alpharomeo</a>
-                                                    </td>
-                                                    <td class="align-items-center">
-                                                        <i class="ti-instagram text-primary font-20 text-center"></i>
-                                                    </td>
-                                                    <td>
-                                                        <a class="text-muted font-18" href="#">
-                                                            <i class="material-icons">more_vert</i>
-                                                        </a>
-                                                    </td>
-                                                </tr>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <a href="#0">@alpharomeo</a>
+                                                </td>
+                                                <td class="align-items-center">
+                                                    <i class="ti-instagram text-primary font-20 text-center"></i>
+                                                </td>
+                                                <td>
+                                                    <a class="text-muted font-18" href="#">
+                                                        <i class="material-icons">more_vert</i>
+                                                    </a>
+                                                </td>
+                                            </tr>
 
-                                                <tr>
-                                                    <td>
-                                                        <a class="text-muted font-18 mr-2" href="#">
-                                                            <i class="material-icons">star_outline</i>
-                                                        </a>
-                                                    </td>
-                                                    <td>
-                                                        <div class="media align-items-center" >
-                                                            <img src="../../assets/images/u3.jpg" width="40" class="contact-avatar rounded-circle mr-3">
-                                                            <div class="media-body">
-                                                                <span class="mb-1">Sina Sharif</span>
-                                                                <div class="font-11 badge badge-pill badge-danger">Business</div>
+                                            <tr data-star="star" data-frequently="false">
+                                                <td>
+                                                    <a class="text-muted font-18 mr-2 starred" href="#">
+                                                        <i class="material-icons">star_outline</i>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <div class="media align-items-center">
+                                                        <img src="../../assets/images/u3.jpg" width="40"
+                                                             class="contact-avatar rounded-circle mr-3">
+                                                        <div class="media-body">
+                                                            <span class="mb-1">Sina Sharif</span>
+                                                            <div class="font-11 badge badge-pill badge-danger">
+                                                                Business
                                                             </div>
                                                         </div>
-                                                    </td>
+                                                    </div>
+                                                </td>
 
-                                                    <td>
-                                                        <a href="#0">@sinalef</a>
-                                                    </td>
-                                                    <td class="align-items-center">
-                                                        <i class="ti-instagram text-primary font-20 text-center"></i>
-                                                    </td>
-                                                    <td>
-                                                        <a class="text-muted font-18" href="#">
-                                                            <i class="material-icons">more_vert</i>
-                                                        </a>
-                                                    </td>
-                                                </tr>
+                                                <td>
+                                                    <a href="#0">@sinalef</a>
+                                                </td>
+                                                <td class="align-items-center">
+                                                    <i class="ti-instagram text-primary font-20 text-center"></i>
+                                                </td>
+                                                <td>
+                                                    <a class="text-muted font-18" href="#">
+                                                        <i class="material-icons">more_vert</i>
+                                                    </a>
+                                                </td>
+                                            </tr>
 
-                                                <tr>
-                                                    <td>
-                                                        <a class="text-muted font-18 mr-2" href="#">
-                                                            <i class="material-icons">star_outline</i>
-                                                        </a>
-                                                    </td>
-                                                    <td>
-                                                        <div class="media align-items-center" >
-                                                            <img src="../../assets/images/u2.jpg" width="40" class="contact-avatar rounded-circle mr-3">
-                                                            <div class="media-body">
-                                                                <span class="mb-1">Hamid Adelinia</span>
-                                                                <div class="font-11 badge badge-pill badge-warning">Training</div>
+                                            <tr data-star="all">
+                                                <td>
+                                                    <a class="text-muted font-18 mr-2 starred" href="#">
+                                                        <i class="material-icons">star_outline</i>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <div class="media align-items-center">
+                                                        <img src="../../assets/images/u2.jpg" width="40"
+                                                             class="contact-avatar rounded-circle mr-3">
+                                                        <div class="media-body">
+                                                            <span class="mb-1">Hamid Adelinia</span>
+                                                            <div class="font-11 badge badge-pill badge-warning">
+                                                                Training
                                                             </div>
                                                         </div>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#0">@h.adelinia</a>
-                                                    </td>
-                                                    <td class="align-items-center">
-                                                        <i class="ti-instagram text-primary font-20 text-center"></i>
-                                                    </td>
-                                                    <td>
-                                                        <a class="text-muted font-18" href="#">
-                                                            <i class="material-icons">more_vert</i>
-                                                        </a>
-                                                    </td>
-                                                </tr>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <a href="#0">@h.adelinia</a>
+                                                </td>
+                                                <td class="align-items-center">
+                                                    <i class="ti-instagram text-primary font-20 text-center"></i>
+                                                </td>
+                                                <td>
+                                                    <a class="text-muted font-18" href="#">
+                                                        <i class="material-icons">more_vert</i>
+                                                    </a>
+                                                </td>
+                                            </tr>
 
                                             </tbody>
                                         </table>
@@ -422,6 +438,60 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="addAccount" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Add New Account</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">×</span></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <form action="javascript:;" class="m-4">
+
+                        <div class="md-form">
+                            <input class="md-form-control" type="text">
+                            <label class="">Username</label>
+                        </div>
+                        <div class="md-form">
+                            <input class="md-form-control" type="password">
+                            <label class="">Password</label>
+                        </div>
+                        <div class="md-form">
+                            <input class="md-form-control" type="password">
+                            <label class="">Proxy (Optional)</label>
+                        </div>
+
+                        <div class="md-form">
+                            <input class="md-form-control" type="text" value="">
+                            <label class="active">tags</label>
+                        </div>
+
+                        <ul>
+                            <li>پروکسی باید با الگوی ذکرشده مطابقت داشته باشد: http://ip:port یا
+                                http://username:password@ip:port
+                            </li>
+                            <li>استفاده از یک پروکسی مناسب برای کشور ثبت نامی این حساب در برنامه رسمی و یا وب سایت
+                                اینستاگرام ، توصیه می شود.
+                            </li>
+                        </ul>
+
+                        <div class="form-group">
+                            <button class="btn btn-primary mr-2" type="submit">Submit</button>
+                            <button class="btn btn-light" type="reset">Clear</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-light" type="button" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
@@ -448,7 +518,7 @@
 <!-- Data Table JS -->
 <script src="../../assets/js/datatable/data_table.min.js"></script>
 <script>
-    $(function() {
+    $(function () {
         var table = $('#contacts-table').DataTable({
             responsive: true,
             "sDom": 'rtip',
@@ -460,10 +530,76 @@
                 orderable: false
             }]
         });
-        $('#key-search').on('keyup', function() {
+
+        $('#key-search').on('keyup', function () {
             table.search(this.value).draw();
         });
+
+        var selectNav = $('#selectNav');
+
+        selectNav.on('click', 'a', function () {
+            selectNav.find('a').removeClass('active');
+            $(this).addClass('active');
+
+            if ($(this).attr('data-star') === 'star') {
+
+                clearSearch();
+
+                $.fn.dataTable.ext.search.push(
+                    function (settings, data, dataIndex) {
+                        return $(table.row(dataIndex).node()).attr('data-star') === 'star';
+                    }
+                );
+                table.draw();
+
+            } else if ($(this).attr('data-star') === 'used') {
+
+                clearSearch();
+
+                $.fn.dataTable.ext.search.push(
+                    function (settings, data, dataIndex) {
+                        return $(table.row(dataIndex).node()).attr('data-frequently') === 'true';
+                    }
+                );
+                table.draw();
+            } else if ($(this).attr('data-star') === 'all') {
+
+                clearSearch();
+
+                table.draw();
+            }
+
+            function clearSearch() {
+
+                while ($.fn.dataTable.ext.search.length > 0) {
+                    $.fn.dataTable.ext.search.pop();
+                }
+            }
+        });
+
+
     });
+
+    $(function () {
+        var $star = $('.starred');
+        var star = $('#starred');
+
+        $('tr').each(function () {
+            if ($(this).attr('data-star') === 'star')
+                $(this).find(' > td:first-child > a > i').addClass('text-warning');
+        });
+
+
+        $star.on('click', function () {
+            $(this).find(' > i').toggleClass('text-warning');
+
+        });
+
+        star.on('click', function () {
+            if ($star.find('> i').hasClass('starred') === false)
+                $star.find(' > i').addClass('text-warning');
+        });
+    })
 </script>
 
 <!-- Main Js -->
