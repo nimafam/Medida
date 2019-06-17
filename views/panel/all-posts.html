@@ -213,13 +213,13 @@
                                         <button class="btn btn-dark control" data-filter="all">
                                             All
                                         </button>
-                                        <button class="btn btn-primary control" data-toggle=".green">
+                                        <button class="btn btn-primary control" data-filter="sent">
                                            Sent
                                         </button>
-                                        <button class="btn btn-primary control" data-toggle=".blue">
+                                        <button class="btn btn-primary control" data-filter="schedule">
                                             Schedule
                                         </button>
-                                        <button class="btn btn-primary control" data-toggle=".pink">
+                                        <button class="btn btn-primary control" data-filter="notSent">
                                             Not Sent
                                         </button>
                                     </div>
@@ -230,13 +230,16 @@
                             <div class="col-4">
                                 <div class="btn-toolbar mb-4" role="toolbar" aria-label="Categories">
                                     <div class="btn-group mr-2" role="group">
-                                        <button class="btn btn-primary control" data-toggle=".post">
+                                        <button class="btn btn-dark control" data-shuffle>
+                                            <i class="fas fa-random font-13"></i>
+                                        </button>
+                                        <button class="btn btn-primary control" data-filter="post">
                                             Post
                                         </button>
-                                        <button class="btn btn-primary control" data-toggle=".album">
+                                        <button class="btn btn-primary control" data-filter="album">
                                             Album
                                         </button>
-                                        <button class="btn btn-primary control" data-toggle=".story">
+                                        <button class="btn btn-primary control" data-filter="story">
                                             Story
                                         </button>
                                     </div>
@@ -247,10 +250,10 @@
                             <div class="col-4">
                                 <div class="btn-toolbar mb-4" role="toolbar" aria-label="Categories">
                                     <div class="btn-group mr-2" role="group">
-                                        <button class="btn btn-success control" data-sort="default:asc">
+                                        <button class="btn btn-success control" data-sortAsc>
                                             <i class="ti-arrow-up"></i>
                                         </button>
-                                        <button class="btn btn-success control" data-sort="default:desc">
+                                        <button class="btn btn-success control" data-sortDesc>
                                             <i class="ti-arrow-down"></i>
                                         </button>
                                     </div>
@@ -261,8 +264,8 @@
 
                     </div>
 
-                    <div class="container">
-                        <div class="mix green album">
+                    <div class="container filtr-container">
+                        <div class="mix filtr-item green" data-category="sent, album">
                             <img src="../../assets/images/upload/annegien-schilling.jpg" class="img-fluid mx-auto">
 
                             <div class="flexbox px-4 my-4">
@@ -273,7 +276,7 @@
 
                             </div>
                         </div>
-                        <div class="mix green post">
+                        <div class="mix filtr-item green" data-category="sent, post">
                             <img src="../../assets/images/upload/images%20(1).jpg" class="img-fluid mx-auto">
 
                             <div class="flexbox px-4 my-4">
@@ -285,7 +288,7 @@
                             </div>
 
                         </div>
-                        <div class="mix blue album">
+                        <div class="mix filtr-item blue" data-category="schedule, album">
                             <img src="../../assets/images/upload/instaphotos1.jpg" class="img-fluid mx-auto">
 
                             <div class="flexbox px-4 my-4">
@@ -297,7 +300,7 @@
                             </div>
 
                         </div>
-                        <div class="mix green post">
+                        <div class="mix filtr-item green" data-category="sent, post">
                             <img src="../../assets/images/upload/images.jpg" class="img-fluid mx-auto">
 
                             <div class="flexbox px-4 my-4">
@@ -309,7 +312,7 @@
                             </div>
 
                         </div>
-                        <div class="mix blue album">
+                        <div class="mix filtr-item blue" data-category="schedule, album">
                             <img src="../../assets/images/upload/qatareats.jpg" class="img-fluid mx-auto">
 
                             <div class="flexbox px-4 my-4">
@@ -321,7 +324,7 @@
                             </div>
 
                         </div>
-                        <div class="mix pink post">
+                        <div class="mix filtr-item pink" data-category="notSent, post">
                             <img src="../../assets/images/upload/brahmino.png" class="img-fluid mx-auto">
 
                             <div class="flexbox px-4 my-4">
@@ -334,9 +337,6 @@
 
                         </div>
 
-                        <div class="gap"></div>
-                        <div class="gap"></div>
-                        <div class="gap"></div>
                     </div>
                 </div>
             </div>
@@ -362,12 +362,49 @@
 <!-- Metismenu JS -->
 <script src="../../assets/js/metismenu.min.js"></script>
 
-<!-- MixItUp -->
-<script src="../../assets/js/mixit-up/mixitup.min.js"></script>
+<!-- Filreizr JS -->
+<script src="../../assets/js/filterizr/jquery.filterizr.min.js"></script>
 <script>
-    var containerEl = document.querySelector('.container');
 
-    var mixer = mixitup(containerEl);
+    var options = {
+        animationDuration: 0.35, // in seconds
+        filter: 'all', // Initial filter
+        callbacks: {
+            onFilteringStart: function () {
+            },
+            onFilteringEnd: function () {
+            },
+            onShufflingStart: function () {
+            },
+            onShufflingEnd: function () {
+            },
+            onSortingStart: function () {
+            },
+            onSortingEnd: function () {
+            }
+        },
+        controlsSelector: '', // Selector for custom controls
+        delay: 0, // Transition delay in ms
+        delayMode: 'progressive', // 'progressive' or 'alternate'
+        easing: 'ease-out',
+        filterOutCss: { // Filtering out animation
+            opacity: 0,
+            transform: 'scale(0.5)'
+        },
+        filterInCss: { // Filtering in animation
+            opacity: 0,
+            transform: 'scale(1)'
+        },
+        layout: 'sameSize', // See layouts
+        multifilterLogicalOperator: 'and',
+        selector: '.filtr-container',
+        setupControls: true // Should be false if controlsSelector is set
+    };
+    // You can override any of these options and then call...
+    var filterizd = $('.filtr-container').filterizr(options);
+    // If you have already instantiated your Filterizr then call...
+    filterizd.filterizr('setOptions', options);
+
 </script>
 
 <!-- Main Js -->
