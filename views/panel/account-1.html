@@ -330,9 +330,21 @@
                                                     <i class="ti-instagram text-primary font-20 text-center"></i>
                                                 </td>
                                                 <td>
-                                                    <a class="text-muted font-18" href="#">
+                                                    <a class="dropdown-toggle no-arrow" data-toggle="dropdown" aria-expanded="false">
                                                         <i class="material-icons">more_vert</i>
                                                     </a>
+
+                                                    <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end">
+                                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                                            <i class="ti-power-off mr-3"></i>Sign out
+                                                        </a>
+                                                        <a class="dropdown-item d-flex align-items-center" href="#editAccount" data-toggle="modal">
+                                                            <i class="ti-pencil mr-3"></i>Edit
+                                                        </a>
+                                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                                            <i class="ti-trash mr-3"></i>Remove
+                                                        </a>
+                                                    </div>
                                                 </td>
                                             </tr>
 
@@ -361,9 +373,21 @@
                                                     <i class="ti-instagram text-primary font-20 text-center"></i>
                                                 </td>
                                                 <td>
-                                                    <a class="text-muted font-18" href="#">
+                                                    <a class="dropdown-toggle no-arrow" data-toggle="dropdown" aria-expanded="false">
                                                         <i class="material-icons">more_vert</i>
                                                     </a>
+
+                                                    <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end">
+                                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                                            <i class="ti-power-off mr-3"></i>Sign out
+                                                        </a>
+                                                        <a class="dropdown-item d-flex align-items-center" href="#editAccount" data-toggle="modal">
+                                                            <i class="ti-pencil mr-3"></i>Edit
+                                                        </a>
+                                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                                            <i class="ti-trash mr-3"></i>Remove
+                                                        </a>
+                                                    </div>
                                                 </td>
                                             </tr>
 
@@ -393,10 +417,22 @@
                                                     <i class="ti-instagram text-primary font-20 text-center"></i>
                                                 </td>
                                                 <td>
-                                                    <a class="text-muted font-18" href="#">
+                                                    <a class="dropdown-toggle no-arrow" data-toggle="dropdown" aria-expanded="false">
                                                         <i class="material-icons">more_vert</i>
                                                     </a>
-                                                </td>
+
+                                                    <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end">
+                                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                                            <i class="ti-power-off mr-3"></i>Sign out
+                                                        </a>
+                                                        <a class="dropdown-item d-flex align-items-center" href="#editAccount" data-toggle="modal">
+                                                            <i class="ti-pencil mr-3"></i>Edit
+                                                        </a>
+                                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                                            <i class="ti-trash mr-3"></i>Remove
+                                                        </a>
+                                                    </div>
+                                                </td>     
                                             </tr>
 
                                             <tr data-star="all">
@@ -424,10 +460,23 @@
                                                     <i class="ti-instagram text-primary font-20 text-center"></i>
                                                 </td>
                                                 <td>
-                                                    <a class="text-muted font-18" href="#">
+                                                    <a class="dropdown-toggle no-arrow" data-toggle="dropdown" aria-expanded="false">
                                                         <i class="material-icons">more_vert</i>
                                                     </a>
+
+                                                    <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end">
+                                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                                            <i class="ti-power-off mr-3"></i>Sign out
+                                                        </a>
+                                                        <a class="dropdown-item d-flex align-items-center" href="#editAccount" data-toggle="modal">
+                                                            <i class="ti-pencil mr-3"></i>Edit
+                                                        </a>
+                                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                                            <i class="ti-trash mr-3"></i>Remove
+                                                        </a>
+                                                    </div>
                                                 </td>
+                                                
                                             </tr>
 
                                             </tbody>
@@ -443,6 +492,60 @@
     </div>
 </div>
 
+
+<div class="modal fade" id="editAccount" tabindex="-1" role="dialog" aria-labelledby="editAccount">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editAccountContent">Edit New Account <span>@johndue</span></h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">×</span></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <form action="javascript:;" class="m-4">
+
+                        <div class="md-form">
+                            <input class="md-form-control" type="text" value="Johnatan Due">
+                            <label class="">Username</label>
+                        </div>
+                        <div class="md-form">
+                            <input class="md-form-control" type="password" value="1234">
+                            <label class="">Password</label>
+                        </div>
+                        <div class="md-form">
+                            <input class="md-form-control" type="text" value="http://1270.0.1:5000">
+                            <label class="">Proxy (Optional)</label>
+                        </div>
+
+                        <div class="md-form">
+                            <input class="md-form-control" type="text" value="Business">
+                            <label class="active">tags</label>
+                        </div>
+
+                        <ul>
+                            <li>
+                                Proxy should be like this: http://ip:port OR http://username:password@ip:port
+                            </li>
+                            <li>
+                                We are recommended to use a proxy that registered on country of instagram App or website.
+                            </li>
+                        </ul>
+
+                        <div class="form-group">
+                            <button class="btn btn-primary mr-2" type="submit">Submit</button>
+                            <button class="btn btn-light" type="reset">Clear</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-light" type="button" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="modal fade" id="addAccount" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
@@ -464,21 +567,21 @@
                             <label class="">Password</label>
                         </div>
                         <div class="md-form">
-                            <input class="md-form-control" type="password">
+                            <input class="md-form-control" type="text">
                             <label class="">Proxy (Optional)</label>
                         </div>
 
                         <div class="md-form">
-                            <input class="md-form-control" type="text" value="">
+                            <input class="md-form-control" type="text">
                             <label class="active">tags</label>
                         </div>
 
                         <ul>
-                            <li>پروکسی باید با الگوی ذکرشده مطابقت داشته باشد: http://ip:port یا
-                                http://username:password@ip:port
+                            <li>
+                                Proxy should be like this: http://ip:port OR http://username:password@ip:port
                             </li>
-                            <li>استفاده از یک پروکسی مناسب برای کشور ثبت نامی این حساب در برنامه رسمی و یا وب سایت
-                                اینستاگرام ، توصیه می شود.
+                            <li>
+                                We are recommended to use a proxy that registered on country of instagram App or website.
                             </li>
                         </ul>
 
@@ -599,7 +702,9 @@
             if ($star.find('> i').hasClass('starred') === false)
                 $star.find(' > i').addClass('text-warning');
         });
-    })
+        
+        
+    });
 </script>
 
 <!-- Main Js -->

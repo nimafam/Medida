@@ -5,6 +5,7 @@
 @import url('fonts/themify-icons.css');
 @import url('device/devices.min.css');
 @import url('appex-charts/apexcharts.css');
+@import url('timline.min.css');
 
 @-webkit-keyframes fadeIn {
     from {
@@ -7090,7 +7091,16 @@ body.fullscreen-mode {
     border-radius: 50%;
     padding: 0
 }
-
+.lg-badge {
+    height: 54px;
+    width: 54px;
+    font-size: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #e9ecef;
+}
 .avatar-badge {
     position: absolute;
     right: 0;
@@ -14417,4 +14427,39 @@ body.has-backdrop .backdrop {
     .gap {
         width: calc(100%/5 - (((5 - 1) * 1rem) / 5));
     }
+}
+
+.dropdown-toggle:after{
+    display: none;
+}
+.dropdown-toggle i{
+    display: block;
+    cursor: pointer;
+    color:#6c757d!important;
+}
+
+
+.cd-timeline-content {
+    height: 60px;
+}
+
+.cd-timeline-content .posts img {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+
+    transition: all linear 0.35s;
+    -webkit-transition: all linear 0.35s;
+    -moz-transition: all linear 0.35s;
+    -o-transition: all linear 0.35s;
+}
+
+.cd-timeline-content.shrink {
+    height: auto;
+}
+
+.cd-timeline-content.shrink .posts img {
+    visibility: visible;
+    opacity: 1;
+    height: auto;
 }
