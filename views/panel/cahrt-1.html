@@ -209,54 +209,64 @@
 
                     <div class="row">
                         <div class="col-md-4">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    
-                                    <div class="card-actions text-right">
-                                          <a href="#">
-                                              <i class="ti-power-off text-danger"></i>
-                                          </a>
-                                    </div>
 
-                                    <span class="position-relative d-inline-block my-4">
-                                        <img class="rounded-circle" src="../../assets/images/man.png" alt="image" width="120">
-                                        <span class="badge-point badge-success avatar-badge" style="bottom: 5px;right: 14px;height: 14px;width: 14px;">
+                            <div class="row">
+                                <div class="col card">
+                                    <div class="card-body text-center">
+                                        
+                                        <div class="card-actions text-right">
+                                                <a href="#">
+                                                    <i class="ti-power-off text-danger"></i>
+                                                </a>
+                                        </div>
+    
+                                        <span class="position-relative d-inline-block my-4">
+                                            <img class="rounded-circle" src="../../assets/images/man.png" alt="image" width="120">
+                                            <span class="badge-point badge-success avatar-badge" style="bottom: 5px;right: 14px;height: 14px;width: 14px;">
+                                            </span>
                                         </span>
-                                    </span>
-                                    <div class="h4">Johnatan Due</div>
-                                    <div class="text-muted font-13 mb-4">@johndue</div>
-                                    <div class="badge badge-pill badge-danger mb-4">Premium</div>
-                                    <div class="row mb-4">
-                                        <div class="col-4">
-                                            <div class="p-4 align-items-center bg-primary text-white" style="border-radius: 8px">
-                                                <i class="ti-instagram align-self-center font-18"></i>
-                                                <h6 class="mb-0x font-weight-bold font-18">Posts</h6>
-                                                <span class="badge lg-badge badge-circle badge-light text-primary">340</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="p-4 align-items-center bg-primary text-white" style="border-radius: 8px">
-                                                <i class="ti-instagram align-self-center font-18"></i>
-                                                <h6 class="mb-0x font-weight-bold font-18">Posts</h6>
-                                                <span class="badge lg-badge badge-circle badge-light text-primary">340</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="p-4 align-items-center bg-primary text-white" style="border-radius: 8px">
-                                                <i class="ti-instagram align-self-center font-18"></i>
-                                                <h6 class="mb-0x font-weight-bold font-18">Posts</h6>
-                                                <span class="badge lg-badge badge-circle badge-light text-primary">340</span>
-                                            </div>
-                                        </div>
+                                        <div class="h4">Johnatan Due</div>
+                                        <div class="text-muted font-13 mb-4">@johndue</div>
+                                        <div class="badge badge-pill badge-danger mb-4">Premium</div>
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="row">
+                                <div class="col card">
+                                    <div class="card-body">
+
+                                        <div class="card-action text-right">
+                                            <a href="#0">
+                                                <i class="ti-reload text-danger"></i>
+                                            </a>
+                                        </div>
+                                        <div class="row my-4">
+                                            <span class="col">
+                                                <h6 class="text-center mb-3">Posts</h6>
+                                                <span class="badge badge-cricle lg-badge badge-light font-18 ml-2">257</span>
+                                            </span>
+                                            <span class="col">
+                                                <h6 class="text-center mb-3">Followers</h6>
+                                                <span class="badge badge-cricle lg-badge badge-light font-18 ml-2">1k</span>
+                                            </span>
+                                            <span class="col">
+                                                <h6 class="text-center mb-3">Followings</h6>
+                                                <span class="badge badge-cricle lg-badge badge-light font-18 ml-2">1.5K</span>
+                                            </span>
+            
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+
                         </div>
 
                         <div class="col-md-8">
 
                             <div class="card card-fullheight">
-                                <div class="card-body custom-scrolly" style="overflow-y:scroll; height: 600px;">
+                                <div class="card-body custom-scrolly" style="overflow-y:scroll; height: 570px;">
                                     <h5 class="text-primary box-title">Post Timeline</h5>
 
                                     <div class="cd-timeline cd-timeline center-orientation" id="timeline-1">
@@ -318,6 +328,40 @@
                         </div>
                     </div>
 
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="box-title text-primary">Post Statics</h5>
+
+                                    <div id="chart"></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="box-tile text-primary">Posts Heatmap <span class="text-muted font-11">(30 Dyas)</span></h5>
+                                    
+                                    <div id="heatmap"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="box-title text-primary">Posts Pie Chart <span class="text-muted font-11">(30 Dyas)</span></h5>
+                                    
+                                    <div id="pieChart"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
                 </div>
             </div>
         </div>
@@ -349,6 +393,213 @@
     });
 </script>
 
+<!-- AppexCharts JS-->
+<script src="../../assets/js/appex-charts/apexcharts.min.js"></script>
+<script>
+    var options = {
+        chart: {
+            height: 450,
+            type: 'bar',
+            stacked: true,
+            toolbar: {
+                show: true
+            }
+        },
+        responsive: [{
+            breakpoint : 480,
+            options: {
+                legend: {
+                    position: 'bottom',
+                    offsetX: -10,
+                    offsetY: 0
+                }
+            }
+        }],
+        plotOptions: {
+            bar: {
+                horizontal: false,
+            },
+        },
+        colors: ['#20c997','#FE4D2E', '#6610f2'],
+        series: [{
+            name: 'Posted',
+            data:[44, 55, 41, 67, 22, 43, 38, 54, 65, 36, 57, 64],
+        },{
+            name: 'Not Sent',
+            data: [11, 2, 15, 4, 9, 8, 5, 14, 6, 8, 10, 11],
+        },{
+            name: 'Schedule',
+            data: [21, 25, 15, 18, 16, 19, 23, 15, 16, 15, 18, 19],
+        }],
+        xaxis: {
+            categories : ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct' ]
+
+        },
+        legend: {
+            position: 'top',
+            offsetY: 0
+        },
+        fill: {
+            opacity: 1
+        },
+    }
+
+    var chart = new ApexCharts(
+        document.querySelector("#chart"),
+        options
+    );
+
+    chart.render();
+</script>
+
+<script>
+    function generateData(count, yrange) {
+        var i = 0;
+        var series = [];
+        while (i < count) {
+            var x = (i+1).toString();
+            var y = Math.floor(Math.random()*(yrange.max - yrange.min + 1)) + yrange.min;
+
+            series.push({
+                x: x,
+                y: y
+            });
+            i++;
+        }
+        return series;
+    }
+
+    var options = {
+        chart: {
+            height: 350,
+            type: 'heatmap',
+        },
+        dataLabels: {
+            enabled: false
+        },
+        plotOptions: {
+            heatmap: {
+                colorScale: {
+                ranges: [{
+                        from: 0,
+                        to: 25,
+                        name: 'low',
+                        color: '#FFB9B9'
+                    },{
+                        from: 26,
+                        to: 50,
+                        name: 'medium',
+                        color: '#ff4545'
+                    },{
+                        from: 51,
+                        to: 75,
+                        name: 'high',
+                        color: '#E80000'
+                    },{
+                        from: 76,
+                        to: 100,
+                        name: 'extreme',
+                        color: '#A30000'
+                    }]
+            },
+            },
+        },
+        series: [{
+                    name: 'Mon',
+                    data: generateData(18, {
+                        min: 0,
+                        max: 100
+                    })
+                },
+                {
+                    name: 'Tuse',
+                    data: generateData(18, {
+                        min: 0,
+                        max: 100
+                    })
+                },
+                {
+                    name: 'Wed',
+                    data: generateData(18, {
+                        min: 0,
+                        max: 100
+                    })
+                },
+                {
+                    name: 'Thurs',
+                    data: generateData(18, {
+                        min: 0,
+                        max: 100
+                    })
+                },
+                {
+                    name: 'Fri',
+                    data: generateData(18, {
+                        min: 0,
+                        max: 100
+                    })
+                },
+                {
+                    name: 'Sat',
+                    data: generateData(18, {
+                        min: 0,
+                        max: 100
+                    })
+                },
+                {
+                    name: 'Sun',
+                    data: generateData(18, {
+                        min: 0,
+                        max: 90
+                    })
+                }],
+    }
+
+    var heatmap = new ApexCharts(
+        document.querySelector("#heatmap"),
+        options
+    );
+
+    heatmap.render();
+</script>
+<script>
+    var options = {
+    chart: {
+        height: 350,
+        type: 'radialBar',
+    },
+    plotOptions: {
+        radialBar: {
+            dataLabels: {
+                name: {
+                    fontSize: '22px',
+                },
+                value: {
+                    fontSize: '16px',
+                },
+                total: {
+                    show: true,
+                    label: 'Total',
+                    formatter: function (w) {
+                        return 320
+                    }
+                }
+            }
+        }
+    },
+    series: [18,15,67],
+    labels: ['Schedule', 'Not Sent', 'Posts'],
+    colors: ['#6610f2', '#FE4D2E', '#20c997' ],
+    }
+
+    var pieChart = new ApexCharts(
+        document.querySelector("#pieChart"),
+        options
+    );
+
+    pieChart.render();
+ 
+</script>
 <!-- Main Js -->
 <script src="../../assets/js/panel/main.js"></script>
 
