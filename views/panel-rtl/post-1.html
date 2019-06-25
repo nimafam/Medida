@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Required Met tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+    <title>Posts</title>
+
+    <!-- Bootstrap 4.0 CSS -->
+    <!-- Add crossorigin="anonymous" for Host stage-->
+    <link rel="stylesheet" href="../../assets/css/bootstrap/bootstrap.min.css"/>
+
+    <!-- Public Stylesheet -->
+    <link rel="stylesheet" href="../../assets/css/admin-panel.css"/>
+
+    <!-- Perfect scrollbar -->
+    <link rel="stylesheet" href="../../assets/css/perfect-scrollbar.css"/>
+    <!-- RTL Direction-->
+    <link rel="stylesheet" href="../../assets/css/rtl.css"/>
+
+    <!-- Material Font Icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+</head>
+<body>
+<div class="page-wrapper">
+    <div class="content-wrapper">
+        <div class="page-sidebar custom-scroll ps ps--active-y" id="sidebar">
+
+            <div class="sidebar-header">
+                <a class="sidebar-brand" href="./dashboard-1.html">Medida.</a>
+                <a class="sidebar-brand-mini" href="./dashboard-1.html">Md</a>
+            </div>
+
+            <ul class="sidebar-menu metismenu">
+                <li>
+                    <a href="./dashboard-1.html" aria-expanded="false">
+                        <i class="sidebar-item-icon material-icons">explorer</i>
+                        <span class="nav-label">پیشخوان</span>
+                    </a>
+                </li>
+
+                <li class="heading">
+                    <span class="nav-label">اصلی</span>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" aria-expanded="false">
+                        <i class="sidebar-item-icon material-icons">subtitles</i>
+                        <span class="nav-label">پست‌ها</span>
+                        <i class="arrow material-icons">keyboard_arrow_right</i>
+                    </a>
+                    <ul class="nav-2-level mm-collapse">
+                        <li>
+                            <a href="./post-1.html">پست جدید</a>
+                        </li>
+                        <li>
+                            <a href="./all-posts.html">تمامی پست‌ها</a>
+                        </li>
+                        <li>
+                            <a href="./media-1.html">مدیا</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./analytics/analytics-1.html" aria-expanded="false">
+                        <i class="sidebar-item-icon material-icons">timeline</i>
+                        <span class="nav-label">تحلیل پروفایل</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./calendar-1.html" aria-expanded="false">
+                        <i class="sidebar-item-icon material-icons">date_range</i>
+                        <span class="nav-label">تقویم</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./captions-1.html" aria-expanded="false">
+                        <i class="sidebar-item-icon material-icons">short_text</i>
+                        <span class="nav-label">کپشن‌ها</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./account-1.html" aria-expanded="false">
+                        <i class="sidebar-item-icon material-icons">supervised_user_circle</i>
+                        <span class="nav-label">حساب‌های کاربری</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./cahrt-1.html" aria-expanded="false">
+                        <i class="sidebar-item-icon material-icons">equalizer</i>
+                        <span class="nav-label">آمار</span>
+                    </a>
+                </li>
+                <li class="heading">
+                    <span class="nav-label">تنظیمات</span>
+                </li>
+                <li>
+                    <a href="./setting-1.html" aria-expanded="false">
+                        <i class="sidebar-item-icon material-icons">settings</i>
+                        <span class="nav-label">تنظیمات</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="p-4 mb-4 media align-items-center position-absolute" style="bottom: 0;">
+                <img src="../../assets/images/man.png" width="36" class="rounded-circle mr-3"/>
+                <div class="media-body">
+                    <a href="./profile.html">
+                        <h5 class="mb-1">Jonathan Due</h5>
+                        <div class="font-11 text-muted">Premuim</div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="content-area">
+            <nav>
+                <a class="nav-link navbar-icon sidebar-toggler" id="sidebar-toggler" href="#">
+                    <span class="material-icons">reorder</span>
+                </a>
+
+            </nav>
+            <div class="page-content fade-in-up">
+                <div class="page-heading">
+
+                    <div class="page-breadcrumb">
+                        <h1 class="page-title page-title-sep">New Posts</h1>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="dashboard-1.html">
+                                    <i class="icon-home font-20"></i>
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                Posts
+                            </li>
+                            <li class="breadcrumb-item">
+                                New Post
+                            </li>
+                        </ol>
+                    </div>
+
+
+                    <div class="subheader_daterange dropdown" id="subheader_daterange">
+                            <span class="subheader-daterange-label">
+                                <span class="subheader-daterange-title">
+                                    <i class="icon-social-instagram"></i>
+                                </span>
+                                <span class="subheader-daterange-date">
+                                    @nima_mirkhani
+                                </span>
+                            </span>
+                        <a class="btn btn-floating btn-sm rounded-0 dropdown-toggle no-arrow megamenu-link" href="#0"
+                           data-toggle="dropdown">
+                            <i class="material-icons">keyboard_arrow_down</i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right nav-megamenu" style="min-width: 400px">
+                            <div class="row m-0">
+                                <div class="col-6">
+                                    <a class="mega-menu-item media align-items-center disabled" href="#">
+                                        <img src="../../assets/images/man.png" class="rounded-circle p-4" alt="image"
+                                             width="256"/>
+                                        <div class="media-body text-white">
+                                            <h5 class="mb-1 text-center ltr text-white">@john_dou</h5>
+                                            <i class="ti-instagram text-center font-11 text-white"></i> instagram
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a class="mega-menu-item media align-items-center bg-success" href="#">
+                                        <img src="../../assets/images/man.png" class="rounded-circle p-4" alt="image"
+                                             width="256"/>
+                                        <div class="media-body text-white">
+                                            <h5 class="mb-1 text-center ltr text-white">@john_dou</h5>
+                                            <i class="ti-instagram text-center font-11 text-white"></i> instagram
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a class="mega-menu-item media align-items-center disabled" href="#">
+                                        <img src="../../assets/images/man.png" class="rounded-circle p-4" alt="image"
+                                             width="256"/>
+                                        <div class="media-body text-white">
+                                            <h5 class="mb-1 text-center ltr text-white">@john_dou</h5>
+                                            <i class="ti-instagram text-center font-11 text-white"></i> instagram
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a class="mega-menu-item media align-items-center disabled" href="#">
+                                        <img src="../../assets/images/man.png" class="rounded-circle p-4" alt="image"
+                                             width="256"/>
+                                        <div class="media-body text-white">
+                                            <h5 class="mb-1 text-center ltr text-white">@john_dou</h5>
+                                            <i class="ti-instagram text-center font-11 text-white"></i> instagram
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div>
+                    <div class="row">
+                        <div class="col-md-10 mx-auto">
+                            <div class="card card-fullheight">
+
+                                <div class="card-body">
+                                    <h5 class="box-title text-primary">Adding New Post</h5>
+
+                                    <form class="circle-steps wizard clearfix" id="form-wizard" action="javascript:;"
+                                          novalidate="novalidate">
+
+                                        <h6>Instagram</h6>
+                                        <fieldset>
+                                            <h3 class="mb-4">Choose your Account</h3>
+                                            <div class="form-group mb-4">
+                                                <div class="input-group-icon input-group-icon-left">
+                                                    <span class="input-icon input-icon-left">
+                                                        <i class="ti-instagram"></i>
+                                                    </span>
+                                                    <select class="form-control ltr" style="height: 50px" title="account">
+                                                        <option>Please Choose an account</option>
+                                                        <option>@sinalef.s</option>
+                                                        <option>@nima_mirkhani</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+
+                                        <h6>Captions</h6>
+                                        <fieldset>
+                                            <h3 class="mb-4">Write done caption</h3>
+                                            <label for="caption"></label>
+                                            <textarea class="form-control" name="caption" id="caption"></textarea>
+                                        </fieldset>
+
+                                        <h6>Post Type</h6>
+                                        <fieldset>
+
+                                        </fieldset>
+
+                                        <h6>Schedule</h6>
+                                        <fieldset>
+
+                                        </fieldset>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="preloader-backdrop">
+    <div class="page-preloader">Loading</div>
+</div>
+
+<!-- Required Javascript -->
+<script src="../../assets/js/jquery-3.4.1.min.js"></script>
+
+<!-- Optional Javascript-->
+<!-- jQuery first, then Potest.select2r.js, then Bootstrap JS -->
+<script src="../../assets/js/popper.min.js"></script>
+<script src="../../assets/js/bootstrap/bootstrap.min.js"></script>
+
+<script src="../../assets/js/validation/jquery.validate.min.js"></script>
+<script src="../../assets/js/validation/localization/messages_fa.min.js"></script>
+<script src="../../assets/js/jquery-steps/jquery.steps.min.js"></script>
+
+
+<script>
+    var form = $("#form-wizard").show();
+
+    form.steps({
+        headerTag: "h6",
+        bodyTag: "fieldset",
+        transitionEffect: "slideLeft",
+        titleTemplate: '<span class="step-number">#index#</span> #title#',
+        loadingTemplate: '<span class="spinner"></span> #text#',
+        saveState: true,
+        stepsOrientation: "vertical",
+//        labels: {
+//            current: "مرحله جاری:",
+//            pagination: "صفحه‌بندی",
+//            finish: "پایان",
+//            next: "بعدی",
+//            previous: "قبلی",
+//            loading: "در حال بارگذاری ..."
+//        },
+        onStepChanging: function (event, currentIndex, newIndex) {
+            // Always allow going backward even if the current step contains invalid fields!
+            if (currentIndex > newIndex) {
+                return true;
+            }
+            // Clean up if user went backward before
+            if (currentIndex < newIndex) {
+                // To remove error styles
+                $(".body:eq(" + newIndex + ") label.invalid-feedback", form).remove();
+                $(".body:eq(" + newIndex + ") .invalid-feedback", form).removeClass(".invalid-feedback");
+            }
+            // Disable validation on fields that are disabled or hidden.
+            form.validate().settings.ignore = ":disabled,:hidden";
+            // Start validation; Prevent going forward if false
+            return form.valid();
+        },
+        onFinishing: function (event, currentIndex) {
+            form.validate().settings.ignore = ":disabled";
+            return form.valid();
+        },
+        onFinished: function (event, currentIndex) {
+            alert("Submitted!");
+        }
+    }).validate({
+        errorPlacement: function errorPlacement(error, element) {
+            error.insertAfter(element);
+        },
+        errorClass: 'invalid-feedback',
+        validClass: 'valid-feedback',
+        highlight: function (e) {
+            $(e).addClass('is-invalid').removeClass('is-valid');
+        },
+        unhighlight: function (e) {
+            $(e).removeClass('is-invalid').addClass('in-valid');
+        }
+
+    });
+
+//
+//    $('.steps').addClass('ltr');
+
+</script>
+
+<!-- Perfect Scrollbar JS -->
+<script src="../../assets/js/perfect-scrollbar.js"></script>
+
+<!-- Metismenu JS -->
+<script src="../../assets/js/metismenu.min.js"></script>
+
+<!-- Main Js -->
+<script src="../../assets/js/panel/main.js"></script>
+
+</body>
+</html>

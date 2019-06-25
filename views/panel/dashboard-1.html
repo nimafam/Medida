@@ -17,8 +17,6 @@
 
     <!-- Perfect scrollbar -->
     <link rel="stylesheet" href="../../assets/css/perfect-scrollbar.css"/>
-    <!-- RTL Direction-->
-    <link rel="stylesheet" href="../../assets/css/rtl.css"/>
 
     <!-- Material Font Icon-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -200,7 +198,126 @@
 
                 </div>
 
-                <div></div>
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body bg-primary-800">
+                                    <h6 class="mb-3 font-15 text-white font-weight-normal">Followers</h6>
+                                    <div class="h2 mb-0 text-white font-weight-normal">
+                                        <i class="ti-arrow-up font-11"></i> 844
+                                    </div>
+                                    <i class="ti-heart data-widget-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body bg-primary-700">
+                                    <h6 class="mb-3 font-15 text-white font-weight-normal">Following</h6>
+                                    <div class="h2 mb-0 text-white font-weight-normal">
+                                        13
+                                    </div>
+                                    <i class="ti-star data-widget-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body bg-primary-700">
+                                    <h6 class="mb-3 font-15 text-white font-weight-normal">Uploads</h6>
+                                    <div class="h2 mb-0 text-white font-weight-normal">
+                                        <i class="ti-arrow-up font-11"></i> 103
+                                    </div>
+                                    <i class="ti-cloud-up data-widget-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div id="follows"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="box-title text-primary">Resources Of your Profile</h5>
+                                    <div id="chart"></div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body mt-4">
+                                    <div class="media">
+                                        <span class="position-relative d-inline-block mr-4">
+                                            <img class="rounded-circle"
+                                                 src="https://scontent-dus1-1.cdninstagram.com/vp/733046f3ff557bf185f9661647a64d80/5D947525/t51.2885-19/s150x150/56182694_387310291859571_7104286815695142912_n.jpg?_nc_ht=scontent-dus1-1.cdninstagram.com"
+                                                 alt="image" width="100">
+                                            <span class="badge-point badge-success avatar-badge"
+                                                  style="bottom: 5px;right: 14px;height: 14px;width: 14px;"></span>
+                                        </span>
+                                        <div class="media-body mt-5">
+                                            <div class="h6">Daften Advertisement</div>
+                                            <div class="text-muted">
+                                                <a href="https://instagram.com/daftein">@daftien</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card border-0 shadow-sm mb-4">
+                                <div class="card-body">
+                                    <img class="rounded-lg mb-4" src="../../assets/images/upload/annegien-schilling.jpg" alt="image">
+
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <div class="flexbox">
+                                        <span class="text-muted font-13">Dec 22 2018</span>
+                                        <span><i class="ti-heart text-danger"></i> 45</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card border-0 shadow-sm mb-4">
+                                <div class="card-body">
+                                    <img class="rounded-lg mb-4" src="../../assets/images/upload/download.jpg" alt="image">
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <div class="flexbox">
+                                        <span class="text-muted font-13">Dec 22 2018</span>
+                                        <span><i class="ti-heart text-danger"></i> 100</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card border-0 shadow-sm mb-4">
+                                <div class="card-body">
+                                    <img class="rounded-lg mb-4" src="../../assets/images/upload/images.jpg" alt="image">
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <div class="flexbox">
+                                        <span class="text-muted font-13">Dec 22 2018</span>
+                                        <span><i class="ti-heart text-danger"></i> 874</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
@@ -214,13 +331,96 @@
 <script src="../../assets/js/jquery-3.4.1.min.js"></script>
 
 <!-- Optional Javascript-->
-<!-- jQuery first, then Potest.jsr.js, then Bootstrap JS -->
+<!-- jQuery first, then Potest.select2r.js, then Bootstrap JS -->
 <script src="../../assets/js/popper.min.js"></script>
 <script src="../../assets/js/bootstrap/bootstrap.min.js"></script>
 
 <!-- Perfect Scrollbar JS -->
 <script src="../../assets/js/perfect-scrollbar.js"></script>
+<!-- ApexCharts JS-->
+<script src="../../assets/js/appex-charts/apexcharts.min.js"></script>
 
+<script>
+    var options = {
+        chart: {
+            height: 450,
+            type: 'area'
+        },
+        dataLabels: {
+            enabled: true
+        },
+        stroke: {
+            curve: 'smooth'
+        },
+        series: [{
+            name: 'Followers',
+            data: [31, 40, 28, 51, 42, 109, 100]
+        }, {
+            name: 'Following',
+            data: [11, 32, 45, 32, 34, 52, 41]
+        }, {
+            name: 'Avg. rate of participation',
+            data: [15.3, 45.5, 37.8, 26.1, 75.8, 91.4, 65.8]
+        }],
+        xaxis: {
+            type: 'datetime',
+            categories: ["2018-09-19T00:00:00", "2018-09-19T01:30:00", "2018-09-19T02:30:00", "2018-09-19T03:30:00", "2018-09-19T04:30:00", "2018-09-19T05:30:00", "2018-09-19T06:30:00"],
+        },
+        tooltip: {
+            x: {
+                format: 'dd/MM/yy HH:mm'
+            }
+        }
+    };
+
+    var follow = new ApexCharts(
+        document.querySelector('#follows'),
+        options
+    );
+
+    follow.render();
+
+</script>
+
+<script>
+    var options = {
+        chart: {
+            height: 200,
+            type: 'radialBar',
+        },
+        plotOptions: {
+            radialBar: {
+                dataLabels: {
+                    name: {
+                        fontSize: '18px',
+                    },
+                    value: {
+                        fontSize: '14px',
+                    },
+                    total: {
+                        show: true,
+                        label: 'Total',
+                        formatter: function (w) {
+                            // By default this function returns the average of all series. The below is just an example to show the use of custom formatter function
+                            return 300 +'MB'
+                        }
+                    }
+                }
+            }
+        },
+        series: [44, 55, 67],
+        labels: ['Usage', 'Images', 'Video'],
+
+    }
+
+    var chart = new ApexCharts(
+        document.querySelector("#chart"),
+        options
+    );
+
+    chart.render();
+
+</script>
 <!-- Metismenu JS -->
 <script src="../../assets/js/metismenu.min.js"></script>
 

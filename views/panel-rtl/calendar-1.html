@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Required Met tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+    <title>Calendar</title>
+
+    <!-- Bootstrap 4.0 CSS -->
+    <!-- Add crossorigin="anonymous" for Host stage-->
+    <link rel="stylesheet" href="../../assets/css/bootstrap/bootstrap.min.css"/>
+
+    <!-- Public Stylesheet -->
+    <link rel="stylesheet" href="../../assets/css/admin-panel.css"/>
+
+    <!-- Perfect scrollbar -->
+    <link rel="stylesheet" href="../../assets/css/perfect-scrollbar.css"/>
+    <!-- RTL Direction-->
+    <link rel="stylesheet" href="../../assets/css/rtl.css"/>
+
+    <!-- Material Font Icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <!-- Full Calander -->
+    <link href="../../assets/css/fullcalendar/fullcalendar.min.css" rel="stylesheet">
+    <link href="../../assets/css/fullcalendar/fullcalendar.print.css" media="print" rel="stylesheet">
+    <link href="../../assets/css/toastr/toastr.min.css" rel="stylesheet">
+    <link href="../../assets/css/datetimepicker/bootstrap-datepicker.min.css" rel="stylesheet">
+    <link href="../../assets/css/fullcalendar/plugins/main.min.css" rel="stylesheet">
+
+
+</head>
+<body>
+<div class="page-wrapper">
+    <div class="content-wrapper">
+        <div class="page-sidebar custom-scroll ps ps--active-y" id="sidebar">
+
+            <div class="sidebar-header">
+                <a class="sidebar-brand" href="./dashboard-1.html">Medida.</a>
+                <a class="sidebar-brand-mini" href="./dashboard-1.html">Md</a>
+            </div>
+
+            <ul class="sidebar-menu metismenu">
+                <li>
+                    <a href="./dashboard-1.html" aria-expanded="false">
+                        <i class="sidebar-item-icon material-icons">explorer</i>
+                        <span class="nav-label">پیشخوان</span>
+                    </a>
+                </li>
+
+                <li class="heading">
+                    <span class="nav-label">اصلی</span>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" aria-expanded="false">
+                        <i class="sidebar-item-icon material-icons">subtitles</i>
+                        <span class="nav-label">پست‌ها</span>
+                        <i class="arrow material-icons">keyboard_arrow_right</i>
+                    </a>
+                    <ul class="nav-2-level mm-collapse">
+                        <li>
+                            <a href="./post-1.html">پست جدید</a>
+                        </li>
+                        <li>
+                            <a href="./all-posts.html">تمامی پست‌ها</a>
+                        </li>
+                        <li>
+                            <a href="./media-1.html">مدیا</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./analytics/analytics-1.html" aria-expanded="false">
+                        <i class="sidebar-item-icon material-icons">timeline</i>
+                        <span class="nav-label">تحلیل پروفایل</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./calendar-1.html" aria-expanded="false">
+                        <i class="sidebar-item-icon material-icons">date_range</i>
+                        <span class="nav-label">تقویم</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./captions-1.html" aria-expanded="false">
+                        <i class="sidebar-item-icon material-icons">short_text</i>
+                        <span class="nav-label">کپشن‌ها</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./account-1.html" aria-expanded="false">
+                        <i class="sidebar-item-icon material-icons">supervised_user_circle</i>
+                        <span class="nav-label">حساب‌های کاربری</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./cahrt-1.html" aria-expanded="false">
+                        <i class="sidebar-item-icon material-icons">equalizer</i>
+                        <span class="nav-label">آمار</span>
+                    </a>
+                </li>
+                <li class="heading">
+                    <span class="nav-label">تنظیمات</span>
+                </li>
+                <li>
+                    <a href="./setting-1.html" aria-expanded="false">
+                        <i class="sidebar-item-icon material-icons">settings</i>
+                        <span class="nav-label">تنظیمات</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="p-4 mb-4 media align-items-center position-absolute" style="bottom: 0;">
+                <img src="../../assets/images/man.png" width="36" class="rounded-circle mr-3"/>
+                <div class="media-body">
+                    <a href="./profile.html">
+                        <h5 class="mb-1">Jonathan Due</h5>
+                        <div class="font-11 text-muted">Premuim</div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="content-area">
+            <nav>
+                <a class="nav-link navbar-icon sidebar-toggler" id="sidebar-toggler" href="#">
+                    <span class="material-icons">reorder</span>
+                </a>
+
+            </nav>
+            <div class="page-content fade-in-up">
+                <div class="page-heading">
+
+                    <div class="page-breadcrumb">
+                        <h1 class="page-title page-title-sep">Calendar</h1>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="dashboard-1.html">
+                                    <i class="icon-home font-20"></i>
+                                </a>
+                            </li>
+                        </ol>
+                    </div>
+
+
+                    <div class="subheader_daterange dropdown" id="subheader_daterange">
+                            <span class="subheader-daterange-label">
+                                <span class="subheader-daterange-title">
+                                    <i class="icon-social-instagram"></i>
+                                </span>
+                                <span class="subheader-daterange-date">
+                                    @nima_mirkhani
+                                </span>
+                            </span>
+                        <a class="btn btn-floating btn-sm rounded-0 dropdown-toggle no-arrow megamenu-link" href="#0"
+                           data-toggle="dropdown">
+                            <i class="material-icons">keyboard_arrow_down</i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right nav-megamenu" style="min-width: 400px">
+                            <div class="row m-0">
+                                <div class="col-6">
+                                    <a class="mega-menu-item media align-items-center disabled" href="#">
+                                        <img src="../../assets/images/man.png" class="rounded-circle p-4" alt="image"
+                                             width="256"/>
+                                        <div class="media-body text-white">
+                                            <h5 class="mb-1 text-center ltr text-white">@john_dou</h5>
+                                            <i class="ti-instagram text-center font-11 text-white"></i> instagram
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a class="mega-menu-item media align-items-center bg-success" href="#">
+                                        <img src="../../assets/images/man.png" class="rounded-circle p-4" alt="image"
+                                             width="256"/>
+                                        <div class="media-body text-white">
+                                            <h5 class="mb-1 text-center ltr text-white">@john_dou</h5>
+                                            <i class="ti-instagram text-center font-11 text-white"></i> instagram
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a class="mega-menu-item media align-items-center disabled" href="#">
+                                        <img src="../../assets/images/man.png" class="rounded-circle p-4" alt="image"
+                                             width="256"/>
+                                        <div class="media-body text-white">
+                                            <h5 class="mb-1 text-center ltr text-white">@john_dou</h5>
+                                            <i class="ti-instagram text-center font-11 text-white"></i> instagram
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a class="mega-menu-item media align-items-center disabled" href="#">
+                                        <img src="../../assets/images/man.png" class="rounded-circle p-4" alt="image"
+                                             width="256"/>
+                                        <div class="media-body text-white">
+                                            <h5 class="mb-1 text-center ltr text-white">@john_dou</h5>
+                                            <i class="ti-instagram text-center font-11 text-white"></i> instagram
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-header bg-white">
+                                    <h5 class="box-title">Captions</h5>
+                                </div>
+                                <div class="card-body p-3">
+                                    <div id="external-events">
+                                        <div class="ex-event" data-class="fc-event-primary">
+                                            <i class="badge-point badge-primary mr-3"></i>
+                                            Business
+                                        </div>
+                                        <div class="ex-event" data-class="fc-event-info">
+                                            <i class="badge-point badge-info mr-3"></i>
+                                            Private
+                                        </div>
+                                        <div class="ex-event" data-class="fc-event-warning">
+                                            <i class="badge-point badge-warning mr-3"></i>
+                                            Event
+                                        </div>
+                                        <div class="ex-event" data-class="fc-event-success">
+                                            <i class="badge-point badge-success mr-3"></i>
+                                            Birthday
+                                        </div>
+                                        <div class="ex-event" data-class="fc-event-danger">
+                                            <i class="badge-point badge-danger mr-3"></i>
+                                            Ads
+                                        </div>
+
+                                        <p class="ml-2 mt-4">
+                                            <label class="checkbox checkbox-success">
+                                                <span>Remove after drop</span>
+                                                <input type="checkbox" id="drop-remove">
+                                            </label>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-9">
+                            <div class="card card-fullheight">
+                                <div class="card-header bg-white">
+                                    <h5 class="box-title">Calendar</h5>
+                                    <button class="btn btn-danger btn-rounded my-3" data-toggle="modal"
+                                            data-target="#new-event-modal">
+                                        <span class="btn-icon">
+                                            <i class="icon-plus"></i>
+                                            new post
+                                        </span>
+                                    </button>
+                                </div>
+
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between mb-5">
+                                        <div id="calendar"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Begin: New Event Modal -->
+                            <div class="modal fade" id="new-event-modal" tabindex="-1" role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <form class="modal-content form-horizontal" id="newEventForm" action="javascript:;"
+                                          novalidate="novalidate">
+                                        <div class="modal-header p-4">
+                                            <h5 class="modal-title">New Post</h5>
+                                            <button class="close font-10" type="button" data-dismiss="modal"
+                                                    aria-label="close">
+                                                <span class="font-15" aria-hidden="true">x</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body p-4">
+
+                                            <div class="form-group mb-4">
+                                                <label class="text-muted mb-3">Captions</label>
+
+                                                <div>
+                                                    <label class="radio radio-outline-primary radio-inline check-single">
+                                                        <input type="radio" name="category" checked=""
+                                                               value="fc-event-primary">
+                                                        <span></span>
+                                                    </label>
+                                                    <label class="radio radio-outline-warning radio-inline check-single">
+                                                        <input type="radio" name="category" value="fc-event-warning">
+                                                        <span></span>
+                                                    </label>
+                                                    <label class="radio radio-outline-success radio-inline check-single">
+                                                        <input type="radio" name="category" value="fc-event-success">
+                                                        <span></span>
+                                                    </label>
+                                                    <label class="radio radio-outline-danger radio-inline check-single">
+                                                        <input type="radio" name="category" value="fc-event-danger">
+                                                        <span></span>
+                                                    </label>
+                                                    <label class="radio radio-outline-info radio-inline check-single">
+                                                        <input type="radio" name="category" value="fc-event-info">
+                                                        <span></span>
+                                                    </label>
+                                                </div>
+
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="md-form mb-1">
+                                                    <input class="md-form-control" id="new-event-title" type="text"
+                                                           name="title" required="">
+                                                    <label>Title</label>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-6">
+                                                    <div class="input-group-icon input-group-icon-right mb-4">
+                                                        <div class="md-form mb-1">
+                                                            <input class="md-form-control m-0 datepicker date"
+                                                                   id="new-event-start" name="start" value=""
+                                                                   type="text" required="">
+                                                            <label class="active">Start:</label>
+                                                            <span class="input-icon input-icon-right">
+                                                                <i class="ti-calendar"></i>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="input-group-icon input-group-icon-right mb-4">
+                                                        <div class="md-form mb-1">
+                                                            <input class="md-form-control m-0 datepicker date"
+                                                                   id="new-event-end" name="end" value="" type="text">
+                                                            <label class="active">End:</label>
+                                                            <span class="input-icon input-icon-right">
+                                                                <i class="ti-calendar"></i>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group mb-4">
+                                                <label class="ui-switch switch-solid">
+                                                    <input id="new-event-allDay" type="checkbox" checked="">
+                                                    <span class="ml-3"></span>
+                                                    Whole Day
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="modal-footer justify-content-start p-4">
+                                            <button class="btn btn-primary btn-rounded" id="addEventButton"
+                                                    type="submit">
+                                                Add new Post
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- End: New Event Modal -->
+                            <!-- Begin: Edit Event Modal -->
+                            <div class="modal fade" id="event-modal" tabindex="-1" role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-dialog" role="document">
+                                        <form class="modal-content form-horizontal" id="eventForm" action="javascript:;" novalidate="novalidate">
+                                            <div class="modal-header p-4">
+                                                <h5 class="modal-title">Edit Post</h5>
+                                                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body p-4">
+                                                <div class="form-group mb-4">
+                                                    <label class="text-muted mb-3">Captions</label>
+                                                    <div>
+                                                        <label class="radio radio-outline-primary radio-inline check-single">
+                                                            <input type="radio" name="category" checked="" value="fc-event-primary">
+                                                            <span></span>
+                                                        </label>
+                                                        <label class="radio radio-outline-warning radio-inline check-single">
+                                                            <input type="radio" name="category" value="fc-event-warning">
+                                                            <span></span>
+                                                        </label>
+                                                        <label class="radio radio-outline-success radio-inline check-single">
+                                                            <input type="radio" name="category" value="fc-event-success">
+                                                            <span></span>
+                                                        </label>
+                                                        <label class="radio radio-outline-danger radio-inline check-single">
+                                                            <input type="radio" name="category" value="fc-event-danger">
+                                                            <span></span>
+                                                        </label>
+                                                        <label class="radio radio-outline-info radio-inline check-single">
+                                                            <input type="radio" name="category" value="fc-event-info">
+                                                            <span></span>
+                                                        </label>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="mb-3">
+                                                    <div class="md-form mb-1">
+                                                        <input class="md-form-control" id="event-title" type="text" name="title" required="">
+                                                        <label class="active">Title</label>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <div class="col-6">
+                                                        <div class="input-group-icon input-group-icon-right mb-4">
+                                                            <div class="md-form mb-1">
+                                                                <input class="md-form-control m-0 datepicker date" id="event-start" name="start" value="" type="text" required="">
+                                                                <label class="active">Start:</label>
+                                                                <span class="input-icon input-icon-right">
+                                                        <i class="ti-calendar"></i>
+                                                    </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="input-group-icon input-group-icon-right mb-4">
+                                                            <div class="md-form mb-1">
+                                                                <input class="md-form-control m-0 datepicker date" id="event-end" name="end" value="" type="text">
+                                                                <label class="active">End:</label>
+                                                                <span class="input-icon input-icon-right">
+                                                        <i class="ti-calendar"></i>
+                                                    </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group mb-4 float-right"><label class="ui-switch switch-solid">
+                                                    <input id="event-allDay" type="checkbox">
+                                                    <span class="ml-3"></span> Whole Day</label>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer justify-content-between p-4">
+                                                <button class="btn btn-primary btn-rounded" id="editEventButton" type="submit">Edit</button>
+                                                <button class="btn btn-danger btn-rounded" id="deleteEventButton" data-dismiss="modal">
+                                                <span class="btn-icon">
+                                                    <i class="ti-trash"></i>
+                                                    Remove
+                                                </span>
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End: Edit Event Modal -->
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="preloader-backdrop">
+    <div class="page-preloader">Loading</div>
+</div>
+
+<!-- Required Javascript -->
+<script src="../../assets/js/jquery-3.4.1.min.js"></script>
+<script src="../../assets/js/fullcalendar/lib/jquery-ui.min.js"></script>
+
+
+<!-- Optional Javascript-->
+<!-- jQuery first, then Potest.select2r.js, then Bootstrap JS -->
+<script src="../../assets/js/popper.min.js"></script>
+<script src="../../assets/js/bootstrap/bootstrap.min.js"></script>
+
+<!-- Validation -->
+<script src="../../assets/js/validation/jquery.validate.min.js"></script>
+<script src="../../assets/js/validation/localization/messages_fa.min.js"></script>
+
+<!-- Full Calendar JS-->
+<script src="../../assets/js/fullcalendar/lib/moment.min.js"></script>
+<script src="../../assets/js/fullcalendar/fullcalendar.min.js"></script>
+<script src="../../assets/js/datapicker/bootstrap-datepicker.js"></script>
+<script src="../../assets/js/toastr/toastr.min.js"></script>
+<script src="../../assets/js/panel/calendar.js"></script>
+
+<!-- Perfect Scrollbar JS -->
+<script src="../../assets/js/perfect-scrollbar.js"></script>
+
+<!-- Metismenu JS -->
+<script src="../../assets/js/metismenu.min.js"></script>
+
+<!-- Main Js -->
+<script src="../../assets/js/panel/main.js"></script>
+
+</body>
+</html>

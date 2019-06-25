@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Required Met tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+    <title>All Posts</title>
+
+    <!-- Bootstrap 4.0 CSS -->
+    <!-- Add crossorigin="anonymous" for Host stage-->
+    <link rel="stylesheet" href="../../../assets/css/bootstrap/bootstrap.min.css"/>
+
+    <!-- Public Stylesheet -->
+    <link rel="stylesheet" href="../../../assets/css/admin-panel.css"/>
+
+    <!-- Perfect scrollbar -->
+    <link rel="stylesheet" href="../../../assets/css/perfect-scrollbar.css"/>
+    <!-- RTL Direction-->
+    <link rel="stylesheet" href="../../../assets/css/rtl.css"/>
+
+    <!-- Material Font Icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>body {
+        background-color: #eff4ff;
+    }
+
+    .auth-wrapper {
+        flex: 1 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 15px 30px 15px;
+    }
+
+    .auth-content {
+        max-width: 900px;
+        flex-basis: 900px;
+        box-shadow: 0 1px 15px 1px rgba(62, 57, 107, .07);
+    }
+
+    .home-link {
+        position: absolute;
+        left: 5px;
+        top: 10px;
+    }
+    </style>
+</head>
+<body>
+<div class="page-wrapper">
+    <div class="auth-wrapper">
+        <div class="row auth-content mx-0">
+            <div class="col-md-6 bg-white p-5">
+                <div>
+                    <div class="text-center mb-5">
+                        <h4 class="mb-3">Login to Your accaunt</h4>
+                        <div class="text-muted">Still no account?<a class="ml-2" href="sign-up.html"
+                                                                    style="border-bottom: 1px solid">Create account</a>
+                        </div>
+                    </div>
+                    <form id="login-form" action="javascript:;">
+                        <div class="form-group mb-4"><input class="form-control" type="email" name="email"
+                                                            placeholder="Enter email"></div>
+                        <div class="form-group mb-4"><input class="form-control" type="password" name="password"
+                                                            placeholder="Enter Password"></div>
+                        <div class="flexbox my-5"><label class="checkbox checkbox-primary"><input type="checkbox"
+                                                                                                  checked=""><span>Remember Me</span></label><a
+                                href="forgot-password.html">Forgot password?</a></div>
+                        <div class="text-center">
+                            <button class="btn btn-primary btn-rounded" style="min-width: 200px">LOGIN</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6 bg-danger text-white p-5 d-flex flex-column justify-content-between">
+                <h3 class="mb-0">Reidius</h3>
+                <div>
+                    <h4 class="font-40 mb-4">Join our group</h4>
+                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt</p>
+                </div>
+                <div class="flexbox font-13 text-white-50"><span>2019 © All rights reserved</span><span><a
+                        class="text-white-50" href="#" style="border-bottom: 1px solid;">About</a><a
+                        class="ml-3 text-white-50" href="#" style="border-bottom: 1px solid;">Policy</a></span></div>
+            </div>
+        </div>
+    </div>
+
+    <a class="btn btn-link home-link" href="index.html">
+        <span class="btn-icon"><i class="ti-arrow-left font-20"></i>Go Home</span>
+    </a>
+
+</div>
+
+<!-- CORE PLUGINS-->
+<script src="../../../assets/js/jquery-3.4.1.min.js"></script>
+<script src="../../../assets/js/bootstrap/bootstrap.bundle.min.js"></script><!-- PAGE LEVEL PLUGINS-->
+<script src="../../../assets/js/validation/jquery.validate.min.js"></script><!-- CORE SCRIPTS-->
+
+<script src="../../../assets/js/main.js"></script><!-- PAGE LEVEL SCRIPTS-->
+<script>
+    $(function () {
+        $('#login-form').validate({
+            rules: {
+                email: {
+                    required: true,
+                    email: true
+                },
+                password: {
+                    required: true
+                }
+            },
+            errorClass: 'invalid-feedback',
+            validClass: 'valid-feedback',
+            errorPlacement: function (error, element) {
+                if (element.hasClass('md-form-control')) {
+                    error.insertAfter(element.closest('.md-form'));
+                } else {
+                    error.insertAfter(element);
+                }
+            },
+            highlight: function (e) {
+                $(e).addClass("is-invalid").removeClass('is-valid');
+            },
+            unhighlight: function (e) {
+                $(e).removeClass("is-invalid").addClass('is-valid');
+            },
+        });
+    });
+</script>
+</body>

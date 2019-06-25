@@ -1,0 +1,1890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Required Met tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+    <title>Settings</title>
+
+    <!-- Bootstrap 4.0 CSS -->
+    <!-- Add crossorigin="anonymous" for Host stage-->
+    <link rel="stylesheet" href="../../assets/css/bootstrap/bootstrap.min.css"/>
+
+    <!-- Data Table -->
+    <link rel="stylesheet" href="../../assets/css/data_table/data_tabel.min.css"/>
+
+    <!-- Drop Zone CSS -->
+    <link rel="stylesheet" href="../../assets/css/dropzone/dropzone.min.css"/>
+
+    <!-- Bootstrap tags input CSS -->
+    <link rel="stylesheet" href="../../assets/css/bootstrap-tags/bootstrap-tagsinput.css"/>
+
+    <!-- Public Stylesheet -->
+    <link rel="stylesheet" href="../../assets/css/admin-panel.css"/>
+
+    <!-- Perfect scrollbar -->
+    <link rel="stylesheet" href="../../assets/css/perfect-scrollbar.css"/>
+
+    <!-- RTL Direction-->
+    <link rel="stylesheet" href="../../assets/css/rtl.css"/>
+
+    <!-- Material Font Icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+<div class="page-wrapper">
+    <div class="content-wrapper">
+        <div class="page-sidebar custom-scroll ps ps--active-y" id="sidebar">
+
+            <div class="sidebar-header">
+                <a class="sidebar-brand" href="./dashboard-1.html">Medida.</a>
+                <a class="sidebar-brand-mini" href="./dashboard-1.html">Md</a>
+            </div>
+
+            <ul class="sidebar-menu metismenu">
+                <li>
+                    <a href="./dashboard-1.html" aria-expanded="false">
+                        <i class="sidebar-item-icon material-icons">explorer</i>
+                        <span class="nav-label">پیشخوان</span>
+                    </a>
+                </li>
+
+                <li class="heading">
+                    <span class="nav-label">اصلی</span>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" aria-expanded="false">
+                        <i class="sidebar-item-icon material-icons">subtitles</i>
+                        <span class="nav-label">پست‌ها</span>
+                        <i class="arrow material-icons">keyboard_arrow_right</i>
+                    </a>
+                    <ul class="nav-2-level mm-collapse">
+                        <li>
+                            <a href="./post-1.html">پست جدید</a>
+                        </li>
+                        <li>
+                            <a href="./all-posts.html">تمامی پست‌ها</a>
+                        </li>
+                        <li>
+                            <a href="./media-1.html">مدیا</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./analytics/analytics-1.html" aria-expanded="false">
+                        <i class="sidebar-item-icon material-icons">timeline</i>
+                        <span class="nav-label">تحلیل پروفایل</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./calendar-1.html" aria-expanded="false">
+                        <i class="sidebar-item-icon material-icons">date_range</i>
+                        <span class="nav-label">تقویم</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./captions-1.html" aria-expanded="false">
+                        <i class="sidebar-item-icon material-icons">short_text</i>
+                        <span class="nav-label">کپشن‌ها</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./account-1.html" aria-expanded="false">
+                        <i class="sidebar-item-icon material-icons">supervised_user_circle</i>
+                        <span class="nav-label">حساب‌های کاربری</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./cahrt-1.html" aria-expanded="false">
+                        <i class="sidebar-item-icon material-icons">equalizer</i>
+                        <span class="nav-label">آمار</span>
+                    </a>
+                </li>
+                <li class="heading">
+                    <span class="nav-label">تنظیمات</span>
+                </li>
+                <li>
+                    <a href="./setting-1.html" aria-expanded="false">
+                        <i class="sidebar-item-icon material-icons">settings</i>
+                        <span class="nav-label">تنظیمات</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="p-4 mb-4 media align-items-center position-absolute" style="bottom: 0;">
+                <img src="../../assets/images/man.png" width="36" class="rounded-circle mr-3"/>
+                <div class="media-body">
+                    <a href="./profile.html">
+                        <h5 class="mb-1">Jonathan Due</h5>
+                        <div class="font-11 text-muted">Premuim</div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="content-area">
+            <nav>
+                <a class="nav-link navbar-icon sidebar-toggler" id="sidebar-toggler" href="#">
+                    <span class="material-icons">reorder</span>
+                </a>
+
+            </nav>
+            <div class="page-content fade-in-up">
+                <div class="page-heading">
+
+                    <div class="page-breadcrumb">
+                        <h1 class="page-title page-title-sep">Settings</h1>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="dashboard-1.html">
+                                    <i class="icon-home font-20"></i>
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="setting-1.html">
+                                    Settings
+                                </a>
+                            </li>
+                        </ol>
+                    </div>
+
+
+                    <div class="subheader_daterange dropdown" id="subheader_daterange">
+                            <span class="subheader-daterange-label">
+                                <span class="subheader-daterange-title">
+                                    <i class="icon-social-instagram"></i>
+                                </span>
+                                <span class="subheader-daterange-date">
+                                    @nima_mirkhani
+                                </span>
+                            </span>
+                        <a class="btn btn-floating btn-sm rounded-0 dropdown-toggle no-arrow megamenu-link" href="#0"
+                           data-toggle="dropdown">
+                            <i class="material-icons">keyboard_arrow_down</i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right nav-megamenu" style="min-width: 400px">
+                            <div class="row m-0">
+                                <div class="col-6">
+                                    <a class="mega-menu-item media align-items-center disabled" href="#">
+                                        <img src="../../assets/images/man.png" class="rounded-circle p-4" alt="image"
+                                             width="256"/>
+                                        <div class="media-body text-white">
+                                            <h5 class="mb-1 text-center ltr text-white">@john_dou</h5>
+                                            <i class="ti-instagram text-center font-11 text-white"></i> instagram
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a class="mega-menu-item media align-items-center bg-success" href="#">
+                                        <img src="../../assets/images/man.png" class="rounded-circle p-4" alt="image"
+                                             width="256"/>
+                                        <div class="media-body text-white">
+                                            <h5 class="mb-1 text-center ltr text-white">@john_dou</h5>
+                                            <i class="ti-instagram text-center font-11 text-white"></i> instagram
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a class="mega-menu-item media align-items-center disabled" href="#">
+                                        <img src="../../assets/images/man.png" class="rounded-circle p-4" alt="image"
+                                             width="256"/>
+                                        <div class="media-body text-white">
+                                            <h5 class="mb-1 text-center ltr text-white">@john_dou</h5>
+                                            <i class="ti-instagram text-center font-11 text-white"></i> instagram
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a class="mega-menu-item media align-items-center disabled" href="#">
+                                        <img src="../../assets/images/man.png" class="rounded-circle p-4" alt="image"
+                                             width="256"/>
+                                        <div class="media-body text-white">
+                                            <h5 class="mb-1 text-center ltr text-white">@john_dou</h5>
+                                            <i class="ti-instagram text-center font-11 text-white"></i> instagram
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div>
+                    <div class="bg-white">
+
+                        <ul class="nav line-tabs line-tabs-solid line-tabs-2x line-tabs-info m-0">
+                            <li class="nav-item">
+                                <a class="nav-link active show" data-toggle="tab" href="#tab-1">
+                                    <i class="ti-settings nav-tabs-icon"></i>
+                                    Main Settings
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tab-2">
+                                    <i class="ti-cloud nav-tabs-icon"></i>
+                                    Proxy
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tab-3">
+                                    <i class="ti-email nav-tabs-icon"></i>
+                                    Email Address
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tab-4">
+                                    <i class="ti-package nav-tabs-icon"></i>
+                                    Integration
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content mt-5">
+
+                        <div class="tab-pane fade active show" id="tab-1">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="card card-fullheight">
+                                            <div class="card-body">
+                                                <h5 class="box-title text-primary">Website Settings</h5>
+
+                                                <form>
+                                                    <div class="md-form mb-4">
+                                                        <input class="md-form-control" type="text">
+                                                        <label>Name</label>
+                                                    </div>
+
+                                                    <div class="md-form mb-4">
+                                                        <textarea class="md-form-control">Medida - Auto Post, Schedule & Manage your Instagram Multi Account</textarea>
+                                                        <label>Description</label>
+                                                        <small class="form-text text-info">Recommended to have 140 to
+                                                            160 characters
+                                                        </small>
+                                                    </div>
+
+                                                    <div class="md-form mb-5">
+                                                        <textarea class="md-form-control">medida, instagram, auto post, schedule, multiple accounts, social media</textarea>
+                                                        <label>Keywords</label>
+                                                    </div>
+
+                                                    <div class="form-group mt-5">
+                                                        <button class="btn btn-primary mr-2" type="submit">Save
+                                                        </button>
+                                                        <button class="btn btn-outline-secondary" type="reset">Clear
+                                                        </button>
+                                                    </div>
+
+                                                </form>
+
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="card card-fullheight">
+                                            <div class="card-body">
+                                                <h5 class="box-title text-primary">Logo Type</h5>
+
+                                                <form class="dropzone border-info dz-clickable"
+                                                      id="mydropzoneValidation" action="javascript:;">
+                                                    <div class="dz-message">
+                                                        <i class="ti-import text-info font-40"></i>
+                                                        <div class="mt-3 font-20">Drop files here or click to upload.
+                                                        </div>
+                                                        <div class="text-muted">You can add any content to the block and
+                                                            customize it to your taste.
+                                                        </div>
+                                                    </div>
+                                                </form>
+
+                                                <div style="overflow-y: scroll; height: 200px; overflow-x: hidden">
+                                                    <div class="row mt-4">
+                                                        <div class="col">
+                                                            <div>
+                                                                <img class="img-fluid mx-auto border p-3 rounded"
+                                                                     src="../../assets/images/upload/logo-1.png">
+                                                                <span class="badge badge-circle badge-light fav-icon active"><small>FAV</small></span>
+                                                                <span class="badge badge-circle badge-light logo-icon"><small>logo</small></span>
+                                                                <span class="badge badge-circle badge-danger trash-icon"><i
+                                                                        class="ti-trash"></i></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <img class="img-fluid mx-auto border p-3 rounded"
+                                                                 src="../../assets/images/upload/logo-2.png">
+                                                            <span class="badge badge-circle badge-light fav-icon"><small>FAV</small></span>
+                                                            <span class="badge badge-circle badge-light logo-icon"><small>logo</small></span>
+                                                            <span class="badge badge-circle badge-danger trash-icon"><i
+                                                                    class="ti-trash"></i></span>
+                                                        </div>
+                                                        <div class="col">
+                                                            <img class="img-fluid mx-auto border p-3 rounded"
+                                                                 src="../../assets/images/upload/logo-3.png">
+                                                            <span class="badge badge-circle badge-light fav-icon"><small>FAV</small></span>
+                                                            <span class="badge badge-circle badge-light logo-icon active"><small>logo</small></span>
+                                                            <span class="badge badge-circle badge-danger trash-icon"><i
+                                                                    class="ti-trash"></i></span>
+                                                        </div>
+                                                        <div class="col">
+                                                            <img class="img-fluid mx-auto border p-3 rounded"
+                                                                 src="../../assets/images/upload/logo-5.png">
+                                                            <span class="badge badge-circle badge-light fav-icon"><small>FAV</small></span>
+                                                            <span class="badge badge-circle badge-light logo-icon"><small>logo</small></span>
+                                                            <span class="badge badge-circle badge-danger trash-icon"><i
+                                                                    class="ti-trash"></i></span>
+
+                                                        </div>
+                                                        <div class="col">
+                                                            <img class="img-fluid mx-auto border p-3 rounded"
+                                                                 src="../../assets/images/upload/logo.png">
+                                                            <span class="badge badge-circle badge-light fav-icon"><small>FAV</small></span>
+                                                            <span class="badge badge-circle badge-light logo-icon"><small>logo</small></span>
+                                                            <span class="badge badge-circle badge-danger trash-icon"><i
+                                                                    class="ti-trash"></i></span>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row mt-4">
+                                                        <div class="col">
+                                                            <div>
+                                                                <img class="img-fluid mx-auto border p-3 rounded"
+                                                                     src="../../assets/images/upload/logo-1.png">
+                                                                <span class="badge badge-circle badge-light fav-icon active"><small>FAV</small></span>
+                                                                <span class="badge badge-circle badge-light logo-icon"><small>logo</small></span>
+                                                                <span class="badge badge-circle badge-danger trash-icon"><i
+                                                                        class="ti-trash"></i></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <img class="img-fluid mx-auto border p-3 rounded"
+                                                                 src="../../assets/images/upload/logo-2.png">
+                                                            <span class="badge badge-circle badge-light fav-icon"><small>FAV</small></span>
+                                                            <span class="badge badge-circle badge-light logo-icon"><small>logo</small></span>
+                                                            <span class="badge badge-circle badge-danger trash-icon"><i
+                                                                    class="ti-trash"></i></span>
+                                                        </div>
+                                                        <div class="col">
+                                                            <img class="img-fluid mx-auto border p-3 rounded"
+                                                                 src="../../assets/images/upload/logo-3.png">
+                                                            <span class="badge badge-circle badge-light fav-icon"><small>FAV</small></span>
+                                                            <span class="badge badge-circle badge-light logo-icon active"><small>logo</small></span>
+                                                            <span class="badge badge-circle badge-danger trash-icon"><i
+                                                                    class="ti-trash"></i></span>
+                                                        </div>
+                                                        <div class="col">
+                                                            <img class="img-fluid mx-auto border p-3 rounded"
+                                                                 src="../../assets/images/upload/logo-5.png">
+                                                            <span class="badge badge-circle badge-light fav-icon"><small>FAV</small></span>
+                                                            <span class="badge badge-circle badge-light logo-icon"><small>logo</small></span>
+                                                            <span class="badge badge-circle badge-danger trash-icon"><i
+                                                                    class="ti-trash"></i></span>
+
+                                                        </div>
+                                                        <div class="col">
+                                                            <img class="img-fluid mx-auto border p-3 rounded"
+                                                                 src="../../assets/images/upload/logo.png">
+                                                            <span class="badge badge-circle badge-light fav-icon"><small>FAV</small></span>
+                                                            <span class="badge badge-circle badge-light logo-icon"><small>logo</small></span>
+                                                            <span class="badge badge-circle badge-danger trash-icon">
+                                                                <i class="ti-trash"></i>
+                                                            </span>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END ROW -->
+
+                                <div class="row">
+
+                                    <div class="col-md-7">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h5 class="box-title text-primary">Experimental Features</h5>
+
+                                                <div class="alert alert-warning alert-bordered" role="alert">
+                                                    <strong>Warning!</strong><br>
+                                                    <p class="text-justify">
+                                                        Following features are experimental. They aren't quite ready for
+                                                        primitive which means some bugs are possible.
+                                                        <br> These features may
+                                                        change, break or disappear at any time.
+                                                    </p>
+                                                </div>
+
+
+                                                <form class="mt-4">
+                                                    <div class="form-group my-5">
+                                                        <label class="checkbox checkbox-outline-primary">
+                                                            <input type="checkbox" checked="">
+                                                            <span>Processing video</span>
+                                                        </label>
+                                                    </div>
+
+                                                    <ul class="text-muted">
+                                                        <li>
+                                                            Allows to upload video files with following new formats:
+                                                            mov, m4v, mpg
+                                                        </li>
+                                                        <li>
+                                                            Does some resize/clib operations during the upload process
+                                                        </li>
+                                                        <li>
+                                                            Requires FFMPEG/FFPROBE
+                                                        </li>
+                                                        <li>
+                                                            Uses to many server resources. Video processing might take
+                                                            too many times and RAM/CPU overload.
+                                                        </li>
+                                                    </ul>
+
+                                                    <div class="form-group my-5">
+                                                        <label class="checkbox checkbox-outline-primary">
+                                                            <input type="checkbox" checked="">
+                                                            <span>Search the post title and the first comment</span>
+                                                        </label>
+                                                    </div>
+
+                                                    <ul class="text-muted">
+                                                        <li>
+                                                            Allows to search for hashtags and users directly in caption
+                                                            and first comment inputs in the post page
+                                                        </li>
+                                                        <li>
+                                                            BUG: Doesn't work properly when an emoji used before the
+                                                            search text
+                                                        </li>
+
+                                                    </ul>
+
+                                                    <div class="form-group mt-5">
+                                                        <button class="btn btn-primary mr-2" type="submit">Save
+                                                        </button>
+                                                    </div>
+                                                </form>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-5">
+                                        <div class="card card-fullheight">
+                                            <div class="card-body">
+                                                <h5 class="box-title text-primary">Other Settings</h5>
+
+                                                <form>
+                                                    <div class="form-group mb-4">
+                                                        <div class="col-md-12">
+                                                            <label for="currency">Default Currency</label>
+                                                            <select class="form-control select2-dropdown" id="currency">
+                                                                <option></option>
+                                                                <option value="ریال">Iran Rial</option>
+                                                                <option value="تومان" selected="">Iran Toman</option>
+                                                                <option value="AUD">Australian Dollar</option>
+                                                                <option value="BRL">Brazilian Real</option>
+                                                                <option value="CAD">Canadian Dollar</option>
+                                                                <option value="CZK">Czech Koruna</option>
+                                                                <option value="DKK">Danish Krone</option>
+                                                                <option value="EUR">Euro</option>
+                                                                <option value="HKD">Hong Kong Dollar</option>
+                                                                <option value="HUF">Hungarian Forint</option>
+                                                                <option value="ILS">Israeli New Sheqel</option>
+                                                                <option value="JPY">Japanese Yen</option>
+                                                                <option value="MYR">Malaysian Ringgit</option>
+                                                                <option value="MXN">Mexican Peso</option>
+                                                                <option value="NOK">Norwegian Krone</option>
+                                                                <option value="NZD">New Zealand Dollar</option>
+                                                                <option value="PHP">Philippine Peso</option>
+                                                                <option value="PLN">Polish Zloty</option>
+                                                                <option value="GBP">Pound Sterling</option>
+                                                                <option value="SGD">Singapore Dollar</option>
+                                                                <option value="SEK">Swedish Krona</option>
+                                                                <option value="CHF">Swiss Franc</option>
+                                                                <option value="TWD">Taiwan New Dollar</option>
+                                                                <option value="THB">Thai Baht</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="md-form mt-5">
+                                                        <input class="md-form-control" type="text"
+                                                               placeholder="Enter Your Geonames">
+                                                        <label>Geonames Account</label>
+                                                        <small class="form-text text-info">
+                                                            For Better information of User locale and Set Proxy is
+                                                            required
+                                                        </small>
+                                                    </div>
+
+                                                    <div class="form-group my-5">
+                                                        <label class="checkbox checkbox-outline-primary">
+                                                            <input type="checkbox" checked="">
+                                                            <span>Required to email validation</span>
+                                                        </label>
+                                                    </div>
+
+                                                    <ul class="text-muted">
+                                                        <li>
+                                                            Enabling these settings does not affect users until their
+                                                            email addresses are updated.
+                                                        </li>
+                                                        <li>
+                                                            Users will not be allowed to use this app until they confirm
+                                                            their email address activation.
+                                                        </li>
+                                                        <li>
+                                                            These settings do not affect the management accounts.
+                                                        </li>
+                                                        <li>
+                                                            Enabling SMTP is strongly recommended.
+                                                        </li>
+                                                    </ul>
+
+                                                    <div class="form-group mt-5">
+                                                        <button class="btn btn-primary mr-2" type="submit">Save
+                                                        </button>
+                                                        <button class="btn btn-outline-secondary" type="reset">Clear
+                                                        </button>
+                                                    </div>
+
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- END: Tab-1 -->
+
+                        <!-- START: Tab-2 -->
+                        <div class="tab-pane" id="tab-2">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h5 class="box-title text-primary">Proxy Settings</h5>
+
+                                                <form>
+                                                    <div class="form-group my-5">
+                                                        <label class="checkbox checkbox-outline-primary">
+                                                            <input type="checkbox" checked="">
+                                                            <span>Activate Proxy in System</span>
+                                                        </label>
+                                                    </div>
+
+                                                    <ul class="text-muted">
+                                                        <li>
+                                                            If this option is enabled, the system will use the most
+                                                            appropriate proxy when adding a new account.
+                                                        </li>
+                                                    </ul>
+
+                                                    <div class="form-group my-5">
+                                                        <label class="checkbox checkbox-outline-primary">
+                                                            <input type="checkbox" checked="">
+                                                            <span>User Can Add their own Proxy</span>
+                                                        </label>
+                                                    </div>
+
+
+                                                    <div class="form-group mt-5">
+                                                        <button class="btn btn-primary mr-2" type="submit">Save
+                                                        </button>
+
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="card-actions float-right">
+                                                    <button class="btn btn-primary btn-rounded" data-toggle="modal"
+                                                            type="button" data-target="#newProxy">
+                                                    <span class="btn-icon">
+                                                        <i class="ti-plus"></i>
+                                                        Add New Proxy
+                                                    </span>
+                                                    </button>
+                                                </div>
+                                                <h5 class="box-title text-primary">Proxy</h5>
+
+                                                <div class="input-group-icon input-group-icon-left input-group-lg mb-4">
+                                                    <span class="input-icon input-icon-left">
+                                                        <i class="material-icons">search</i>
+                                                    </span>
+                                                    <input class="form-control border-0" id="key-search"
+                                                           placeholder="Search accounts" type="text">
+                                                </div>
+
+                                                <table class="table table-hover" id="proxy-table" style="width: 100%">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>
+                                                            <a class="text-muted font-18 mr-2" href="#" id="starred">
+                                                                <i class="material-icons">star_outline</i>
+                                                            </a>
+                                                        </th>
+                                                        <th> Proxy Address</th>
+                                                        <th> Country</th>
+                                                        <th> Action</th>
+                                                    </tr>
+                                                    </thead>
+
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <a class="text-muted font-18 mr-2" href="#">
+                                                                <i class="material-icons">star_outline</i>
+                                                            </a>
+                                                        </td>
+                                                        <td>http://192.168.1.1</td>
+                                                        <td><i class="flag-icon flag-icon-us"></i> USA</td>
+                                                        <td>
+                                                            <a class="dropdown-toggle no-arrow" data-toggle="dropdown"
+                                                               aria-expanded="false">
+                                                                <i class="material-icons">more_vert</i>
+                                                            </a>
+
+                                                            <div class="dropdown-menu dropdown-menu-right"
+                                                                 x-placement="bottom-end">
+                                                                <a class="dropdown-item d-flex align-items-center"
+                                                                   href="#editProxy" data-toggle="modal">
+                                                                    <i class="ti-pencil mr-3"></i>Edit
+                                                                </a>
+                                                                <a class="dropdown-item d-flex align-items-center"
+                                                                   href="#">
+                                                                    <i class="ti-trash mr-3"></i>Remove
+                                                                </a>
+                                                            </div>
+
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <a class="text-muted font-18 mr-2" href="#">
+                                                                <i class="material-icons">star_outline</i>
+                                                            </a>
+                                                        </td>
+                                                        <td>http://77.25.156.31</td>
+                                                        <td><i class="flag-icon flag-icon-br"></i> Brazil</td>
+                                                        <td>
+                                                            <a class="dropdown-toggle no-arrow" data-toggle="dropdown"
+                                                               aria-expanded="false">
+                                                                <i class="material-icons">more_vert</i>
+                                                            </a>
+
+                                                            <div class="dropdown-menu dropdown-menu-right"
+                                                                 x-placement="bottom-end">
+                                                                <a class="dropdown-item d-flex align-items-center"
+                                                                   href="#editProxy" data-toggle="modal">
+                                                                    <i class="ti-pencil mr-3"></i>Edit
+                                                                </a>
+                                                                <a class="dropdown-item d-flex align-items-center"
+                                                                   href="#">
+                                                                    <i class="ti-trash mr-3"></i>Remove
+                                                                </a>
+                                                            </div>
+
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <a class="text-muted font-18 mr-2" href="#">
+                                                                <i class="material-icons">star_outline</i>
+                                                            </a>
+                                                        </td>
+                                                        <td>http://87.21.24.52</td>
+                                                        <td><i class="flag-icon flag-icon-de"></i> Germany</td>
+                                                        <td>
+                                                            <a class="dropdown-toggle no-arrow" data-toggle="dropdown"
+                                                               aria-expanded="false">
+                                                                <i class="material-icons">more_vert</i>
+                                                            </a>
+
+                                                            <div class="dropdown-menu dropdown-menu-right"
+                                                                 x-placement="bottom-end">
+                                                                <a class="dropdown-item d-flex align-items-center"
+                                                                   href="#editProxy" data-toggle="modal">
+                                                                    <i class="ti-pencil mr-3"></i>Edit
+                                                                </a>
+                                                                <a class="dropdown-item d-flex align-items-center"
+                                                                   href="#">
+                                                                    <i class="ti-trash mr-3"></i>Remove
+                                                                </a>
+                                                            </div>
+
+                                                        </td>
+
+                                                    </tr>
+                                                    </tbody>
+
+                                                </table>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END: Tab-2 -->
+
+                        <!-- START: Tab-3-->
+                        <div class="tab-pane" id="tab-3">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h5 class="box-title text-primary">SMTP Settings</h5>
+
+                                                <form>
+
+                                                    <div class="md-form">
+                                                        <input class="md-form-control" type="text">
+                                                        <label>SMTP Server</label>
+                                                        <small class="form-text text-info">If you leave this field
+                                                            blank, other values ​​of the field will be ignored and the
+                                                            default server settings will be used.
+                                                        </small>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="form-group col-md-6">
+                                                            <label for="security">Security Type</label>
+                                                            <select class="form-control" id="security">
+                                                                <option selected="">Empty</option>
+                                                                <option>SSL</option>
+                                                                <option>TLS</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label for="port">Port</label>
+                                                            <select class="form-control" id="port">
+                                                                <option selected="">25</option>
+                                                                <option>465</option>
+                                                                <option>587</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <hr class="my-4 mt-5">
+
+                                                    <div class="form-group my-5">
+                                                        <label class="checkbox checkbox-outline-primary">
+                                                            <input type="checkbox" checked="">
+                                                            <span>SMTP Authenticate</span>
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="md-form mb-4">
+                                                        <input class="md-form-control" type="text" id="user">
+                                                        <label for="user">Auth. Username</label>
+                                                    </div>
+                                                    <div class="md-form mt-4">
+                                                        <input class="md-form-control" type="password" id="pass">
+                                                        <label for="pass">Auth. Password</label>
+                                                    </div>
+                                                    <div class="md-form mt-4">
+                                                        <input class="md-form-control" type="text" id="from">
+                                                        <label for="from">From</label>
+                                                        <small class="form-text text-info">All Email Send with this
+                                                            email address.
+                                                        </small>
+                                                    </div>
+
+                                                    <div class="form-group my-4">
+                                                        <button class="btn btn-outline-secondary" type="button"
+                                                                data-dismiss="modal">Clear
+                                                        </button>
+                                                        <button class="btn btn-primary" type="button">Save changes
+                                                        </button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="card card-fullheight">
+                                            <div class="card-body">
+                                                <h5 class="box-title text-primary">Email Notifications</h5>
+
+                                                <form>
+
+                                                    <div class="form-group">
+
+                                                        <label for="emailAdd">Email Addresses</label>
+                                                        <input class="tagsinput" placeholder="email@example.com"
+                                                               id="emailAdd">
+                                                        <small class="form-text text-info">Alert emails are sent by this
+                                                            email address. Separate emails with comma.
+                                                        </small>
+
+                                                    </div>
+
+                                                    <div class="form-group my-5">
+                                                        <label class="checkbox checkbox-outline-primary">
+                                                            <input type="checkbox" checked="">
+                                                            <span>New User</span>
+                                                        </label>
+                                                    </div>
+
+                                                    <ul class="text-muted">
+                                                        <li>When a new user sign up , you will receive a notification
+                                                        </li>
+                                                    </ul>
+
+                                                    <div class="form-group my-5">
+                                                        <label class="checkbox checkbox-outline-primary">
+                                                            <input type="checkbox" checked="">
+                                                            <span>Recharge Account <small>( new Payment)</small></span>
+                                                        </label>
+                                                    </div>
+
+                                                    <ul class="text-muted">
+                                                        <li>You will receive a notification when a successful new
+                                                            payment has been made to recharge account
+                                                        </li>
+                                                    </ul>
+
+                                                    <hr class="my-4 mt-5">
+
+                                                    <div class="form-group my-4">
+                                                        <button class="btn btn-outline-secondary" type="button"
+                                                                data-dismiss="modal">Clear
+                                                        </button>
+                                                        <button class="btn btn-primary" type="button">Save changes
+                                                        </button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- END: Tab-3-->
+
+                        <!-- START: Tab-4 -->
+
+                        <div class="tab-pane" id="tab-4">
+                            <div class="container">
+                                <div class="row">
+
+                                    <div class="col-md-4">
+                                        <div class="card card-fullheight">
+                                            <div class="card-body">
+                                                <h5 class="box-title text-primary"><i class="fab fa-google"></i> oogle
+                                                    Analytics</h5>
+
+                                                <div class="form-group mb-4">
+                                                    <label class="ui-switch switch-solid">
+                                                        <small>Enable Google Analytics</small>
+                                                        <input type="checkbox" id="g-analytics-c">
+                                                        <span></span>
+                                                    </label>
+                                                </div>
+
+                                                <div class="md-form mt-4">
+                                                    <input class="md-form-control" type="text" id="g-analytics">
+                                                    <label for="g-analytics">Google Analytics Property ID</label>
+                                                </div>
+
+                                                <div class="form-group my-5">
+                                                    <button class="btn btn-primary btn-block" type="submit">Save
+                                                    </button>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END: Google Analytics-->
+
+                                    <!-- START: Google Driver Picker -->
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h5 class="box-title text-primary"><i class="fab fa-google"></i> oolge
+                                                    Driver Picker </h5>
+
+                                                <div class="form-group my-5">
+                                                    <label class="ui-switch switch-solid">
+                                                        <small>Enable Google Driver Picker</small>
+                                                        <input type="checkbox" id="g-driver-c">
+                                                        <span></span>
+                                                    </label>
+                                                </div>
+
+                                                <div class="md-form">
+                                                    <input type="text" class="md-form-control" id="g-driver-api">
+                                                    <label for="g-driver-api">Google API Key</label>
+                                                </div>
+
+                                                <div class="md-form">
+                                                    <input type="text" class="md-form-control" id="g-driver-id">
+                                                    <label for="g-driver-id">Google Client ID</label>
+                                                </div>
+
+                                                <div class="form-group my-5">
+                                                    <button class="btn btn-primary btn-block" type="submit">Save
+                                                    </button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END: Google Driver Picker-->
+
+                                    <!-- START: Facebook Login -->
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h5 class="box-title text-primary"><i class="fab fa-facebook"></i>
+                                                    acebook login</h5>
+
+                                                <div class="form-group my-5">
+                                                    <label class="ui-switch switch-solid">
+                                                        <small>Enable Facebook</small>
+                                                        <input type="checkbox" id="facebook">
+                                                        <span></span>
+                                                    </label>
+                                                </div>
+
+                                                <div class="md-form">
+                                                    <input type="text" class="md-form-control" id="fb-id">
+                                                    <label for="fb-id">App ID</label>
+                                                </div>
+
+                                                <div class="md-form">
+                                                    <input type="text" class="md-form-control" id="fb-secret">
+                                                    <label for="fb-secret">App Secret</label>
+                                                </div>
+
+                                                <div class="form-group my-5">
+                                                    <button class="btn btn-primary btn-block" type="submit">Save
+                                                    </button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END: Facebook Login-->
+
+                                </div>
+
+                                <div class="row">
+
+                                    <!-- START: Dropbox -->
+                                    <div class="col-md-6">
+                                        <div class="card card-fullheight">
+                                            <div class="card-body">
+                                                <h5 class="box-title text-primary"><i class="fab fa-dropbox"></i>
+                                                    Dropbox Selector</h5>
+
+                                                <div class="form-group">
+                                                    <label class="ui-switch switch-solid">
+                                                        <small>Enable Dropbox</small>
+                                                        <input type="checkbox" id="drop">
+                                                        <span></span>
+                                                    </label>
+                                                </div>
+
+                                                <div class="md-form">
+                                                    <input class="md-form-control" type="text" id="dropbox-api">
+                                                    <label for="dropbox-api">Dropbox API Key</label>
+                                                </div>
+
+                                                <div class="form-group my-5">
+                                                    <button class="btn btn-primary btn-block" type="submit">Save
+                                                    </button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END: Dropbox-->
+
+                                    <!-- START: One Drive -->
+                                    <div class="col-md-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h5 class="box-title text-primary"><i class="fas fa-cloud"></i> OneDrive
+                                                    File Picker</h5>
+
+                                                <div class="form-group">
+                                                    <label class="ui-switch switch-solid">
+                                                        <small>Enable OneDrive</small>
+                                                        <input type="checkbox" id="one">
+                                                        <span></span>
+                                                    </label>
+                                                </div>
+
+                                                <div class="md-form">
+                                                    <input class="md-form-control" type="text" id="onedrive-id">
+                                                    <label for="onedrive-id">OneDrive Cliebt ID</label>
+                                                    <small class="form-text text-info">An SSL certificate is required to
+                                                        integrate OneDrive
+                                                    </small>
+                                                </div>
+
+                                                <div class="form-group my-5">
+                                                    <button class="btn btn-primary btn-block" type="submit">Save
+                                                    </button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End: One Drive -->
+
+                                </div>
+                                <!--END: row-->
+
+                                <!-- Start: row-->
+                                <div class="row">
+                                    <div class="col-md-6">
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <h5 class="box-title text-primary">ZarinPal Integration</h5>
+
+
+                                                        <h6 class="text-primary">Environment</h6>
+                                                        <div class="form-group">
+                                                            <label class="ui-switch switch-solid">
+                                                                Sandbox (Test Env)
+                                                                <input type="checkbox">
+                                                                <span></span>
+                                                                Live Env
+                                                            </label>
+                                                        </div>
+
+                                                        <div class="md-form mt-5">
+                                                            <input class="md-form-control" type="text" id="zarin"
+                                                                   value="111122222222222222222222222222277777">
+                                                            <label for="zarin">ZarinPal Merchant ID</label>
+                                                        </div>
+
+                                                        <div class="form-group my-5">
+                                                            <button class="btn btn-primary btn-block" type="submit">Save
+                                                            </button>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <h5 class="box-title text-primary"><i class="fab fa-paypal"></i>
+                                                            PayPal Integration</h5>
+
+
+                                                        <h6 class="text-primary">Environment</h6>
+                                                        <div class="form-group">
+                                                            <label class="ui-switch switch-solid">
+                                                                Sandbox (Test Env)
+                                                                <input type="checkbox">
+                                                                <span></span>
+                                                                Live Env
+                                                            </label>
+                                                        </div>
+
+                                                        <div class="md-form mt-5">
+                                                            <input class="md-form-control" type="text" id="paypal-id">
+                                                            <label for="paypal-id">PayPal Client ID</label>
+                                                        </div>
+
+                                                        <div class="md-form mt-5">
+                                                            <input class="md-form-control" type="text"
+                                                                   id="paypal-secret">
+                                                            <label for="paypal-secret">PayPal Client Secret</label>
+                                                        </div>
+
+                                                        <div class="form-group my-5">
+                                                            <button class="btn btn-primary btn-block" type="submit">Save
+                                                            </button>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h5 class="box-title text-primary"><i class="fab fa-stripe"></i> Stipe Settings</h5>
+
+                                                <h6 class="text-primary">Environment</h6>
+                                                <div class="form-group">
+                                                    <label class="ui-switch switch-solid">
+                                                        Sandbox (Test Env)
+                                                        <input type="checkbox">
+                                                        <span></span>
+                                                        Live Env
+                                                    </label>
+                                                </div>
+
+                                                <div class="md-form mt-5">
+                                                    <input class="md-form-control" type="text" id="st-pub-key">
+                                                    <label for="st-pub-key">Publishable Key</label>
+                                                </div>
+
+                                                <div class="md-form mt-5">
+                                                    <input class="md-form-control" type="text" id="st-secret">
+                                                    <label for="st-secret">Secret Key</label>
+                                                </div>
+
+                                                <div class="form-group my-5">
+                                                    <label class="checkbox checkbox-outline-primary">
+                                                        <input type="checkbox" id="duplicate">
+                                                        <span>Duplicate payments</span>
+                                                    </label>
+                                                </div>
+
+                                                <ul class="text-muted">
+                                                    <li>
+                                                        Users will have the option to create duplicate payments
+                                                    </li>
+                                                </ul>
+
+                                                <div class="md-form mt-5">
+                                                    <input class="md-form-control disabled" type="text" id="st-webhook"
+                                                           disabled>
+                                                    <label for="st-pub-key">Webhook Signing Secret Key</label>
+                                                </div>
+
+                                                <hr class="my-5 mt-4">
+
+                                                <small class="text-info">If you want to enable duplicate payments,
+                                                    follow these steps:
+                                                </small>
+                                                <ul class="text-muted">
+                                                    <li>
+                                                        Go to the webhook settings in the account dashboard:<br>
+                                                        <a href="https://dashboard.stripe.com/account/webhooks">
+                                                            https://dashboard.stripe.com/account/webhooks
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        Click the "+ Add endpoint" button in the "Endpoints receiving
+                                                        events from your account" section
+                                                    </li>
+                                                    <li>
+                                                        Add the URL below to the "URL to be called" section:<br>
+                                                        <a href="http://medida.ir/webhooks/payments/stripe">
+                                                            http://medida.ir/webhooks/payments/stripe
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        Select "Send all event types" as the "Filter event" value
+                                                    </li>
+                                                </ul>
+
+                                                <div class="form-group my-5">
+                                                    <button class="btn btn-primary btn-block" type="submit">Save
+                                                    </button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END: row -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modals -->
+<div class="modal" id="newProxy" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="newProxyContent">Add New Proxy</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">×</span></button>
+            </div>
+            <form>
+                <div class="modal-body">
+
+                    <div class="md-form">
+                        <input type="text" class="md-form-control">
+                        <label>Proxy</label>
+                        <small class="form-text text-info">The proxy must match the following pattern</small>
+                        <small class="form-text text-info">
+                            http://ip:port Or http://username:password@ip:port
+                        </small>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Select A Country</label>
+                        <select name="country" class="form-control select2-dropdown country">
+                            <option class="unknown">Unknown</option>
+                            <option value="Afghanistan">Afghanistan</option>
+                            <option value="Åland Islands">Åland Islands</option>
+                            <option value="Albania">Albania</option>
+                            <option value="Algeria">Algeria</option>
+                            <option value="American Samoa">American Samoa</option>
+                            <option value="Andorra">Andorra</option>
+                            <option value="Angola">Angola</option>
+                            <option value="Anguilla">Anguilla</option>
+                            <option value="Antarctica">Antarctica</option>
+                            <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Armenia">Armenia</option>
+                            <option value="Aruba">Aruba</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Austria">Austria</option>
+                            <option value="Azerbaijan">Azerbaijan</option>
+                            <option value="Bahamas">Bahamas</option>
+                            <option value="Bahrain">Bahrain</option>
+                            <option value="Bangladesh">Bangladesh</option>
+                            <option value="Barbados">Barbados</option>
+                            <option value="Belarus">Belarus</option>
+                            <option value="Belgium">Belgium</option>
+                            <option value="Belize">Belize</option>
+                            <option value="Benin">Benin</option>
+                            <option value="Bermuda">Bermuda</option>
+                            <option value="Bhutan">Bhutan</option>
+                            <option value="Bolivia">Bolivia</option>
+                            <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                            <option value="Botswana">Botswana</option>
+                            <option value="Bouvet Island">Bouvet Island</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+                            <option value="Brunei Darussalam">Brunei Darussalam</option>
+                            <option value="Bulgaria">Bulgaria</option>
+                            <option value="Burkina Faso">Burkina Faso</option>
+                            <option value="Burundi">Burundi</option>
+                            <option value="Cambodia">Cambodia</option>
+                            <option value="Cameroon">Cameroon</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Cape Verde">Cape Verde</option>
+                            <option value="Cayman Islands">Cayman Islands</option>
+                            <option value="Central African Republic">Central African Republic</option>
+                            <option value="Chad">Chad</option>
+                            <option value="Chile">Chile</option>
+                            <option value="China">China</option>
+                            <option value="Christmas Island">Christmas Island</option>
+                            <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+                            <option value="Colombia">Colombia</option>
+                            <option value="Comoros">Comoros</option>
+                            <option value="Congo">Congo</option>
+                            <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of
+                                The
+                            </option>
+                            <option value="Cook Islands">Cook Islands</option>
+                            <option value="Costa Rica">Costa Rica</option>
+                            <option value="Cote D'ivoire">Cote D'ivoire</option>
+                            <option value="Croatia">Croatia</option>
+                            <option value="Cuba">Cuba</option>
+                            <option value="Cyprus">Cyprus</option>
+                            <option value="Czech Republic">Czech Republic</option>
+                            <option value="Denmark">Denmark</option>
+                            <option value="Djibouti">Djibouti</option>
+                            <option value="Dominica">Dominica</option>
+                            <option value="Dominican Republic">Dominican Republic</option>
+                            <option value="Ecuador">Ecuador</option>
+                            <option value="Egypt">Egypt</option>
+                            <option value="El Salvador">El Salvador</option>
+                            <option value="Equatorial Guinea">Equatorial Guinea</option>
+                            <option value="Eritrea">Eritrea</option>
+                            <option value="Estonia">Estonia</option>
+                            <option value="Ethiopia">Ethiopia</option>
+                            <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
+                            <option value="Faroe Islands">Faroe Islands</option>
+                            <option value="Fiji">Fiji</option>
+                            <option value="Finland">Finland</option>
+                            <option value="France">France</option>
+                            <option value="French Guiana">French Guiana</option>
+                            <option value="French Polynesia">French Polynesia</option>
+                            <option value="French Southern Territories">French Southern Territories</option>
+                            <option value="Gabon">Gabon</option>
+                            <option value="Gambia">Gambia</option>
+                            <option value="Georgia">Georgia</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Ghana">Ghana</option>
+                            <option value="Gibraltar">Gibraltar</option>
+                            <option value="Greece">Greece</option>
+                            <option value="Greenland">Greenland</option>
+                            <option value="Grenada">Grenada</option>
+                            <option value="Guadeloupe">Guadeloupe</option>
+                            <option value="Guam">Guam</option>
+                            <option value="Guatemala">Guatemala</option>
+                            <option value="Guernsey">Guernsey</option>
+                            <option value="Guinea">Guinea</option>
+                            <option value="Guinea-bissau">Guinea-bissau</option>
+                            <option value="Guyana">Guyana</option>
+                            <option value="Haiti">Haiti</option>
+                            <option value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</option>
+                            <option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
+                            <option value="Honduras">Honduras</option>
+                            <option value="Hong Kong">Hong Kong</option>
+                            <option value="Hungary">Hungary</option>
+                            <option value="Iceland">Iceland</option>
+                            <option value="India">India</option>
+                            <option value="Indonesia">Indonesia</option>
+                            <option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option>
+                            <option value="Iraq">Iraq</option>
+                            <option value="Ireland">Ireland</option>
+                            <option value="Isle of Man">Isle of Man</option>
+                            <option value="Israel">Israel</option>
+                            <option value="Italy">Italy</option>
+                            <option value="Jamaica">Jamaica</option>
+                            <option value="Japan">Japan</option>
+                            <option value="Jersey">Jersey</option>
+                            <option value="Jordan">Jordan</option>
+                            <option value="Kazakhstan">Kazakhstan</option>
+                            <option value="Kenya">Kenya</option>
+                            <option value="Kiribati">Kiribati</option>
+                            <option value="Korea, Democratic People's Republic of">Korea, Democratic People's Republic
+                                of
+                            </option>
+                            <option value="Korea, Republic of">Korea, Republic of</option>
+                            <option value="Kuwait">Kuwait</option>
+                            <option value="Kyrgyzstan">Kyrgyzstan</option>
+                            <option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option>
+                            <option value="Latvia">Latvia</option>
+                            <option value="Lebanon">Lebanon</option>
+                            <option value="Lesotho">Lesotho</option>
+                            <option value="Liberia">Liberia</option>
+                            <option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
+                            <option value="Liechtenstein">Liechtenstein</option>
+                            <option value="Lithuania">Lithuania</option>
+                            <option value="Luxembourg">Luxembourg</option>
+                            <option value="Macao">Macao</option>
+                            <option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former Yugoslav
+                                Republic of
+                            </option>
+                            <option value="Madagascar">Madagascar</option>
+                            <option value="Malawi">Malawi</option>
+                            <option value="Malaysia">Malaysia</option>
+                            <option value="Maldives">Maldives</option>
+                            <option value="Mali">Mali</option>
+                            <option value="Malta">Malta</option>
+                            <option value="Marshall Islands">Marshall Islands</option>
+                            <option value="Martinique">Martinique</option>
+                            <option value="Mauritania">Mauritania</option>
+                            <option value="Mauritius">Mauritius</option>
+                            <option value="Mayotte">Mayotte</option>
+                            <option value="Mexico">Mexico</option>
+                            <option value="Micronesia, Federated States of">Micronesia, Federated States of</option>
+                            <option value="Moldova, Republic of">Moldova, Republic of</option>
+                            <option value="Monaco">Monaco</option>
+                            <option value="Mongolia">Mongolia</option>
+                            <option value="Montenegro">Montenegro</option>
+                            <option value="Montserrat">Montserrat</option>
+                            <option value="Morocco">Morocco</option>
+                            <option value="Mozambique">Mozambique</option>
+                            <option value="Myanmar">Myanmar</option>
+                            <option value="Namibia">Namibia</option>
+                            <option value="Nauru">Nauru</option>
+                            <option value="Nepal">Nepal</option>
+                            <option value="Netherlands">Netherlands</option>
+                            <option value="Netherlands Antilles">Netherlands Antilles</option>
+                            <option value="New Caledonia">New Caledonia</option>
+                            <option value="New Zealand">New Zealand</option>
+                            <option value="Nicaragua">Nicaragua</option>
+                            <option value="Niger">Niger</option>
+                            <option value="Nigeria">Nigeria</option>
+                            <option value="Niue">Niue</option>
+                            <option value="Norfolk Island">Norfolk Island</option>
+                            <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                            <option value="Norway">Norway</option>
+                            <option value="Oman">Oman</option>
+                            <option value="Pakistan">Pakistan</option>
+                            <option value="Palau">Palau</option>
+                            <option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option>
+                            <option value="Panama">Panama</option>
+                            <option value="Papua New Guinea">Papua New Guinea</option>
+                            <option value="Paraguay">Paraguay</option>
+                            <option value="Peru">Peru</option>
+                            <option value="Philippines">Philippines</option>
+                            <option value="Pitcairn">Pitcairn</option>
+                            <option value="Poland">Poland</option>
+                            <option value="Portugal">Portugal</option>
+                            <option value="Puerto Rico">Puerto Rico</option>
+                            <option value="Qatar">Qatar</option>
+                            <option value="Reunion">Reunion</option>
+                            <option value="Romania">Romania</option>
+                            <option value="Russian Federation">Russian Federation</option>
+                            <option value="Rwanda">Rwanda</option>
+                            <option value="Saint Helena">Saint Helena</option>
+                            <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                            <option value="Saint Lucia">Saint Lucia</option>
+                            <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+                            <option value="Saint Vincent and The Grenadines">Saint Vincent and The Grenadines</option>
+                            <option value="Samoa">Samoa</option>
+                            <option value="San Marino">San Marino</option>
+                            <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                            <option value="Saudi Arabia">Saudi Arabia</option>
+                            <option value="Senegal">Senegal</option>
+                            <option value="Serbia">Serbia</option>
+                            <option value="Seychelles">Seychelles</option>
+                            <option value="Sierra Leone">Sierra Leone</option>
+                            <option value="Singapore">Singapore</option>
+                            <option value="Slovakia">Slovakia</option>
+                            <option value="Slovenia">Slovenia</option>
+                            <option value="Solomon Islands">Solomon Islands</option>
+                            <option value="Somalia">Somalia</option>
+                            <option value="South Africa">South Africa</option>
+                            <option value="South Georgia and The South Sandwich Islands">South Georgia and The South
+                                Sandwich Islands
+                            </option>
+                            <option value="Spain">Spain</option>
+                            <option value="Sri Lanka">Sri Lanka</option>
+                            <option value="Sudan">Sudan</option>
+                            <option value="Suriname">Suriname</option>
+                            <option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+                            <option value="Swaziland">Swaziland</option>
+                            <option value="Sweden">Sweden</option>
+                            <option value="Switzerland">Switzerland</option>
+                            <option value="Syrian Arab Republic">Syrian Arab Republic</option>
+                            <option value="Taiwan, Province of China">Taiwan, Province of China</option>
+                            <option value="Tajikistan">Tajikistan</option>
+                            <option value="Tanzania, United Republic of">Tanzania, United Republic of</option>
+                            <option value="Thailand">Thailand</option>
+                            <option value="Timor-leste">Timor-leste</option>
+                            <option value="Togo">Togo</option>
+                            <option value="Tokelau">Tokelau</option>
+                            <option value="Tonga">Tonga</option>
+                            <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                            <option value="Tunisia">Tunisia</option>
+                            <option value="Turkey">Turkey</option>
+                            <option value="Turkmenistan">Turkmenistan</option>
+                            <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+                            <option value="Tuvalu">Tuvalu</option>
+                            <option value="Uganda">Uganda</option>
+                            <option value="Ukraine">Ukraine</option>
+                            <option value="United Arab Emirates">United Arab Emirates</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="United States">United States</option>
+                            <option value="United States Minor Outlying Islands">United States Minor Outlying Islands
+                            </option>
+                            <option value="Uruguay">Uruguay</option>
+                            <option value="Uzbekistan">Uzbekistan</option>
+                            <option value="Vanuatu">Vanuatu</option>
+                            <option value="Venezuela">Venezuela</option>
+                            <option value="Viet Nam">Viet Nam</option>
+                            <option value="Virgin Islands, British">Virgin Islands, British</option>
+                            <option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option>
+                            <option value="Wallis and Futuna">Wallis and Futuna</option>
+                            <option value="Western Sahara">Western Sahara</option>
+                            <option value="Yemen">Yemen</option>
+                            <option value="Zambia">Zambia</option>
+                            <option value="Zimbabwe">Zimbabwe</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-outline-secondary" type="button" data-dismiss="modal">Close</button>
+                    <button class="btn btn-primary" type="button">Save changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="editProxy" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editProxyContnet">Add New Proxy</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">×</span></button>
+            </div>
+            <form>
+                <div class="modal-body">
+
+                    <div class="md-form">
+                        <input type="text" class="md-form-control">
+                        <label>Proxy</label>
+                        <small class="form-text text-info">The proxy must match the following pattern</small>
+                        <small class="form-text text-info">
+                            http://ip:port Or http://username:password@ip:port
+                        </small>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Select A Country</label>
+                        <select name="country" class="form-control select2-dropdown country">
+                            <option class="unknown">Unknown</option>
+                            <option value="Afghanistan">Afghanistan</option>
+                            <option value="Åland Islands">Åland Islands</option>
+                            <option value="Albania">Albania</option>
+                            <option value="Algeria">Algeria</option>
+                            <option value="American Samoa">American Samoa</option>
+                            <option value="Andorra">Andorra</option>
+                            <option value="Angola">Angola</option>
+                            <option value="Anguilla">Anguilla</option>
+                            <option value="Antarctica">Antarctica</option>
+                            <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Armenia">Armenia</option>
+                            <option value="Aruba">Aruba</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Austria">Austria</option>
+                            <option value="Azerbaijan">Azerbaijan</option>
+                            <option value="Bahamas">Bahamas</option>
+                            <option value="Bahrain">Bahrain</option>
+                            <option value="Bangladesh">Bangladesh</option>
+                            <option value="Barbados">Barbados</option>
+                            <option value="Belarus">Belarus</option>
+                            <option value="Belgium">Belgium</option>
+                            <option value="Belize">Belize</option>
+                            <option value="Benin">Benin</option>
+                            <option value="Bermuda">Bermuda</option>
+                            <option value="Bhutan">Bhutan</option>
+                            <option value="Bolivia">Bolivia</option>
+                            <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                            <option value="Botswana">Botswana</option>
+                            <option value="Bouvet Island">Bouvet Island</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+                            <option value="Brunei Darussalam">Brunei Darussalam</option>
+                            <option value="Bulgaria">Bulgaria</option>
+                            <option value="Burkina Faso">Burkina Faso</option>
+                            <option value="Burundi">Burundi</option>
+                            <option value="Cambodia">Cambodia</option>
+                            <option value="Cameroon">Cameroon</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Cape Verde">Cape Verde</option>
+                            <option value="Cayman Islands">Cayman Islands</option>
+                            <option value="Central African Republic">Central African Republic</option>
+                            <option value="Chad">Chad</option>
+                            <option value="Chile">Chile</option>
+                            <option value="China">China</option>
+                            <option value="Christmas Island">Christmas Island</option>
+                            <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+                            <option value="Colombia">Colombia</option>
+                            <option value="Comoros">Comoros</option>
+                            <option value="Congo">Congo</option>
+                            <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of
+                                The
+                            </option>
+                            <option value="Cook Islands">Cook Islands</option>
+                            <option value="Costa Rica">Costa Rica</option>
+                            <option value="Cote D'ivoire">Cote D'ivoire</option>
+                            <option value="Croatia">Croatia</option>
+                            <option value="Cuba">Cuba</option>
+                            <option value="Cyprus">Cyprus</option>
+                            <option value="Czech Republic">Czech Republic</option>
+                            <option value="Denmark">Denmark</option>
+                            <option value="Djibouti">Djibouti</option>
+                            <option value="Dominica">Dominica</option>
+                            <option value="Dominican Republic">Dominican Republic</option>
+                            <option value="Ecuador">Ecuador</option>
+                            <option value="Egypt">Egypt</option>
+                            <option value="El Salvador">El Salvador</option>
+                            <option value="Equatorial Guinea">Equatorial Guinea</option>
+                            <option value="Eritrea">Eritrea</option>
+                            <option value="Estonia">Estonia</option>
+                            <option value="Ethiopia">Ethiopia</option>
+                            <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
+                            <option value="Faroe Islands">Faroe Islands</option>
+                            <option value="Fiji">Fiji</option>
+                            <option value="Finland">Finland</option>
+                            <option value="France">France</option>
+                            <option value="French Guiana">French Guiana</option>
+                            <option value="French Polynesia">French Polynesia</option>
+                            <option value="French Southern Territories">French Southern Territories</option>
+                            <option value="Gabon">Gabon</option>
+                            <option value="Gambia">Gambia</option>
+                            <option value="Georgia">Georgia</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Ghana">Ghana</option>
+                            <option value="Gibraltar">Gibraltar</option>
+                            <option value="Greece">Greece</option>
+                            <option value="Greenland">Greenland</option>
+                            <option value="Grenada">Grenada</option>
+                            <option value="Guadeloupe">Guadeloupe</option>
+                            <option value="Guam">Guam</option>
+                            <option value="Guatemala">Guatemala</option>
+                            <option value="Guernsey">Guernsey</option>
+                            <option value="Guinea">Guinea</option>
+                            <option value="Guinea-bissau">Guinea-bissau</option>
+                            <option value="Guyana">Guyana</option>
+                            <option value="Haiti">Haiti</option>
+                            <option value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</option>
+                            <option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
+                            <option value="Honduras">Honduras</option>
+                            <option value="Hong Kong">Hong Kong</option>
+                            <option value="Hungary">Hungary</option>
+                            <option value="Iceland">Iceland</option>
+                            <option value="India">India</option>
+                            <option value="Indonesia">Indonesia</option>
+                            <option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option>
+                            <option value="Iraq">Iraq</option>
+                            <option value="Ireland">Ireland</option>
+                            <option value="Isle of Man">Isle of Man</option>
+                            <option value="Israel">Israel</option>
+                            <option value="Italy">Italy</option>
+                            <option value="Jamaica">Jamaica</option>
+                            <option value="Japan">Japan</option>
+                            <option value="Jersey">Jersey</option>
+                            <option value="Jordan">Jordan</option>
+                            <option value="Kazakhstan">Kazakhstan</option>
+                            <option value="Kenya">Kenya</option>
+                            <option value="Kiribati">Kiribati</option>
+                            <option value="Korea, Democratic People's Republic of">Korea, Democratic People's Republic
+                                of
+                            </option>
+                            <option value="Korea, Republic of">Korea, Republic of</option>
+                            <option value="Kuwait">Kuwait</option>
+                            <option value="Kyrgyzstan">Kyrgyzstan</option>
+                            <option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option>
+                            <option value="Latvia">Latvia</option>
+                            <option value="Lebanon">Lebanon</option>
+                            <option value="Lesotho">Lesotho</option>
+                            <option value="Liberia">Liberia</option>
+                            <option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
+                            <option value="Liechtenstein">Liechtenstein</option>
+                            <option value="Lithuania">Lithuania</option>
+                            <option value="Luxembourg">Luxembourg</option>
+                            <option value="Macao">Macao</option>
+                            <option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former Yugoslav
+                                Republic of
+                            </option>
+                            <option value="Madagascar">Madagascar</option>
+                            <option value="Malawi">Malawi</option>
+                            <option value="Malaysia">Malaysia</option>
+                            <option value="Maldives">Maldives</option>
+                            <option value="Mali">Mali</option>
+                            <option value="Malta">Malta</option>
+                            <option value="Marshall Islands">Marshall Islands</option>
+                            <option value="Martinique">Martinique</option>
+                            <option value="Mauritania">Mauritania</option>
+                            <option value="Mauritius">Mauritius</option>
+                            <option value="Mayotte">Mayotte</option>
+                            <option value="Mexico">Mexico</option>
+                            <option value="Micronesia, Federated States of">Micronesia, Federated States of</option>
+                            <option value="Moldova, Republic of">Moldova, Republic of</option>
+                            <option value="Monaco">Monaco</option>
+                            <option value="Mongolia">Mongolia</option>
+                            <option value="Montenegro">Montenegro</option>
+                            <option value="Montserrat">Montserrat</option>
+                            <option value="Morocco">Morocco</option>
+                            <option value="Mozambique">Mozambique</option>
+                            <option value="Myanmar">Myanmar</option>
+                            <option value="Namibia">Namibia</option>
+                            <option value="Nauru">Nauru</option>
+                            <option value="Nepal">Nepal</option>
+                            <option value="Netherlands">Netherlands</option>
+                            <option value="Netherlands Antilles">Netherlands Antilles</option>
+                            <option value="New Caledonia">New Caledonia</option>
+                            <option value="New Zealand">New Zealand</option>
+                            <option value="Nicaragua">Nicaragua</option>
+                            <option value="Niger">Niger</option>
+                            <option value="Nigeria">Nigeria</option>
+                            <option value="Niue">Niue</option>
+                            <option value="Norfolk Island">Norfolk Island</option>
+                            <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                            <option value="Norway">Norway</option>
+                            <option value="Oman">Oman</option>
+                            <option value="Pakistan">Pakistan</option>
+                            <option value="Palau">Palau</option>
+                            <option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option>
+                            <option value="Panama">Panama</option>
+                            <option value="Papua New Guinea">Papua New Guinea</option>
+                            <option value="Paraguay">Paraguay</option>
+                            <option value="Peru">Peru</option>
+                            <option value="Philippines">Philippines</option>
+                            <option value="Pitcairn">Pitcairn</option>
+                            <option value="Poland">Poland</option>
+                            <option value="Portugal">Portugal</option>
+                            <option value="Puerto Rico">Puerto Rico</option>
+                            <option value="Qatar">Qatar</option>
+                            <option value="Reunion">Reunion</option>
+                            <option value="Romania">Romania</option>
+                            <option value="Russian Federation">Russian Federation</option>
+                            <option value="Rwanda">Rwanda</option>
+                            <option value="Saint Helena">Saint Helena</option>
+                            <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                            <option value="Saint Lucia">Saint Lucia</option>
+                            <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+                            <option value="Saint Vincent and The Grenadines">Saint Vincent and The Grenadines</option>
+                            <option value="Samoa">Samoa</option>
+                            <option value="San Marino">San Marino</option>
+                            <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                            <option value="Saudi Arabia">Saudi Arabia</option>
+                            <option value="Senegal">Senegal</option>
+                            <option value="Serbia">Serbia</option>
+                            <option value="Seychelles">Seychelles</option>
+                            <option value="Sierra Leone">Sierra Leone</option>
+                            <option value="Singapore">Singapore</option>
+                            <option value="Slovakia">Slovakia</option>
+                            <option value="Slovenia">Slovenia</option>
+                            <option value="Solomon Islands">Solomon Islands</option>
+                            <option value="Somalia">Somalia</option>
+                            <option value="South Africa">South Africa</option>
+                            <option value="South Georgia and The South Sandwich Islands">South Georgia and The South
+                                Sandwich Islands
+                            </option>
+                            <option value="Spain">Spain</option>
+                            <option value="Sri Lanka">Sri Lanka</option>
+                            <option value="Sudan">Sudan</option>
+                            <option value="Suriname">Suriname</option>
+                            <option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+                            <option value="Swaziland">Swaziland</option>
+                            <option value="Sweden">Sweden</option>
+                            <option value="Switzerland">Switzerland</option>
+                            <option value="Syrian Arab Republic">Syrian Arab Republic</option>
+                            <option value="Taiwan, Province of China">Taiwan, Province of China</option>
+                            <option value="Tajikistan">Tajikistan</option>
+                            <option value="Tanzania, United Republic of">Tanzania, United Republic of</option>
+                            <option value="Thailand">Thailand</option>
+                            <option value="Timor-leste">Timor-leste</option>
+                            <option value="Togo">Togo</option>
+                            <option value="Tokelau">Tokelau</option>
+                            <option value="Tonga">Tonga</option>
+                            <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                            <option value="Tunisia">Tunisia</option>
+                            <option value="Turkey">Turkey</option>
+                            <option value="Turkmenistan">Turkmenistan</option>
+                            <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+                            <option value="Tuvalu">Tuvalu</option>
+                            <option value="Uganda">Uganda</option>
+                            <option value="Ukraine">Ukraine</option>
+                            <option value="United Arab Emirates">United Arab Emirates</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="United States">United States</option>
+                            <option value="United States Minor Outlying Islands">United States Minor Outlying Islands
+                            </option>
+                            <option value="Uruguay">Uruguay</option>
+                            <option value="Uzbekistan">Uzbekistan</option>
+                            <option value="Vanuatu">Vanuatu</option>
+                            <option value="Venezuela">Venezuela</option>
+                            <option value="Viet Nam">Viet Nam</option>
+                            <option value="Virgin Islands, British">Virgin Islands, British</option>
+                            <option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option>
+                            <option value="Wallis and Futuna">Wallis and Futuna</option>
+                            <option value="Western Sahara">Western Sahara</option>
+                            <option value="Yemen">Yemen</option>
+                            <option value="Zambia">Zambia</option>
+                            <option value="Zimbabwe">Zimbabwe</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-outline-secondary" type="button" data-dismiss="modal">Close</button>
+                    <button class="btn btn-primary" type="button">Save changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="preloader-backdrop">
+    <div class="page-preloader">Loading</div>
+</div>
+
+<!-- Required Javascript -->
+<script src="../../assets/js/jquery-3.4.1.min.js"></script>
+
+<!-- Optional Javascript-->
+<!-- jQuery first, then Potest.select2r.js, then Bootstrap JS -->
+<script src="../../assets/js/popper.min.js"></script>
+<script src="../../assets/js/bootstrap/bootstrap.min.js"></script>
+
+<!-- Perfect Scrollbar JS -->
+<script src="../../assets/js/perfect-scrollbar.js"></script>
+
+<!-- Metismenu JS -->
+<script src="../../assets/js/metismenu.min.js"></script>
+
+<!-- Dropzone -->
+<script src="../../assets/js/dropzone/dropzone.min.js"></script>
+<script>
+
+    Dropzone.options.mydropzoneMultiple = {
+        paramName: "file", // The name that will be used to transfer the file
+        maxFilesize: 5, // MB
+        addRemoveLinks: !0,
+        acceptedFiles: "image/png"
+    }
+
+</script>
+
+<script>
+    $(function () {
+        var $fav = $('.fav-icon');
+        var $logo = $('.logo-icon');
+
+        $fav.on('click', function () {
+            if ($(this).hasClass('badge-light')) {
+                $(this).removeClass('badge-light').addClass('badge-primary');
+            } else {
+                $(this).removeClass('badge-primary').addClass('badge-light');
+            }
+        });
+
+        $logo.on('click', function () {
+            if ($(this).hasClass('badge-light')) {
+                $(this).removeClass('badge-light').addClass('badge-success');
+            } else {
+                $(this).removeClass('badge-success').addClass('badge-light');
+            }
+        })
+    });
+</script>
+
+<script src="../../assets/js/select2/select2.full.min.js"></script>
+<script>
+    $(function () {
+        $('#currency').select2();
+        $('.country').select2();
+    })
+</script>
+
+<script src="../../assets/js/bootstrap-tags/bootstrap-tagsinput.min.js"></script>
+<script>
+    $(function () {
+        $('.tagsinput').tagsinput({
+            tagClass: 'badge badge-primary'
+        });
+    })
+</script>
+
+<!-- Main Js -->
+<script src="../../assets/js/panel/main.js"></script>
+
+</body>
+</html>

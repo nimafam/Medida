@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Required Met tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+    <title>Dashboard</title>
+
+    <!-- Bootstrap 4.0 CSS -->
+    <!-- Add crossorigin="anonymous" for Host stage-->
+    <link rel="stylesheet" href="../../../assets/css/bootstrap/bootstrap.min.css"/>
+
+    <!-- Public Stylesheet -->
+    <link rel="stylesheet" href="../../../assets/css/admin-panel.css"/>
+
+    <!-- Perfect scrollbar -->
+    <link rel="stylesheet" href="../../../assets/css/perfect-scrollbar.css"/>
+
+    <!-- Material Font Icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+<div class="page-wrapper">
+    <div class="content-wrapper">
+        <div class="page-sidebar custom-scroll ps ps--active-y" id="sidebar">
+
+            <div class="sidebar-header">
+                <a class="sidebar-brand" href="./result-1.html">Medida.</a>
+                <a class="sidebar-brand-mini" href="./result-1.html">Md</a>
+            </div>
+
+            <ul class="sidebar-menu metismenu">
+                <li>
+                    <a href="./result-1.html" aria-expanded="false">
+                        <i class="sidebar-item-icon material-icons">explorer</i>
+                        <span class="nav-label">Dashboard</span>
+                    </a>
+                </li>
+
+                <li class="heading">
+                    <span class="nav-label">Main</span>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" aria-expanded="false">
+                        <i class="sidebar-item-icon material-icons">subtitles</i>
+                        <span class="nav-label">Posts</span>
+                        <i class="arrow material-icons">keyboard_arrow_right</i>
+                    </a>
+                    <ul class="nav-2-level mm-collapse">
+                        <li>
+                            <a href="../post-1.html">New Posts</a>
+                        </li>
+                        <li>
+                            <a href="../all-posts.html">All Posts</a>
+                        </li>
+                        <li>
+                            <a href="../media-1.html">Media</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./analytics-1.html" aria-expanded="false">
+                        <i class="sidebar-item-icon material-icons">timeline</i>
+                        <span class="nav-label">Profile Analytics</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../calendar-1.html" aria-expanded="false">
+                        <i class="sidebar-item-icon material-icons">date_range</i>
+                        <span class="nav-label">Calendar</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../captions-1.html" aria-expanded="false">
+                        <i class="sidebar-item-icon material-icons">short_text</i>
+                        <span class="nav-label">Captions</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../account-1.html" aria-expanded="false">
+                        <i class="sidebar-item-icon material-icons">supervised_user_circle</i>
+                        <span class="nav-label">Accounts</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../cahrt-1.html" aria-expanded="false">
+                        <i class="sidebar-item-icon material-icons">equalizer</i>
+                        <span class="nav-label">Charts</span>
+                    </a>
+                </li>
+                <li class="heading">
+                    <span class="nav-label">Settings</span>
+                </li>
+                <li>
+                    <a href="../setting-1.html" aria-expanded="false">
+                        <i class="sidebar-item-icon material-icons">settings</i>
+                        <span class="nav-label">Settings</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="p-4 mb-4 media align-items-center position-absolute" style="bottom: 0;">
+                <img src="../../../assets/images/man.png" width="36" class="rounded-circle mr-3"/>
+                <div class="media-body">
+                    <a href="../profile.html">
+                        <h5 class="mb-1">Jonathan Due</h5>
+                        <div class="font-11 text-muted">Premuim</div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="content-area">
+            <nav>
+                <a class="nav-link navbar-icon sidebar-toggler" id="sidebar-toggler" href="#">
+                    <span class="material-icons">reorder</span>
+                </a>
+
+            </nav>
+            <div class="page-content fade-in-up">
+                <div class="page-heading">
+
+                    <div class="page-breadcrumb">
+                        <h1 class="page-title page-title-sep">Daftein Advertisement</h1>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="result-1.html">
+                                    <i class="icon-home font-20"></i>
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="./analytics-1.html">
+                                    Analytics
+                                </a>
+                            </li>
+                        </ol>
+                    </div>
+
+
+                    <div class="subheader_daterange dropdown" id="subheader_daterange">
+                            <span class="subheader-daterange-label">
+                                <span class="subheader-daterange-title">
+                                    <i class="icon-social-instagram"></i>
+                                </span>
+                                <span class="subheader-daterange-date">
+                                    @nima_mirkhani
+                                </span>
+                            </span>
+                        <a class="btn btn-floating btn-sm rounded-0 dropdown-toggle no-arrow megamenu-link" href="#0"
+                           data-toggle="dropdown">
+                            <i class="material-icons">keyboard_arrow_down</i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right nav-megamenu" style="min-width: 400px">
+                            <div class="row m-0">
+                                <div class="col-6">
+                                    <a class="mega-menu-item media align-items-center disabled" href="#">
+                                        <img src="../../../assets/images/man.png" class="rounded-circle p-4" alt="image"
+                                             width="256"/>
+                                        <div class="media-body text-white">
+                                            <h5 class="mb-1 text-center ltr text-white">@john_dou</h5>
+                                            <i class="ti-instagram text-center font-11 text-white"></i> instagram
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a class="mega-menu-item media align-items-center bg-success" href="#">
+                                        <img src="../../../assets/images/man.png" class="rounded-circle p-4" alt="image"
+                                             width="256"/>
+                                        <div class="media-body text-white">
+                                            <h5 class="mb-1 text-center ltr text-white">@john_dou</h5>
+                                            <i class="ti-instagram text-center font-11 text-white"></i> instagram
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a class="mega-menu-item media align-items-center disabled" href="#">
+                                        <img src="../../../assets/images/man.png" class="rounded-circle p-4" alt="image"
+                                             width="256"/>
+                                        <div class="media-body text-white">
+                                            <h5 class="mb-1 text-center ltr text-white">@john_dou</h5>
+                                            <i class="ti-instagram text-center font-11 text-white"></i> instagram
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a class="mega-menu-item media align-items-center disabled" href="#">
+                                        <img src="../../../assets/images/man.png" class="rounded-circle p-4" alt="image"
+                                             width="256"/>
+                                        <div class="media-body text-white">
+                                            <h5 class="mb-1 text-center ltr text-white">@john_dou</h5>
+                                            <i class="ti-instagram text-center font-11 text-white"></i> instagram
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <div class="card card-fullheight">
+                                <div class="card-body mt-4">
+                                    <div class="media">
+                                        <span class="position-relative d-inline-block mr-4">
+                                            <img class="rounded-circle"
+                                                 src="https://scontent-dus1-1.cdninstagram.com/vp/733046f3ff557bf185f9661647a64d80/5D947525/t51.2885-19/s150x150/56182694_387310291859571_7104286815695142912_n.jpg?_nc_ht=scontent-dus1-1.cdninstagram.com"
+                                                 alt="image" width="100">
+                                            <span class="badge-point badge-success avatar-badge"
+                                                  style="bottom: 5px;right: 14px;height: 14px;width: 14px;"></span>
+                                        </span>
+                                        <div class="media-body mt-5">
+                                            <div class="h4">Daften Advertisement</div>
+                                            <div class="text-muted">
+                                                <a href="https://instagram.com/daftein">@daftien</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h6 class="box-title text-primary">
+                                        Daftein Advertising
+                                    </h6>
+                                    <p class="text-muted">
+                                        Advertising & Marcoms Agency<br>
+                                        <a href="http://www.daftein.com"> www.daftein.com</a>
+                                    </p>
+                                    <p class="text-muted">
+                                        لینک کتاب<br>
+                                        <a href="https://drive.google.com/file/d/1g7DhBC30s5gdtr2zfXxOwY6B9iuYviK7/view"
+                                           target="_blank"> bit.ly/2YYCdUS</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body bg-primary-800">
+                                    <h6 class="mb-3 font-15 text-white font-weight-normal">Followers</h6>
+                                    <div class="h2 mb-0 text-white font-weight-normal">
+                                        <i class="ti-arrow-up font-11"></i> 844
+                                    </div>
+                                    <i class="ti-heart data-widget-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body bg-primary-700">
+                                    <h6 class="mb-3 font-15 text-white font-weight-normal">Following</h6>
+                                    <div class="h2 mb-0 text-white font-weight-normal">
+                                        13
+                                    </div>
+                                    <i class="ti-star data-widget-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body bg-primary-700">
+                                    <h6 class="mb-3 font-15 text-white font-weight-normal">Uploads</h6>
+                                    <div class="h2 mb-0 text-white font-weight-normal">
+                                        <i class="ti-arrow-up font-11"></i> 103
+                                    </div>
+                                    <i class="ti-cloud-up data-widget-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body bg-primary-600">
+                                    <h6 class="mb-3 font-15 text-white font-weight-normal">Avg. Like
+                                        <small class="font-11">(last 10 posts)</small>
+                                    </h6>
+                                    <div class="h2 mb-0 text-white font-weight-normal">
+                                        <i class="ti-arrow-down font-11"></i> 82.4
+                                    </div>
+                                    <i class="ti-thumb-up data-widget-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body bg-primary">
+                                    <h6 class="mb-3 font-15 text-white font-weight-normal">Avg. Comments
+                                        <small class="font-11">(last 10 posts)</small>
+                                    </h6>
+                                    <div class="h2 mb-0 text-white font-weight-normal">
+                                        <i class="ti-arrow-down font-11"></i> 5.40
+                                    </div>
+                                    <i class="ti-comment data-widget-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body bg-primary-400">
+                                    <h6 class="mb-3 font-15 text-white font-weight-normal">Association</h6>
+                                    <div class="h2 mb-0 text-white font-weight-normal">
+                                        <i class="ti-arrow-down font-11"></i> 10.40%
+                                    </div>
+                                    <i class="ti-game data-widget-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body bg-primary-300">
+                                    <h6 class="mb-3 font-15 text-white font-weight-normal">Comments</h6>
+                                    <div class="h2 mb-0 text-white font-weight-normal">
+                                        <i class="ti-arrow-up font-11"></i> 996
+                                    </div>
+                                    <i class="ti-comments data-widget-icon text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body bg-primary-200">
+                                    <h6 class="mb-3 font-15 text-white font-weight-normal">Likes</h6>
+                                    <div class="h2 mb-0 text-white font-weight-normal">3188</div>
+                                    <i class="ti-comments-smiley data-widget-icon text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body bg-primary-100">
+                                    <h6 class="mb-3 font-15 text-white font-weight-normal">Followers Grow Rate</h6>
+                                    <div class="h2 mb-0 text-white font-weight-normal">
+                                        <i class="ti-arrow-up font-11"></i> 4.72%
+                                    </div>
+                                    <i class="ti-ruler data-widget-icon text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <h3 class="title text-primary">Summary of individuals statistics</h3>
+                    </div>
+
+                    <hr class="my-5 mt-4"/>
+
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="box-title text-primary">
+                                        <i class="ti-timer" data-toggle="tooltip" title
+                                           data-original-title="are changed according to the timeline"></i>
+                                        Followers, Following and Avg. Rate of Participation
+                                    </h5>
+
+                                    <p class="text-info">Summary of individuals statistics</p>
+
+                                    <div id="follows"></div>
+
+                                    <p class="text-info">Each value in this graph is equal to the average rate of
+                                        participation on that particular day.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row justify-content-center">
+                        <h3 class="title text-primary">Summary of account statistics</h3>
+                    </div>
+
+                    <hr class="my-5 mt-4"/>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="box-title text-primary">
+                                        <i class="ti-timer" data-toggle="tooltip" title
+                                           data-original-title="are changed according to the time-line"></i>
+                                        Avg. Account
+                                    </h5>
+
+                                    <div id="followers"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <table class="table table-bordered table-border-primary table-responsive-md table-hover table-striped">
+                                        <thead class="thead-primary">
+                                        <tr>
+                                            <th>
+                                                <span data-toggle="tooltip" title=""
+                                                      data-original-title="Format: YYYY-MM-DD">
+                                                    <i class="fa fa-question-circle"></i>
+                                                    Date
+                                                </span>
+                                            </th>
+                                            <th></th>
+                                            <th>Followers</th>
+                                            <th></th>
+                                            <th>Following</th>
+                                            <th></th>
+                                            <th>Uploads</th>
+                                            <th></th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>2018-12-11</td>
+                                            <td>Tue</td>
+                                            <td>247</td>
+                                            <td>-</td>
+                                            <td>13</td>
+                                            <td>-</td>
+                                            <td>57</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2019-01-06</td>
+                                            <td>Sun</td>
+                                            <td>244</td>
+                                            <td><span style="color: #dc3545 !important;">-3</span></td>
+                                            <td>12</td>
+                                            <td><span style="color: #dc3545 !important;">-1</span></td>
+                                            <td>72</td>
+                                            <td><span style="color: #28a745 !important;">+15</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2019-01-08</td>
+                                            <td>Tue</td>
+                                            <td>248</td>
+                                            <td><span style="color: #28a745 !important;">+4</span></td>
+                                            <td>13</td>
+                                            <td><span style="color: #28a745 !important;">+1</span></td>
+                                            <td>72</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2019-01-26</td>
+                                            <td>Sat</td>
+                                            <td>275</td>
+                                            <td><span style="color: #28a745 !important;">+27</span></td>
+                                            <td>14</td>
+                                            <td><span style="color: #28a745 !important;">+1</span></td>
+                                            <td>82</td>
+                                            <td><span style="color: #28a745 !important;">+10</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2019-01-27</td>
+                                            <td>Sun</td>
+                                            <td>279</td>
+                                            <td><span style="color: #28a745 !important;">+4</span></td>
+                                            <td>14</td>
+                                            <td>-</td>
+                                            <td>77</td>
+                                            <td><span style="color: #dc3545 !important;">-5</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2019-01-30</td>
+                                            <td>Wed</td>
+                                            <td>323</td>
+                                            <td><span style="color: #28a745 !important;">+44</span></td>
+                                            <td>69</td>
+                                            <td><span style="color: #28a745 !important;">+55</span></td>
+                                            <td>77</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2019-01-31</td>
+                                            <td>Thu</td>
+                                            <td>317</td>
+                                            <td><span style="color: #dc3545 !important;">-6</span></td>
+                                            <td>69</td>
+                                            <td>-</td>
+                                            <td>78</td>
+                                            <td><span style="color: #28a745 !important;">+1</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2019-02-03</td>
+                                            <td>Sun</td>
+                                            <td>307</td>
+                                            <td><span style="color: #dc3545 !important;">-10</span></td>
+                                            <td>69</td>
+                                            <td>-</td>
+                                            <td>79</td>
+                                            <td><span style="color: #28a745 !important;">+1</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2019-02-04</td>
+                                            <td>Mon</td>
+                                            <td>310</td>
+                                            <td><span style="color: #28a745 !important;">+3</span></td>
+                                            <td>69</td>
+                                            <td>-</td>
+                                            <td>79</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2019-02-05</td>
+                                            <td>Tue</td>
+                                            <td>311</td>
+                                            <td><span style="color: #28a745 !important;">+1</span></td>
+                                            <td>69</td>
+                                            <td>-</td>
+                                            <td>79</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2019-04-13</td>
+                                            <td>Sat</td>
+                                            <td>459</td>
+                                            <td><span style="color: #28a745 !important;">+148</span></td>
+                                            <td>21</td>
+                                            <td><span style="color: #dc3545 !important;">-48</span></td>
+                                            <td>102</td>
+                                            <td><span style="color: #28a745 !important;">+23</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2019-04-24</td>
+                                            <td>Wed</td>
+                                            <td>631</td>
+                                            <td><span style="color: #28a745 !important;">+172</span></td>
+                                            <td>18</td>
+                                            <td><span style="color: #dc3545 !important;">-3</span></td>
+                                            <td>102</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2019-05-15</td>
+                                            <td>Wed</td>
+                                            <td>1,427</td>
+                                            <td><span style="color: #28a745 !important;">+796</span></td>
+                                            <td>13</td>
+                                            <td><span style="color: #dc3545 !important;">-5</span></td>
+                                            <td>103</td>
+                                            <td><span style="color: #28a745 !important;">+1</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2019-06-13</td>
+                                            <td>Thu</td>
+                                            <td>875</td>
+                                            <td><span style="color: #dc3545 !important;">-552</span></td>
+                                            <td>13</td>
+                                            <td>-</td>
+                                            <td>103</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2019-06-21</td>
+                                            <td>Fri</td>
+                                            <td>844</td>
+                                            <td><span style="color: #dc3545 !important;">-31</span></td>
+                                            <td>13</td>
+                                            <td>-</td>
+                                            <td>103</td>
+                                            <td>-</td>
+                                        </tr>
+
+                                        <tr class="bg-light">
+                                            <td colspan="2"><i class="fa fa-list-ol"></i> Total Summary</td>
+                                            <td colspan="4" class="total_new_followers" data-total="597"
+                                                data-count="15">
+                                                <span style="color: #28a745 !important;">+597</span>
+                                            </td>
+                                            <td colspan="2"><span style="color: #28a745 !important;">+46</span></td>
+                                        </tr>
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <h3 class="title text-primary">Future predictions</h3>
+                    </div>
+
+                    <hr class="my-5 mt-4"/>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-body">
+
+                                    <div id="chart"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <table class="table table-responsive-md table-hover table-striped table-bordered table-border-primary">
+                                        <thead class="thead-primary">
+                                        <tr>
+                                            <th>تا زمان</th>
+                                            <th>تاریخ</th>
+                                            <th>Followers</th>
+                                            <th>آپلودها</th>
+                                        </tr>
+                                        </thead>
+
+                                        <tbody>
+                                        <tr class="bg-light">
+                                            <td>وضعیت کنونی</td>
+                                            <td>2019-06-22</td>
+                                            <td>844</td>
+                                            <td>103</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>30 روز</td>
+                                            <td>2019-07-22</td>
+                                            <td>964</td>
+                                            <td>133</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>60 روز</td>
+                                            <td>2019-08-21</td>
+                                            <td>1,084</td>
+                                            <td>163</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>3 ماه</td>
+                                            <td>2019-09-20</td>
+                                            <td>1,204</td>
+                                            <td>193</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>6 ماه</td>
+                                            <td>2019-12-19</td>
+                                            <td>1,564</td>
+                                            <td>283</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>9 ماه</td>
+                                            <td>2020-03-18</td>
+                                            <td>1,924</td>
+                                            <td>373</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>یک سال</td>
+                                            <td>2020-06-21</td>
+                                            <td>2,304</td>
+                                            <td>468</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>یک سال و نیم</td>
+                                            <td>2020-12-20</td>
+                                            <td>3,032</td>
+                                            <td>650</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>2 سال</td>
+                                            <td>2021-06-21</td>
+                                            <td>3,764</td>
+                                            <td>833</td>
+                                        </tr>
+
+                                        <tr class="bg-light">
+                                            <td colspan="2">
+                                                <i class="fa fa-calculator"></i> بر اساس میانگین از
+                                            </td>
+                                            <td>تعداد <span style="color: #28a745 !important;">+4</span> followers در
+                                                روز
+                                            </td>
+                                            <td><span style="color: #28a745 !important;">+1</span> آپلود در روز</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <h3 class="title text-primary">Top Posts</h3>
+                    </div>
+
+                    <hr class="my-5 mt-4"/>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card bg-dark text-white">
+                                <img class="card-img" src="https://scontent-dus1-1.cdninstagram.com/vp/fdf1f3bfabd9b9a4cb15b73a37c25dcf/5D87C2D9/t51.2885-15/e35/55835402_428216004638339_8325396029309395768_n.jpg?_nc_ht=scontent-dus1-1.cdninstagram.com" alt="image">
+                                <div class="card-img-overlay p-4 d-flex flex-column justify-content-between align-items-start" style="background-color: rgba(0,0,0,.5);">
+                                    <div class="flexbox w-100">
+                                        <div>
+                                            <div class="media">
+                                        <span class="position-relative d-inline-block mr-4">
+                                            <img class="rounded-circle" src="https://scontent-dus1-1.cdninstagram.com/vp/733046f3ff557bf185f9661647a64d80/5D947525/t51.2885-19/s150x150/56182694_387310291859571_7104286815695142912_n.jpg?_nc_ht=scontent-dus1-1.cdninstagram.com" alt="image" width="100">
+                                            <span class="badge-point badge-success avatar-badge" style="bottom: 5px;right: 14px;height: 14px;width: 14px;"></span>
+                                        </span>
+                                                <div class="media-body mt-5">
+                                                    <div class="h4">Daftein Advertisement</div>
+                                                    <div class="text-muted">
+                                                        <a class="text-white" href="https://instagram.com/daftein">@daftien</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span><i class="ti-thumb-up"></i> 220</span>
+                                    </div>
+                                    <div class="h2 card-title mb-2">
+                                        <a class="text-white" href="javascript:;">Rate Of Participant 0.19%</a>
+                                    </div>
+                                    <p class="card-text">Last updated 2 hrs ago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card bg-dark text-white">
+                                <img class="card-img" src="https://scontent-dus1-1.cdninstagram.com/vp/823dd82ef18939fb43b9e55155b84d0c/5DBD3ED7/t51.2885-15/sh0.08/e35/p640x640/54513883_677506032686261_625434749611341156_n.jpg?_nc_ht=scontent-dus1-1.cdninstagram.com" alt="image">
+                                <div class="card-img-overlay p-4 d-flex flex-column justify-content-between align-items-start" style="background-color: rgba(0,0,0,.5);">
+                                    <div class="flexbox w-100">
+                                        <div>
+                                            <div class="media">
+                                        <span class="position-relative d-inline-block mr-4">
+                                            <img class="rounded-circle" src="https://scontent-dus1-1.cdninstagram.com/vp/733046f3ff557bf185f9661647a64d80/5D947525/t51.2885-19/s150x150/56182694_387310291859571_7104286815695142912_n.jpg?_nc_ht=scontent-dus1-1.cdninstagram.com" alt="image" width="100">
+                                            <span class="badge-point badge-success avatar-badge" style="bottom: 5px;right: 14px;height: 14px;width: 14px;"></span>
+                                        </span>
+                                                <div class="media-body mt-5">
+                                                    <div class="h4">Daftein Advertisement</div>
+                                                    <div class="text-muted">
+                                                        <a class="text-white" href="https://instagram.com/daftein">@daftien</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span><i class="ti-thumb-up"></i> 60</span>
+                                    </div>
+                                    <div class="h2 card-title mb-2">
+                                        <a class="text-white" href="javascript:;">Rate Of Participant 0.17%</a>
+                                    </div>
+                                    <p class="card-text">Last updated 2 hrs ago</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card bg-dark text-white">
+                                <img class="card-img" src="https://scontent-dus1-1.cdninstagram.com/vp/fd198884831d43090f8216914f2cc614/5DC0E0B1/t51.2885-15/sh0.08/e35/p640x640/46323575_320368198799877_7194686352967979248_n.jpg?_nc_ht=scontent-dus1-1.cdninstagram.com" alt="image">
+                                <div class="card-img-overlay p-4 d-flex flex-column justify-content-between align-items-start" style="background-color: rgba(0,0,0,.5);">
+                                    <div class="flexbox w-100">
+                                        <div>
+                                            <div class="media">
+                                        <span class="position-relative d-inline-block mr-4">
+                                            <img class="rounded-circle" src="https://scontent-dus1-1.cdninstagram.com/vp/733046f3ff557bf185f9661647a64d80/5D947525/t51.2885-19/s150x150/56182694_387310291859571_7104286815695142912_n.jpg?_nc_ht=scontent-dus1-1.cdninstagram.com" alt="image" width="100">
+                                            <span class="badge-point badge-success avatar-badge" style="bottom: 5px;right: 14px;height: 14px;width: 14px;"></span>
+                                        </span>
+                                                <div class="media-body mt-5">
+                                                    <div class="h4">Daftein Advertisement</div>
+                                                    <div class="text-muted">
+                                                        <a class="text-white" href="https://instagram.com/daftein">@daftien</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span><i class="ti-thumb-up"></i> 100</span>
+                                    </div>
+                                    <div class="h2 card-title mb-2">
+                                        <a class="text-white" href="javascript:;">Rate Of Participant 0.16%</a>
+                                    </div>
+                                    <p class="card-text">Last updated 2 hrs ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="preloader-backdrop">
+    <div class="page-preloader">Loading</div>
+</div>
+
+<!-- Required Javascript -->
+<script src="../../../assets/js/jquery-3.4.1.min.js"></script>
+
+<!-- Optional Javascript-->
+<!-- jQuery first, then Potest.select2r.js, then Bootstrap JS -->
+<script src="../../../assets/js/popper.min.js"></script>
+<script src="../../../assets/js/bootstrap/bootstrap.min.js"></script>
+
+<!-- Perfect Scrollbar JS -->
+<script src="../../../assets/js/perfect-scrollbar.js"></script>
+
+<!-- Metismenu JS -->
+<script src="../../../assets/js/metismenu.min.js"></script>
+
+<!-- Main Js -->
+<script src="../../../assets/js/panel/main.js"></script>
+
+<!-- ApexCharts JS-->
+<script src="../../../assets/js/appex-charts/apexcharts.min.js"></script>
+
+<script>
+    var options = {
+        chart: {
+            height: 450,
+            type: 'area'
+        },
+        dataLabels: {
+            enabled: true
+        },
+        stroke: {
+            curve: 'smooth'
+        },
+        series: [{
+            name: 'Followers',
+            data: [31, 40, 28, 51, 42, 109, 100]
+        }, {
+            name: 'Following',
+            data: [11, 32, 45, 32, 34, 52, 41]
+        }, {
+            name: 'Avg. rate of participation',
+            data: [15.3, 45.5, 37.8, 26.1, 75.8, 91.4, 65.8]
+        }],
+        xaxis: {
+            type: 'datetime',
+            categories: ["2018-09-19T00:00:00", "2018-09-19T01:30:00", "2018-09-19T02:30:00", "2018-09-19T03:30:00", "2018-09-19T04:30:00", "2018-09-19T05:30:00", "2018-09-19T06:30:00"],
+        },
+        tooltip: {
+            x: {
+                format: 'dd/MM/yy HH:mm'
+            }
+        }
+    };
+
+    var follow = new ApexCharts(
+        document.querySelector('#follows'),
+        options
+    );
+
+    follow.render();
+
+</script>
+
+<script>
+    var options = {
+        chart: {
+            height: 450,
+            type: 'bar',
+        },
+        colors: ['#2949ef', '#FE4D2E', '#06b5b6'],
+        plotOptions: {
+            bar: {
+                columnWidth: '80%',
+            }
+        },
+        dataLabels: {
+            enabled: false,
+        },
+        series: [{
+            name: 'followers',
+            data: [1365, 3889, 1836, 1017, -1383,
+                3307, -400, 506, 2125, 2239,
+                -1016, 3051, -1503, 481, 1836
+            ],
+        }, {
+            name: 'followers-up',
+            data: [2, 87, 96, 59, 82,
+                94, 30, 66, 62, 88,
+                29, 25, 100, 83, 6
+            ],
+        }, {
+            name: 'followers-down',
+            data: [99, 31, 45, 39, 14,
+                18, 87, 0, 5, 9,
+                6, 63, 6, 6, 58
+            ],
+        }],
+
+        yaxis: {
+            title: {
+                text: 'Summery of Account',
+            },
+        },
+        xaxis: {
+            categories: [
+                '2018-12-11', '2018-01-06', '2019-01-8', '2019-01-26', '2019-01-27',
+                '2019-01-30', '2019-01-31', '2019-02-03', '2019-02-04', '2019-02-05',
+                '2019-04-13', '2019-04-24', '2019-05-15', '2019-06-13', '2019-06-21'
+            ],
+            labels: {
+                rotate: -90
+            }
+        },
+        tooltip: {}
+    }
+
+    var chart = new ApexCharts(
+        document.querySelector("#followers"),
+        options
+    );
+
+    chart.render();
+</script>
+
+<script>
+    var options = {
+        chart: {
+            height: 450,
+            type: 'area',
+        },
+        dataLabels: {
+            enabled: false
+        },
+        colors: ['#FE4D2E', '#6610f2'],
+        stroke: {
+            curve: 'smooth'
+        },
+        series: [{
+            name: 'Followers',
+            data: [31, 40, 28, 51, 42, 109, 100]
+        }, {
+            name: 'Upload',
+            data: [11, 32, 45, 32, 34, 52, 41]
+        }],
+
+        xaxis: {
+            categories: ["Current", "30 Days", "60 Days", "3 Months", "6 months", "9 Months", "1 Year"],
+        },
+        tooltip: {
+            x: {
+                format: 'dd/MM/yy HH:mm'
+            },
+        }
+    }
+
+    var chart = new ApexCharts(
+        document.querySelector("#chart"),
+        options
+    );
+
+    chart.render();
+</script>
+</body>
+</html>

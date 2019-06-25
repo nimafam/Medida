@@ -58,7 +58,7 @@ require.define = function (name, exports) {
   };
 };
 
-require.register("jalaali-js", function (exports, module) {
+require.register("jalaali-select2", function (exports, module) {
 /*
   Expose functions.
 */
@@ -313,7 +313,7 @@ require.register("moment-jalaali", function (exports, module) {
 module.exports = jMoment;
 
 var moment = require('moment')
-  , jalaali = require('jalaali-js');
+  , jalaali = require('jalaali-select2');
 
 /************************************
     Constants

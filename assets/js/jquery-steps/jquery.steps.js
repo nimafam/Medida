@@ -1663,7 +1663,7 @@ var defaults = $.fn.steps.defaults = {
     stepsContainerTag: "div",
 
     /**
-     * The css class which will be added to the outer component wrapper.
+     * The select2 class which will be added to the outer component wrapper.
      *
      * @property cssClass
      * @type String
@@ -1677,7 +1677,7 @@ var defaults = $.fn.steps.defaults = {
     cssClass: "wizard",
 
     /**
-     * The css class which will be used for floating scenarios.
+     * The select2 class which will be used for floating scenarios.
      *
      * @property clearFixCssClass
      * @type String

@@ -76,7 +76,7 @@
         segmentB = new Segment(pathB, beginB, endB),
         segmentC = new Segment(pathC, beginAC, endAC),
         trigger = document.getElementById('menu-icon-trigger'),
-        toCloseIcon = true,
+        toCloseIcon = false,
         dummy = document.getElementById('dummy'),
         wrapper = document.getElementById('menu-icon-wrapper');
 

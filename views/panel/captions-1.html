@@ -17,8 +17,6 @@
 
     <!-- Perfect scrollbar -->
     <link rel="stylesheet" href="../../assets/css/perfect-scrollbar.css"/>
-    <!-- RTL Direction-->
-    <link rel="stylesheet" href="../../assets/css/rtl.css"/>
 
     <!-- Material Font Icon-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -222,7 +220,7 @@
                                                 <input class="md-form-control" type="text" name="title" id="title">
                                             </div>
 
-                                            <textarea name="captions" id="captions">
+                                            <textarea name="captions" id="captions" class="captions">
                                                 Please Add your caption here
                                             </textarea>
 
@@ -411,7 +409,7 @@
                         <input class="md-form-control" type="text" name="title" value="dini">
                     </div>
 
-                    <textarea name="captions">
+                    <textarea name="captions" class="captions">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.😁😚
                         #lorem_ipsum, #Iran, #Medida
                     </textarea>
@@ -431,7 +429,7 @@
     <div class="modal-dialog modal-sm modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-body">
-                <h5 class="modal-title text-danger mb-4" id="exampleSmallModalLabel">Delete Caption</h5>
+                <h5 class="modal-title text-danger mb-4" id="smallModalLabel">Delete Caption</h5>
 
                 <p>Watch out! You really wana remove me? :-( </p>
                 <form>
@@ -453,7 +451,7 @@
 <script src="../../assets/js/jquery-3.4.1.min.js"></script>
 
 <!-- Optional Javascript-->
-<!-- jQuery first, then Potest.jsr.js, then Bootstrap JS -->
+<!-- jQuery first, then Potest.select2r.js, then Bootstrap JS -->
 <script src="../../assets/js/popper.min.js"></script>
 <script src="../../assets/js/bootstrap/bootstrap.min.js"></script>
 
@@ -464,12 +462,15 @@
 <script src="../../assets/js/metismenu.min.js"></script>
 
 <!-- CK Editor JS -->
-<script src="../../assets/ckeditor/ckeditor.js"></script>
+<script src="../../assets/js/tinymce/tinymce.min.js"></script>
 <script>
-    CKEDITOR.replaceAll();
 
-    CKEDITOR.disableAutoInline = true;
-    CKEDITOR.inlineAll();
+
+    tinymce.init({
+        selector: '.captions',
+        plugins: "emoticons",
+        toolbar: "emoticons"
+    })
 </script>
 
 <script src="../../assets/js/filterizr/jquery.filterizr.min.js"></script>

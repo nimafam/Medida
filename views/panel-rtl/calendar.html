@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Required Met tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+    <title>Calander</title>
+
+    <!-- Bootstrap 4.0 CSS -->
+    <!-- Add crossorigin="anonymous" for Host stage-->
+    <link rel="stylesheet" href="../../assets/css/bootstrap/bootstrap.min.css"/>
+
+    <!-- Public Stylesheet -->
+    <link rel="stylesheet" href="../../assets/css/admin-panel.css"/>
+
+    <!-- RTL Direction-->
+    <link rel="stylesheet" href="../../assets/css/rtl.css"/>
+
+    <!-- Material Font Icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Full Calander -->
+    <link href="../../assets/css/fullcalendar/fullcalendar.min.css" rel="stylesheet">
+    <link href="../../assets/css/fullcalendar/fullcalendar.print.css" media="print" rel="stylesheet">
+    <link href="../../assets/css/toastr/toastr.min.css" rel="stylesheet">
+    <link href="../../assets/css/datetimepicker/bootstrap-datepicker.min.css" rel="stylesheet">
+    <link href="../../assets/css/fullcalendar/plugins/main.min.css" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="page-wrapper">
+
+    <!-- Begin: header -->
+    <header class="header">
+        <nav class="navbar navbar-expand navbar-dark header-navbar">
+
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item ml-2">
+                    <a class="nav-link navbar-icon header-nav-toggler" id="header-nav-toggler" href="#">
+                        <i class="material-icons">menu</i>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="navbar-brand d-none d-sm-inline-block" href="dashboard.html.html">Medida</a>
+                </li>
+
+                <li class="nav-item dropdown d-none d-sm-inline-block mr-2"></li>
+
+            </ul>
+
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle navbar-icon navbar-icon-btn px-4" data-toggle="dropdown" href="#0" aria-expanded="false">
+                        <i class="material-icons position-relative">notification_important</i>
+                        <span class="badge badge-danger badge-circle notify-badge">4</span>
+                    </a>
+
+                    <div class="dropdown-menu pt-0" style="min-width: 350px;">
+                        <div class="py-4 px-3 text-center border-bottom mb-3 bg-primary">
+                            <h5 class="text-white m-0">4 رویداد جدید</h5>
+                        </div>
+
+                        <div class="custom-scroll position-relative mb-3 ps" style="height: 270px">
+                            <div class="list-group list-group-flush">
+
+                                <a class="list-group-item list-group-item-action px-4 py-3" href="#0">
+                                    <div class="media align-items-center">
+                                        <i class="ti-user text-center font-26 text-primary ml-3" style="width: 40px;"></i>
+                                        <div class="media-body">
+                                            <div class="flexbox">
+                                                <h6 class="text-right mb-0 font-weight-bold">20 درخواست دوستی جدید</h6>
+                                                <div class="text-muted font-13">15 دقیقه</div>
+                                            </div>
+                                            <div class="text-right font-13 text-muted">daftein, digiato</div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a class="list-group-item list-group-item-action px-4 py-3" href="#0">
+                                    <div class="media align-items-center">
+                                        <i class="ti-heart text-center font-26 text-primary ml-3" style="width: 40px;"></i>
+                                        <div class="media-body">
+                                            <div class="flexbox">
+                                                <h6 class="text-right mb-0 font-weight-bold">46 لایک چدید</h6>
+                                                <div class="text-muted font-13">1 ساعت</div>
+                                            </div>
+                                            <div class="text-right font-13 text-muted">daftein, digiato, &rlm;44 کاربر دیگر</div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a class="list-group-item list-group-item-action px-4 py-3" href="#0">
+                                    <div class="media align-items-center">
+                                        <i class="ti-envelope text-center font-26 text-primary ml-3" style="width: 40px;"></i>
+                                        <div class="media-body">
+                                            <div class="flexbox">
+                                                <h6 class="text-right mb-0 font-weight-bold">75 پیام خوانده نشده</h6>
+                                                <div class="text-muted font-13">2 ساعت</div>
+                                            </div>
+                                            <div class="text-right font-13 text-muted">daftein, digiato</div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a class="list-group-item list-group-item-action px-4 py-3" href="#0">
+                                    <div class="media align-items-center">
+                                        <i class="ti-alert text-center font-26 text-primary ml-3" style="width: 40px;"></i>
+                                        <div class="media-body">
+                                            <div class="flexbox">
+                                                <h6 class="text-right mb-0 font-weight-bold">2 پیام از طرف مدیدا</h6>
+                                                <div class="text-muted font-13">1 روز</div>
+                                            </div>
+                                            <div class="text-right font-13 text-muted">اعتبار حساب کاربری شما روبه اتمام است</div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+
+                        <div class="px-3 py-2 text-center"><a class="hover-link font-13" href="javascript:;">مشاهده همه</a></div>
+
+                    </div>
+                </li>
+               <li class="nav-item dropdown mr-3">
+                   <a class="nav-link dropdown-toggle no-arrow d-inline-flex align-items-center px-4" style="background-color: rgba(255,255,255,.1);" data-toggle="dropdown" href="#" aria-expanded="false">
+                       <div class="d-none d-sm-inline-block ml-2 text-left">
+                           <div class="font-weight-strong text-white">John Due</div>
+                           <div class="font-12">سلام جان</div>
+                       </div>
+
+                       <span class="position-relative d-inline-block">
+                           <img class="rounded-circle" src="../../assets/images/man.png" alt="image" width="36">
+                           <span class="badge-point badge-success avatar-badge"></span>
+                       </span>
+                   </a>
+
+                   <div class="dropdown-menu pt-0 pb-4" style="min-width: 280px;">
+                       <div class="p-4 mb-4 media align-items-center border-bottom">
+                           <img class="rounded-circle ml-3" src="../../assets/images/man.png" alt="image" width="55">
+                           <div class="media-body">
+                               <h5 class="mb-1 text-right">John Due</h5>
+                               <div class="font-13 text-right">جان دو</div>
+                           </div>
+                       </div>
+
+                       <a class="dropdown-item d-flex align-items-center" href="#">
+                           <i class="ti-user ml-3 font-18 text-muted"></i>
+                           حساب کاربری
+                       </a>
+                       <a class="dropdown-item d-flex align-items-center" href="#">
+                           <i class="ti-email ml-3 font-18 text-muted"></i>
+پیام‌ها
+                       </a>
+                       <a class="dropdown-item d-flex align-items-center" href="#">
+                           <i class="ti-settings ml-3 font-18 text-muted"></i>
+                          تنظیمات
+                       </a>
+
+                       <div class="dropdown-divider"></div>
+
+                       <div class="mx-4 float-right">
+                           <a class="btn btn-link p-0" href="login.html">
+                               <span class="btn-icon"></span>
+                               <i class="ti-power-off ml-2 font-18"></i>
+                               خروج
+                           </a>
+                       </div>
+
+                   </div>
+               </li>
+            </ul>
+        </nav>
+        <!-- ،Top Nav-->
+
+
+        <nav class="header-nav" id="header-nav">
+            <ul class="nav header-menu position-static">
+                <li class="nav-item">
+                    <a class="header-menu-toggle" href="dashboard.html">
+                        <i class="ti-dashboard ml-3 font-18"></i>
+                        پیشخوان
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="header-menu-toggle" href="post.html">
+                        <i class="ti-image ml-2 font-18"></i>
+                        افزودن پست جدید
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="header-menu-toggle" href="analytics.html">
+                        <i class="fa fa-chart-bar ml-2 font-18"></i>
+تحلیل پروفایل
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="header-menu-toggle active" href="calendar.html">
+                        <i class="ti-calendar ml-2 font-18"></i>
+تقویم
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="header-menu-toggle" href="captions.html">
+                        <i class="ti-instagram ml-2 font-18"></i>
+کپشن‌ها
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="header-menu-toggle" href="stats.html">
+                        <i class="ti-stats-up ml-2 font-18"></i>
+آمارها
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- .Down Nav-->
+
+    </header>
+    <!-- End: header-->
+    
+    <div class="content-wrapper">
+
+        <!-- Begin: content -->
+        <div class="content-area">
+            <div class="page-content fade-in-up">
+
+                <!-- Begin: Page Heading -->
+
+                <div class="page-heading">
+                    <div class="page-breadcrumb">
+                        <h1 class="page-title">تقویم</h1>
+                    </div>
+                </div>
+                <!-- End: Page Heading -->
+
+                <!-- Begin: Main Content -->
+                <div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="card-header">
+                                        <h5 class="box-title">رویداد</h5>
+                                    </div>
+                                    <div class="card-body p-3">
+                                        <div id="external-events" class="float-right text-right">
+                                            <div class="ex-event" data-class="fc-event-primary">
+                                                <i class="badge-point badge-primary ml-3"></i>
+                                                تجاری
+                                            </div>
+                                            <div class="ex-event" data-class="fc-info">
+                                                <i class="badge-point badge-info ml-3"></i>
+                                                شخصی
+                                            </div>
+                                            <div class="ex-event" data-class="fc-warning">
+                                                <i class="badge-point badge-warning ml-3"></i>
+                                                رویداد
+                                            </div>
+                                            <div class="ex-event" data-class="fc-danger">
+                                                <i class="badge-point badge-danger ml-3"></i>
+                                                رویداد مهم
+                                            </div>
+                                            <div class="ex-event" data-class="fc-success">
+                                                <i class="badge-point badge-success ml-3"></i>
+                                                تولد
+                                            </div>
+
+                                            <p class="mr-2 mt-4">
+                                                <label class="checkbox checkbox-success">
+                                                        <span>
+                                                                بعد از قراردادن در تقویم پاک شود
+                                                        </span>    
+                                                    <input type="checkbox" id="drop-remove">
+                                                </label>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                           <div class="card card-fullheight">
+                               <div class="card-header">
+                                   <h5 class="title-box">تقویم</h5>
+                                   <button class="btn btn-danger btn-rounded my-3" data-toggle="modal" data-target="#new-event-modal">
+                                       <span class="btn-icon">
+                                            رویداد جدید
+                                           <i class="ti-plus"></i>
+                                       </span>
+                                   </button>
+                               </div>
+                               <div class="card-body">
+                                <div class="d-flex justify-content-between mb-5">
+                                    <div id="calendar"></div>
+                                </div>
+                               </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End: Main Heading -->
+
+            </div>
+        </div>
+        <!-- End: Content -->
+        
+        <!-- Begin: New  Event Modal -->
+        <div class="modal fade" id="new-event-modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <form class="modal-content form-horizontal" id="newEventForm" action="javascript:;" novalidate="novalidate">
+                    <div class="modal-header p-4">
+                        <h5 class="modal-title">رویداد جدید</h5>
+                        <button class="close float-left font-10" type="button" data-dismiss="modal" aria-label="close">
+                            <span aria-hidden="true">x</span>
+                        </button>
+                    </div>
+                    <div class="modal-body p-4">
+
+                            <div class="form-group mb-4">
+                                <label class="text-muted mb-3 float-right">دسته بندی</label>
+
+                                <div>
+                                    <label class="radio radio-outline-primary radio-inline check-single">
+                                        <input type="radio" name="category" checked="" value="fc-event-primary">
+                                        <span></span>
+                                    </label>
+                                    <label class="radio radio-outline-warning radio-inline check-single">
+                                        <input type="radio" name="category" value="fc-event-warning">
+                                        <span></span>
+                                    </label>
+                                    <label class="radio radio-outline-success radio-inline check-single">
+                                        <input type="radio" name="category" value="fc-event-success">
+                                        <span></span>
+                                    </label>
+                                    <label class="radio radio-outline-danger radio-inline check-single">
+                                        <input type="radio" name="category" value="fc-event-danger">
+                                        <span></span>
+                                    </label>
+                                    <label class="radio radio-outline-info radio-inline check-single">
+                                        <input type="radio" name="category" value="fc-event-info">
+                                        <span></span>
+                                    </label>
+                                </div>
+
+                            </div>
+                            <div class="mb-3">
+                                <div class="md-form mb-1">
+                                    <input class="md-form-control" id="new-event-title" type="text" name="title" required="">
+                                    <label>عنوان</label>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-6">
+                                    <div class="input-group-icon input-group-icon-right mb-4">
+                                        <div class="md-form mb-1">
+                                            <input class="md-form-control m-0 datepicker date" id="new-event-start" name="start" value="" type="text" required="">
+                                            <label class="active">شروع:</label>
+                                            <span class="input-icon input-icon-right">
+                                                <i class="ti-calendar"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="input-group-icon input-group-icon-right mb-4">
+                                        <div class="md-form mb-1">
+                                            <input class="md-form-control m-0 datepicker date" id="new-event-end" name="end" value="" type="text">
+                                            <label class="active">پایان:</label>
+                                            <span class="input-icon input-icon-right">
+                                                <i class="ti-calendar"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group mb-4 float-right">
+                                <label class="ui-switch switch-solid">
+                                    <input id="new-event-allDay" type="checkbox" checked="">
+                                        <span class="ml-3"></span>
+                                         تمام روز
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="modal-footer justify-content-start p-4">
+                            <button class="btn btn-primary btn-rounded" id="addEventButton" type="submit">
+                                افزودن رویداد
+                            </button>
+                        </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- End: New Event Modal -->
+        <!-- Begin: Edit Event Modal -->
+        <div class="modal fade" id="event-modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                    <div class="modal-dialog" role="document">
+                            <form class="modal-content form-horizontal" id="eventForm" action="javascript:;" novalidate="novalidate">
+                                <div class="modal-header p-4">
+                                    <h5 class="modal-title">ویرایش رویداد</h5>
+                                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body p-4">
+                                    <div class="form-group mb-4">
+                                        <label class="text-muted mb-3 float-right">دسته بندی</label>
+                                            <div>
+                                                <label class="radio radio-outline-primary radio-inline check-single">
+                                                    <input type="radio" name="category" checked="" value="fc-event-primary">
+                                                    <span></span>
+                                                </label>
+                                                <label class="radio radio-outline-warning radio-inline check-single">
+                                                    <input type="radio" name="category" value="fc-event-warning">
+                                                    <span></span>
+                                                </label>
+                                                <label class="radio radio-outline-success radio-inline check-single">
+                                                    <input type="radio" name="category" value="fc-event-success">
+                                                    <span></span>
+                                                </label>
+                                                <label class="radio radio-outline-danger radio-inline check-single">
+                                                    <input type="radio" name="category" value="fc-event-danger">
+                                                    <span></span>
+                                                </label>
+                                                <label class="radio radio-outline-info radio-inline check-single">
+                                                    <input type="radio" name="category" value="fc-event-info">
+                                                    <span></span>
+                                                </label>
+                                            </div>
+
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <div class="md-form mb-1"><input class="md-form-control" id="event-title" type="text" name="title" required=""><label class="active">عنوان</label></div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-6">
+                                            <div class="input-group-icon input-group-icon-right mb-4">
+                                                <div class="md-form mb-1">
+                                                    <input class="md-form-control m-0 datepicker date" id="event-start" name="start" value="" type="text" required="">
+                                                    <label class="active">شروع:</label>
+                                                    <span class="input-icon input-icon-right">
+                                                        <i class="ti-calendar"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="input-group-icon input-group-icon-right mb-4">
+                                                <div class="md-form mb-1">
+                                                    <input class="md-form-control m-0 datepicker date" id="event-end" name="end" value="" type="text">
+                                                    <label class="active">پایان:</label>
+                                                    <span class="input-icon input-icon-right">
+                                                        <i class="ti-calendar"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-4 float-right"><label class="ui-switch switch-solid">
+                                        <input id="event-allDay" type="checkbox">
+                                        <span class="ml-3"></span> تمام روز</label>
+                                    </div>
+                                </div>
+                                <div class="modal-footer justify-content-between p-4">
+                                    <button class="btn btn-primary btn-rounded" id="editEventButton" type="submit">ثبت</button>
+                                    <button class="btn btn-danger btn-rounded" id="deleteEventButton" data-dismiss="modal">
+                                        <span class="btn-icon">
+                                            <i class="ti-trash"></i>
+                                            پاک کردن</span>
+                                        </button>
+                                    </div>
+                            </form>
+                        </div>
+            </div>
+        </div>
+        <!-- End: Edit Event Modal -->
+    </div>
+
+    <footer class="footer font-18">
+        <div class="container text-muted font-13 text-center">
+            &lrm;© 2020 All Right Reserved: <span class="font-18">Medida</span>
+        </div>
+    </footer>
+    </div>
+
+    <!-- Page Preloader -->
+    <div class="preloader-backdrop" style="display: none;">
+        <div class="page-preloader">Loading</div>
+    </div>
+
+    <!-- Required Javascript -->
+    <script src="../../assets/js/jquery-3.4.1.min.js"></script>
+    <script src="../../assets/js/fullcalendar/lib/jquery-ui.min.js"></script>
+
+    <!-- Validation -->
+    <script src="../../assets/js/validation/jquery.validate.min.js"></script>
+    <script src="../../assets/js/validation/localization/messages_fa.min.js"></script>
+    
+    <!-- Optional Javascript-->
+    <!-- jQuery first, then Potest.select2r.js, then Bootstrap JS -->
+    <script src="../../assets/js/popper.min.js"></script>
+    <script src="../../assets/js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Main.JS -->
+    <script src="../../assets/js/panel/main.js"></script>
+
+    <!-- Full Calander  -->
+    <script src="../../assets/js/fullcalendar/lib/moment.min.js"></script>
+    <script src="../../assets/js/fullcalendar/lib/moment-jalaali.js"></script>
+    <script src="../../assets/js/fullcalendar/fullcalendar.min.js"></script>
+    <script src="../../assets/js/fullcalendar/locale/fa.js"></script>
+    <script src="../../assets/js/datapicker/bootstrap-datepicker.js"></script>
+    <script src="../../assets/js/datapicker/bootstrap-datepicker.fa.js" charset="UTF-8"></script>
+    <script src="../../assets/js/toastr/toastr.min.js"></script>
+    <script src="../../assets/js/panel/calendar.js"></script>
+
+    
+</body>
+</html>

@@ -14,15 +14,13 @@
 
 
     <!-- Data Table -->
-    <link rel="stylesheet" href="../../assets/css/data_table/data_tabel.min.css"/>
+    <link rel="stylesheet" href="../../assets/datatable/datatables.min.css"/>
 
     <!-- Public Stylesheet -->
     <link rel="stylesheet" href="../../assets/css/admin-panel.css"/>
 
     <!-- Perfect scrollbar -->
     <link rel="stylesheet" href="../../assets/css/perfect-scrollbar.css"/>
-    <!-- RTL Direction-->
-    <link rel="stylesheet" href="../../assets/css/rtl.css"/>
 
 
     <!-- Material Font Icon-->
@@ -608,7 +606,7 @@
 <script src="../../assets/js/jquery-3.4.1.min.js"></script>
 
 <!-- Optional Javascript-->
-<!-- jQuery first, then Potest.jsr.js, then Bootstrap JS -->
+<!-- jQuery first, then Potest.select2r.js, then Bootstrap JS -->
 <script src="../../assets/js/popper.min.js"></script>
 <script src="../../assets/js/bootstrap/bootstrap.min.js"></script>
 
@@ -619,12 +617,11 @@
 <script src="../../assets/js/metismenu.min.js"></script>
 
 <!-- Data Table JS -->
-<script src="../../assets/js/datatable/data_table.min.js"></script>
+<script src="../../assets/datatable/datatables.min.js"></script>
 <script>
     $(function () {
         var table = $('#contacts-table').DataTable({
             responsive: true,
-            "sDom": 'rtip',
             order: [
                 [1, 'asc']
             ],

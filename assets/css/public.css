@@ -1,5 +1,6 @@
 @import url("fonts/iransans.css");
 @import url("fonts/all.min.css");
+@import url("pure_drawer/pure-drawer.css");
 
 body{
     font-family: IRANSans, Serif !important;
@@ -45,101 +46,9 @@ body{
     height:2000px;
     /*just to get the page to scroll*/
 }
-/* Menu icon styles */
-
-.menu-icon-wrapper {
-    position: relative;
-    display: inline-block;
-    width: 150px;
-    height: 34px;
-    margin: 2em;
-    pointer-events: none;
-    transition: 0.1s;
-}
-
-.menu-icon-wrapper.scaled {
-    -webkit-transform: scale(0.5);
-    -ms-transform: scale(0.5);
-    transform: scale(0.5);
-}
-
-.menu-icon-wrapper svg {
-    position: absolute;
-    top: -33px;
-    left: -33px;
-    -webkit-transform: scale(0.1);
-    -ms-transform: scale(0.1);
-    transform: scale(0.1);
-    -webkit-transform-origin: 0 0;
-    -ms-transform-origin: 0 0;
-    transform-origin: 0 0;
-}
-
-.menu-icon-wrapper svg path {
-    stroke: #17d0ff;
-    stroke-width: 30px;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    fill: transparent;
-}
-
-.menu-icon-wrapper .menu-icon-trigger {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    pointer-events: auto;
-    background: none;
-    border: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu-icon-wrapper .menu-icon-trigger:hover,
-.menu-icon-wrapper .menu-icon-trigger:focus {
-    outline: none;
-}
-
-
-/* THe Side navigation Menu */
-.side-nav{
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1031; /* Stay on top */
-    top: 0; /* Stay at the top */
-    right: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-}
-
-.side-nav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.side-nav a:hover {
-    color: #f1f1f1;
-}
-
-#main {
-    transition: margin-right .5s;
-}
-
-@media screen and (max-height: 450px) {
-    .side-nav {padding-top: 15px;}
-    .side-nav a {font-size: 18px;}
-}
-
 #cover {
     padding-top: 50px;
-    background-color: #4e555b;
+    background: url("../images/main.png") scroll no-repeat center;
 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -147,6 +56,8 @@ body{
 
     height: 100vh;
 }
+/* Sidebar */
+
 
 /* Footer Section */
 footer {

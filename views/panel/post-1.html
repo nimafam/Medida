@@ -17,8 +17,10 @@
 
     <!-- Perfect scrollbar -->
     <link rel="stylesheet" href="../../assets/css/perfect-scrollbar.css"/>
-    <!-- RTL Direction-->
-    <link rel="stylesheet" href="../../assets/css/rtl.css"/>
+
+
+    <link href="../../assets/smalot-bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+    <!-- THEME STYLES-->
 
     <!-- Material Font Icon-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -226,8 +228,8 @@
                                                     <span class="input-icon input-icon-left">
                                                         <i class="ti-instagram"></i>
                                                     </span>
-                                                    <select class="form-control ltr" style="height: 50px" title="account">
-                                                        <option>Please Choose an account</option>
+                                                    <select class="form-control ltr" style="height: 50px"
+                                                            title="account" id="account" name="account">
                                                         <option>@sinalef.s</option>
                                                         <option>@nima_mirkhani</option>
                                                     </select>
@@ -235,26 +237,248 @@
                                             </div>
                                         </fieldset>
 
+                                        <h6>Post Type</h6>
+                                        <fieldset>
+                                            <div class="row">
+                                                <div class="col-md-4 mx-auto">
+                                                    <label class="checkbox checkbox-outline-primary">
+                                                        <input type="checkbox" checked="">
+                                                        <span>Post</span>
+                                                    </label>
+                                                    <img src="https://via.placeholder.com/180x180?text=1080+x+1080" class="img-fluid border border-primary">
+                                                </div>
+                                                <div class="col-md-4 mx-auto">
+                                                    <label class="checkbox checkbox-outline-primary">
+                                                        <input type="checkbox" checked="">
+                                                        <span>Album</span>
+                                                    </label>
+                                                    <img src="https://via.placeholder.com/180x180?text=1080+x+1080" class="img-fluid border border-primary">
+
+                                                </div>
+                                                <div class="col-md-4 mx-auto">
+                                                    <label class="checkbox checkbox-outline-primary">
+                                                        <input type="checkbox" checked="">
+                                                        <span>story</span>
+                                                    </label>
+                                                    <img src="https://via.placeholder.com/180x320?text=1080+x+1920" class="img-fluid border border-primary">
+
+                                                </div>
+
+                                            </div>
+                                        </fieldset>
+
+
                                         <h6>Captions</h6>
                                         <fieldset>
                                             <h3 class="mb-4">Write done caption</h3>
                                             <label for="caption"></label>
-                                            <textarea class="form-control" name="caption" id="caption"></textarea>
+                                            <textarea class="captions" name="caption" id="caption"></textarea>
                                         </fieldset>
 
-                                        <h6>Post Type</h6>
-                                        <fieldset>
+                                        <h6>Media</h6>
+                                        <fieldset style="height: 450px">
+                                            <h3 class="mb-4">Select Media</h3>
+                                            <div class="controls">
+
+                                                <div class="row justify-content-between">
+
+                                                    <div class="col-4">
+                                                        <div class="btn-toolbar mb-4" role="toolbar" aria-label="Categories" id="filters">
+                                                            <div class="btn-group mr-2" role="group">
+                                                                <button class="btn btn-dark" data-filter="all">
+                                                                    All
+                                                                </button>
+                                                                <button class="btn btn-primary" data-filter="image">
+                                                                    <i class="fas fa-images"></i>
+                                                                </button>
+                                                                <button class="btn btn-primary" data-filter="video">
+                                                                    <i class="fas fa-video"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-4">
+                                                        <div class="btn-toolbar mb-4" role="toolbar" aria-label="Categories" id="sorts">
+                                                            <div class="btn-group mr-2" role="group">
+                                                                <button class="btn btn-success" data-sort-by="default:asc">
+                                                                    <i class="ti-arrow-up"></i>
+                                                                </button>
+                                                                <button class="btn btn-success" data-sort-by="default:desc">
+                                                                    <i class="ti-arrow-down"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="container filtr-container">
+                                                <div class="mix filtr-item" data-category="image">
+                                                    <img class="img-fluid mx-auto" src="../../assets/images/upload/annegien-schilling.jpg">
+                                                </div>
+                                                <div class="mix filtr-item" data-category="image">
+                                                    <img class="img-fluid mx-auto" src="../../assets/images/upload/download.jpg">
+                                                </div>
+                                                <div class="mix filtr-item" data-category="video">
+                                                    <img class="img-fluid mx-auto" src="../../assets/images/upload/qatareats.jpg">
+                                                </div>
+                                                <div class="mix filtr-item" data-category="video">
+                                                    <img class="img-fluid mx-auto" src="../../assets/images/upload/images.jpg">
+                                                </div>
+                                                <div class="mix filtr-item" data-category="image">
+                                                    <img class="img-fluid mx-auto" src="../../assets/images/upload/images%20(1).jpg">
+                                                </div>
+                                                <div class="mix filtr-item" data-category="image">
+                                                    <img class="img-fluid mx-auto" src="../../assets/images/upload/annegien-schilling.jpg">
+                                                </div>
+                                                <div class="mix filtr-item" data-category="video">
+                                                    <img class="img-fluid mx-auto" src="../../assets/images/upload/download.jpg">
+                                                </div>
+                                                <div class="mix filtr-item" data-category="video">
+                                                    <img class="img-fluid mx-auto" src="../../assets/images/upload/qatareats.jpg">
+                                                </div>
+                                                <div class="mix filtr-item" data-category="image">
+                                                    <img class="img-fluid mx-auto" src="../../assets/images/upload/annegien-schilling.jpg">
+                                                </div>
+                                                <div class="mix filtr-item" data-category="video">
+                                                    <img class="img-fluid mx-auto" src="../../assets/images/upload/download.jpg">
+                                                </div>
+                                                <div class="mix filtr-item" data-category="image">
+                                                    <img class="img-fluid mx-auto" src="../../assets/images/upload/qatareats.jpg">
+                                                </div>
+                                                <div class="mix filtr-item" data-category="video">
+                                                    <img class="img-fluid mx-auto" src="../../assets/images/upload/images.jpg">
+                                                </div>
+                                                <div class="mix filtr-item" data-category="image">
+                                                    <img class="img-fluid mx-auto" src="../../assets/images/upload/images%20(1).jpg">
+                                                </div>
+                                                <div class="mix filtr-item" data-category="image">
+                                                    <img class="img-fluid mx-auto" src="../../assets/images/upload/annegien-schilling.jpg">
+                                                </div>
+                                                <div class="mix filtr-item" data-category="video">
+                                                    <img class="img-fluid mx-auto" src="../../assets/images/upload/download.jpg">
+                                                </div>
+                                                <div class="mix filtr-item" data-category="image">
+                                                    <img class="img-fluid mx-auto" src="../../assets/images/upload/download.jpg">
+                                                </div>
+                                            </div>
 
                                         </fieldset>
+
 
                                         <h6>Schedule</h6>
                                         <fieldset>
+
+                                            <div class="form-group row mb-4"><label class="col-form-label col-lg-3">Start Date or to send now just leave it empty</label>
+                                                <div class="col-lg-4 col-md-9">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text"><i class="ti-calendar"></i>
+                                                            </span>
+                                                        </div>
+                                                        <input class="form-control" id="datetimepicker_4" type="text" placeholder="Select date &amp; time">
+                                                    </div>
+                                                </div>
+                                            </div>
 
                                         </fieldset>
 
                                     </form>
                                 </div>
                             </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mx-auto">
+
+                            <div class="marvel-device iphone8 gold ml-5">
+                                <div class="top-bar"></div>
+                                <div class="sleep"></div>
+                                <div class="volume"></div>
+                                <div class="camera"></div>
+                                <div class="sensor"></div>
+                                <div class="speaker"></div>
+                                <div class="screen">
+                                    <!-- Content goes here -->
+                                    <div class="row mobile-header ltr">
+                                        <div class="flexbox pl-4 mt-2">
+                                            <div class="ml-2">
+                                                <i class="icon-camera font-20"></i>
+                                                <img class="ml-1" src="../../assets/images/instagram-logo.png"
+                                                     style="width: 5rem;"/>
+                                            </div>
+
+
+                                            <div class="right-side" style="position:absolute; right: 0;">
+                                                <span class="icon-film font-20 mr-2"></span>
+                                                <span class="icon-paper-plane font-20 mr-3"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="post-header mb-3">
+                                        <div class="flexbox">
+                                            <div class="mt-4 ml-3">
+                                                <div class="d-inline-flex align-items-center">
+                                                    <span class="position-relative d-inline-block">
+                                                    <img class="rounded-circle" src="../../assets/images/man.png"
+                                                         width="18">
+                                                     </span>
+                                                    <span class="d-sm-inline-block ml-2 font-11"> golnoush.mirosseini</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="right-side mt-4 mr-3">
+                                                <span class="icon-options-vertical font-13"></span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="post-image">
+                                        <div class="row  no-gutters">
+                                            <div class="col-sm-12">
+                                                <img src="../../assets/images/upload/qatareats.jpg"/>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="post-like p-4">
+                                        <div class="flexbox">
+                                            <div class="left-side ml-3">
+                                                <span class="ti-heart font-20 ml-1"></span>
+                                                <span class="icon-bubble font-20 ml-2"></span>
+                                                <span class="icon-paper-plane font-20 ml-2"></span>
+                                            </div>
+
+                                            <div class="right-side mr-3">
+                                                <span class="ti-bookmark font-20 mr-2"></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="flexbox en mt-3">
+                                            <div>
+                                                <p class="text-left font-16"><strong>77 likes</strong></p>
+                                                <div class="text-left font-14">
+                                                    Solems tolerare, tanquam pius bubo.Pumpkin seeds taste best with tea
+                                                    and lots of chocolate.Treasure, strength, and grace.Luna de magnum
+                                                    calceus, examinare idoleum!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="home"></div>
+                                <div class="bottom-bar"></div>
+                            </div>
+
                         </div>
 
                     </div>
@@ -272,9 +496,18 @@
 <script src="../../assets/js/jquery-3.4.1.min.js"></script>
 
 <!-- Optional Javascript-->
-<!-- jQuery first, then Potest.jsr.js, then Bootstrap JS -->
+<!-- jQuery first, then Potest.select2r.js, then Bootstrap JS -->
 <script src="../../assets/js/popper.min.js"></script>
 <script src="../../assets/js/bootstrap/bootstrap.min.js"></script>
+
+<script src="../../assets/js/tinymce/tinymce.min.js"></script>
+<script>
+    tinymce.init({
+        selector: '.captions',
+        plugins: "emoticons",
+        toolbar: "emoticons"
+    })
+</script>
 
 <script src="../../assets/js/validation/jquery.validate.min.js"></script>
 <script src="../../assets/js/validation/localization/messages_fa.min.js"></script>
@@ -327,6 +560,10 @@
         errorPlacement: function errorPlacement(error, element) {
             error.insertAfter(element);
         },
+        rules: {
+            account: 'required',
+            captions: 'require'
+        },
         errorClass: 'invalid-feedback',
         validClass: 'valid-feedback',
         highlight: function (e) {
@@ -338,11 +575,70 @@
 
     });
 
-//
-//    $('.steps').addClass('ltr');
+    //
+    //    $('.steps').addClass('ltr');
 
 </script>
 
+
+<!-- Filreizr JS -->
+<script src="../../assets/js/filterizr/jquery.filterizr.min.js"></script>
+<script>
+
+    var options = {
+        animationDuration: 0.35, // in seconds
+        filter: 'all', // Initial filter
+        callbacks: {
+            onFilteringStart: function () {
+            },
+            onFilteringEnd: function () {
+            },
+            onShufflingStart: function () {
+            },
+            onShufflingEnd: function () {
+            },
+            onSortingStart: function () {
+            },
+            onSortingEnd: function () {
+            }
+        },
+        controlsSelector: '', // Selector for custom controls
+        delay: 0, // Transition delay in ms
+        delayMode: 'progressive', // 'progressive' or 'alternate'
+        easing: 'ease-out',
+        filterOutCss: { // Filtering out animation
+            opacity: 0,
+            transform: 'scale(0.5)'
+        },
+        filterInCss: { // Filtering in animation
+            opacity: 0,
+            transform: 'scale(1)'
+        },
+        layout: 'sameSize', // See layouts
+        multifilterLogicalOperator: 'and',
+        selector: '.filtr-container',
+        setupControls: true // Should be false if controlsSelector is set
+    };
+    // You can override any of these options and then call...
+    var filterizd = $('.filtr-container').filterizr(options);
+    // If you have already instantiated your Filterizr then call...
+    filterizd.filterizr('setOptions', options);
+
+</script>
+
+<script src="../../assets/smalot-bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script><!-- CORE SCRIPTS-->
+
+<script>
+    $(function () {
+        $("#datetimepicker_4").datetimepicker({
+            todayHighlight: !0,
+            autoclose: !0,
+            todayBtn: !0,
+            format: "dd MM yyyy - HH:ii P",
+            showMeridian: !0,
+        });
+    })
+</script>
 <!-- Perfect Scrollbar JS -->
 <script src="../../assets/js/perfect-scrollbar.js"></script>
 
