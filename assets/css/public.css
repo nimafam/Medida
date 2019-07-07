@@ -6,6 +6,26 @@ body{
     font-family: IRANSans, Serif !important;
 }
 
+/* button */
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+}
+
 /* Main Navigation Bar*/
 .nav-header {
     background: transparent;
@@ -47,22 +67,157 @@ body{
     /*just to get the page to scroll*/
 }
 #cover {
-    padding-top: 50px;
     background: url("../images/main.png") scroll no-repeat center;
 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
 
+    padding-left: 0 !important;
+    padding-right: 0 !important;
     height: 100vh;
 }
-/* Sidebar */
 
+header {
+    text-align: center;
+    font-size: 72px;
+    color: #fff;
+    transition: all 500ms cubic-bezier(0.55, 0, 0.1, 1);
+}
+.navbar-default {
+    background-color: rgba(0, 194, 196,0.6);
+    border-radius: 0 0 80% 23%;
+}
+.navbar-header {
+    width: 100%;
+}
+.navbar-brand {
+    padding: 10px 0;
+}
+.navbar-brand > img {
+    position: absolute;
+    left: 20%;
+    top: 14px;
+    float: left;
+    display: block;
+    width: 150px;
+    transition: all 500ms cubic-bezier(0.55, 0, 0.1, 1);
+}
+.navbar-right {
+    width: 100%;
+    margin-right: 0px;
+}
+.navbar-nav {
+    direction: rtl;
+    float: left;
+    font-size: 100%;
+    margin-bottom: 35px;
+    width: 100%;
+    display: inline-block;
+    margin-left: -55px;
+}
+.navbar-default .navbar-nav>li {
+    display: inline-block;
+    text-align: center;
+    float: none;
+    font-size: 1rem;
+    margin-right: 25px;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+    display: inline-block;
+    transition: all 500ms cubic-bezier(0.55, 0, 0.1, 1);
+}
+.navbar-default .navbar-nav>li>a:hover {
+    opacity: 0.8;
+    text-decoration: none !important;
+}
+.navbar-toggle {
+    position: absolute;
+    right: 30%;
+    float: right;
+    margin: 25px 0 -15px;
+    transition: all 500ms cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+header.sticky {
+    position: fixed;
+    font-size: 24px;
+    line-height: 48px;
+    height: 48px;
+    width: 100%;
+    text-align: left;
+}
+header.sticky .navbar-default {
+    background-color: rgba(0, 194, 196,0.6);
+}
+header.sticky .container {
+    width: inherit;
+}
+header.sticky .navbar-header {
+    width: 20%;
+    margin-bottom: 0px;
+    float: left;
+}
+header.sticky .navbar-brand {
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+header.sticky .navbar-brand img {
+    position: absolute;
+    left: 20%;
+    top: 14px;
+    width: 100px;
+    margin-right: 5px;
+}
+header.sticky .navbar-right {
+    width: 80%;
+    background: none;
+}
+header.sticky .navbar-nav {
+    float: right;
+}
+
+header.sticky .navbar-toggle {
+    float: right;
+    margin-top: 12px;
+    position: absolute;
+    right: 30%;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav{
+        font-size: 14px;
+    }
+    header.sticky .navbar-header {
+        width: 100%;
+    }
+    header.sticky .navbar-brand img {
+        padding-top: 0px;
+    }
+    header.sticky .navbar-right {
+        width: 100%;
+        background: none;
+        margin-top: 50px;
+    }
+    header.sticky .navbar-nav {
+        float: left;
+    }
+}
+@media (max-width: 480px) {
+    .navbar-brand > img {
+        margin: 10px auto 0;
+        max-width: 200px;
+    }
+}
+
+/* Sidebar */
 
 /* Footer Section */
 footer {
     height: 300px;
-    background-color: #92b8c3;
+    background-color: rgba(0, 194, 196,1);
     position: relative;
 }
 footer .footer-inner {
@@ -73,7 +228,16 @@ footer .footer-inner {
     width: 100%;
 }
 footer .footer-inner * {
-    color: #fff;
+    color: rgba(0, 194, 196,1);
+    text-decoration: none;
+}
+
+footer .social {
+    -webkit-transition: all ease-in-out 0.35s;
+    -moz-transition: all ease-in-out 0.35s;
+    -ms-transition: all ease-in-out 0.35s;
+    -o-transition: all ease-in-out 0.35s;
+    transition: all ease-in-out 0.35s;
 }
 footer .logo {
     text-align: center;
