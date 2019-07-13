@@ -67,12 +67,14 @@ body{
     /*just to get the page to scroll*/
 }
 #cover {
+
     background: url("../images/main.png") scroll no-repeat center;
 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
 
+    margin-top: -130px;
     padding-left: 0 !important;
     padding-right: 0 !important;
     height: 100vh;

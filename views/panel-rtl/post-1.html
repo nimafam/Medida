@@ -226,8 +226,8 @@
                                                     <span class="input-icon input-icon-left">
                                                         <i class="ti-instagram"></i>
                                                     </span>
-                                                    <select class="form-control ltr" style="height: 50px" title="account">
-                                                        <option>Please Choose an account</option>
+                                                    <select class="form-control ltr" style="height: 50px"
+                                                            title="account" id="account" name="account">
                                                         <option>@sinalef.s</option>
                                                         <option>@nima_mirkhani</option>
                                                     </select>
@@ -235,20 +235,152 @@
                                             </div>
                                         </fieldset>
 
+                                        <h6>Post Type</h6>
+                                        <fieldset>
+                                            <div class="row">
+                                                <div class="col-md-4 mx-auto">
+                                                    <label class="checkbox checkbox-outline-primary">
+                                                        <input type="checkbox" checked="">
+                                                        <span>Post</span>
+                                                    </label>
+                                                    <img src="https://via.placeholder.com/180x180?text=1080+x+1080" class="img-fluid border border-primary">
+                                                </div>
+                                                <div class="col-md-4 mx-auto">
+                                                    <label class="checkbox checkbox-outline-primary">
+                                                        <input type="checkbox" checked="">
+                                                        <span>Album</span>
+                                                    </label>
+                                                    <img src="https://via.placeholder.com/180x180?text=1080+x+1080" class="img-fluid border border-primary">
+
+                                                </div>
+                                                <div class="col-md-4 mx-auto">
+                                                    <label class="checkbox checkbox-outline-primary">
+                                                        <input type="checkbox" checked="">
+                                                        <span>story</span>
+                                                    </label>
+                                                    <img src="https://via.placeholder.com/180x320?text=1080+x+1920" class="img-fluid border border-primary">
+
+                                                </div>
+
+                                            </div>
+                                        </fieldset>
+
+
                                         <h6>Captions</h6>
                                         <fieldset>
                                             <h3 class="mb-4">Write done caption</h3>
                                             <label for="caption"></label>
-                                            <textarea class="form-control" name="caption" id="caption"></textarea>
+                                            <textarea class="captions" name="caption" id="caption"></textarea>
                                         </fieldset>
 
-                                        <h6>Post Type</h6>
-                                        <fieldset>
+                                        <h6>Media</h6>
+                                        <fieldset style="height: 450px">
+                                            <h3 class="mb-4">Select Media</h3>
+                                            <div class="controls">
+
+                                                <div class="row justify-content-between">
+
+                                                    <div class="col-4">
+                                                        <div class="btn-toolbar mb-4" role="toolbar" aria-label="Categories" id="filters">
+                                                            <div class="btn-group mr-2" role="group">
+                                                                <button class="btn btn-dark" data-filter="all">
+                                                                    All
+                                                                </button>
+                                                                <button class="btn btn-primary" data-filter="image">
+                                                                    <i class="fas fa-images"></i>
+                                                                </button>
+                                                                <button class="btn btn-primary" data-filter="video">
+                                                                    <i class="fas fa-video"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-4">
+                                                        <div class="btn-toolbar mb-4" role="toolbar" aria-label="Categories" id="sorts">
+                                                            <div class="btn-group mr-2" role="group">
+                                                                <button class="btn btn-success" data-sort-by="default:asc">
+                                                                    <i class="ti-arrow-up"></i>
+                                                                </button>
+                                                                <button class="btn btn-success" data-sort-by="default:desc">
+                                                                    <i class="ti-arrow-down"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="container filtr-container">
+                                                <div class="mix filtr-item" data-category="image">
+                                                    <img class="img-fluid mx-auto" src="../../assets/images/upload/annegien-schilling.jpg">
+                                                </div>
+                                                <div class="mix filtr-item" data-category="image">
+                                                    <img class="img-fluid mx-auto" src="../../assets/images/upload/download.jpg">
+                                                </div>
+                                                <div class="mix filtr-item" data-category="video">
+                                                    <img class="img-fluid mx-auto" src="../../assets/images/upload/qatareats.jpg">
+                                                </div>
+                                                <div class="mix filtr-item" data-category="video">
+                                                    <img class="img-fluid mx-auto" src="../../assets/images/upload/images.jpg">
+                                                </div>
+                                                <div class="mix filtr-item" data-category="image">
+                                                    <img class="img-fluid mx-auto" src="../../assets/images/upload/images%20(1).jpg">
+                                                </div>
+                                                <div class="mix filtr-item" data-category="image">
+                                                    <img class="img-fluid mx-auto" src="../../assets/images/upload/annegien-schilling.jpg">
+                                                </div>
+                                                <div class="mix filtr-item" data-category="video">
+                                                    <img class="img-fluid mx-auto" src="../../assets/images/upload/download.jpg">
+                                                </div>
+                                                <div class="mix filtr-item" data-category="video">
+                                                    <img class="img-fluid mx-auto" src="../../assets/images/upload/qatareats.jpg">
+                                                </div>
+                                                <div class="mix filtr-item" data-category="image">
+                                                    <img class="img-fluid mx-auto" src="../../assets/images/upload/annegien-schilling.jpg">
+                                                </div>
+                                                <div class="mix filtr-item" data-category="video">
+                                                    <img class="img-fluid mx-auto" src="../../assets/images/upload/download.jpg">
+                                                </div>
+                                                <div class="mix filtr-item" data-category="image">
+                                                    <img class="img-fluid mx-auto" src="../../assets/images/upload/qatareats.jpg">
+                                                </div>
+                                                <div class="mix filtr-item" data-category="video">
+                                                    <img class="img-fluid mx-auto" src="../../assets/images/upload/images.jpg">
+                                                </div>
+                                                <div class="mix filtr-item" data-category="image">
+                                                    <img class="img-fluid mx-auto" src="../../assets/images/upload/images%20(1).jpg">
+                                                </div>
+                                                <div class="mix filtr-item" data-category="image">
+                                                    <img class="img-fluid mx-auto" src="../../assets/images/upload/annegien-schilling.jpg">
+                                                </div>
+                                                <div class="mix filtr-item" data-category="video">
+                                                    <img class="img-fluid mx-auto" src="../../assets/images/upload/download.jpg">
+                                                </div>
+                                                <div class="mix filtr-item" data-category="image">
+                                                    <img class="img-fluid mx-auto" src="../../assets/images/upload/download.jpg">
+                                                </div>
+                                            </div>
 
                                         </fieldset>
+
 
                                         <h6>Schedule</h6>
                                         <fieldset>
+
+                                            <div class="form-group row mb-4"><label class="col-form-label col-lg-3">Start Date or to send now just leave it empty</label>
+                                                <div class="col-lg-4 col-md-9">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text"><i class="ti-calendar"></i>
+                                                            </span>
+                                                        </div>
+                                                        <input class="form-control" id="datetimepicker_4" type="text" placeholder="Select date &amp; time">
+                                                    </div>
+                                                </div>
+                                            </div>
 
                                         </fieldset>
 

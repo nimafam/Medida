@@ -14,6 +14,9 @@
 
     <!-- Public Stylesheet -->
     <link rel="stylesheet" href="../../assets/css/public.css"/>
+    <!-- Public Stylesheet -->
+    <link rel="stylesheet" href="../../assets/css/owl-slider/owl.carousel.min.css" media="screen"/>
+    <link rel="stylesheet" href="../../assets/css/owl-slider/owl.theme.default.css"/>
 
     <!-- Material Font Icon-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -21,44 +24,63 @@
 </head>
 <body class="pure-container" data-effect="pure-effect-scaleDown">
 
+<header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar-header">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/993/2139239993_13b35a83-f92d-4da0-bb3c-1b5b2d5147c9.png?cb=1562497182"
+                         alt="Logo">
+                </a>
 
+                <button type="button" class="navbar-toggle collasdpsed btn btn-light btn-circle"
+                        data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fas fa-align-justify"></i>
+                </button>
 
-<section class="container-fluid" id="cover">
-    <header>
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="navbar-header">
-                <div class="container">
-                    <a class="navbar-brand" href="#">
-                        <img src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/993/2139239993_13b35a83-f92d-4da0-bb3c-1b5b2d5147c9.png?cb=1562497182" alt="Logo">
-                    </a>
-
-                    <button type="button" class="navbar-toggle collasdpsed btn btn-light btn-circle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <i class="fas fa-align-justify"></i>
-                    </button>
-
-                </div>
             </div>
+        </div>
 
-            <div id="navbar" class="navbar-collapse collapse navbar-right">
-                <div class="container">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#">مدیدا</a></li>
-                        <li><a href="#about">درباره مدیدا</a></li>
-                        <li><a href="#services">خدمات مدیدا</a></li>
-                        <li><a href="#services">مظنه مدیدا</a></li>
-                        <li><a href="#contact">ارتباط با مدیدا</a></li>
-                    </ul>
-                </div>
+        <div id="navbar" class="navbar-collapse collapse navbar-right">
+            <div class="container">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">مدیدا</a></li>
+                    <li><a href="#about">درباره مدیدا</a></li>
+                    <li><a href="#services">خدمات مدیدا</a></li>
+                    <li><a href="#services">مظنه مدیدا</a></li>
+                    <li><a href="#contact">ارتباط با مدیدا</a></li>
+                </ul>
             </div>
-            <!--/.nav-collapse -->
-        </nav>
-    </header>
+        </div>
+        <!--/.nav-collapse -->
+    </nav>
+</header>
+
+<section id="cover">
+
+    <div class="container">
+        <div class="row" style="padding: 0!important; margin: 0!important;">
+            <div class="col-md-8">
+
+            </div>
+            <div class="col-md-4">
+                <h1 class="text-center">مدیدا تجربه‌ای نوین</h1>
+                <p class="text-justify text-muted">
+                    بر اثر چنین تلقین و شستشوی مغزی جامعی، سطح و پایهٔ ذهن و فهم و نظر بعضی اشخاص واژگونه و معکوس
+                    می‌شود.
+                    بر اثر چنین تلقین و شستشوی مغزی جامعی، سطح و پایهٔ ذهن و فهم و نظر بعضی اشخاص واژگونه و معکوس
+                    می‌شود.
+                </p>
+            </div>
+        </div>
+    </div>
 </section>
 <main>
     <div>
         <section class="container" style="height: 100vh">
             <h1> Medida </h1>
+
         </section>
 
         <section class="container" style="height: 100vh">
@@ -68,7 +90,7 @@
         <footer>
             <div class="footer-inner">
                 <div class="logo">
-                    <img src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/993/2139239993_13b35a83-f92d-4da0-bb3c-1b5b2d5147c9.png?cb=1562497182" />
+                    <img src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/993/2139239993_13b35a83-f92d-4da0-bb3c-1b5b2d5147c9.png?cb=1562497182"/>
                 </div>
                 <nav>
                     <a href="" class="text-primary">© Medida</a>
@@ -84,7 +106,6 @@
     </div>
 </main>
 
-<label class="pure-overlay" for="pure-toggle-right" data-overlay="right"></label>
 
 <!-- Required Javascript -->
 <script src="../../assets/js/jquery-3.2.1.slim.min.js"></script>
@@ -96,14 +117,22 @@
 
 <script>
 
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 1){
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 1) {
             $('header').addClass("sticky");
         }
         else {
             $('header').removeClass("sticky");
         }
     });
+</script>
+
+
+<script src="../../assets/js/owl-slider/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.slider-wrapper').owlCarousel();
+    })
 </script>
 <!-- Main JS-->
 <script src="../../assets/js/main.js"></script>
